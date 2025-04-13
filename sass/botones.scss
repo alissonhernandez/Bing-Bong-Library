@@ -1,5 +1,5 @@
 @import '../sass/variables.scss';
-
+//!!(ME FALTA AGREGAR DE LAS CLASES UTILITARIAS: LAS FUENTES DE LETRA, SOMBRAS, REDONDEO)!!
 //Estilos para los tamaños de los botones.
 //Contamos con 3 tamaños: L, M y P.
 // "L" Grande, "M" Mediano y "P" Pequeño.
@@ -157,3 +157,9 @@
 .ansiedad-O { @include ansiedad-style($ansiedad-expontanea, $ansiedad-relajada); }
 .ansiedad-I { @include ansiedad-style($ansiedad-expontanea, $ansiedad-caotica); }
 .ansiedad-D { @include ansiedad-style($ansiedad-relajada, $ansiedad-explosiva); }
+
+// Temor
+.temor-A { @include temor-style($temor-adrenalina, $temor-suave); }
+.temor-O { @include temor-style($temor-caos, $temor-oscuridad); }
+.temor-I { @include temor-style($temor-oscuridad, $temor-adrenalina); }
+.temor-D { @include temor-style($temor-suave, $temor-caos);}
