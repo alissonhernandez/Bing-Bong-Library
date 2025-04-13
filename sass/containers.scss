@@ -1,0 +1,92 @@
+@import '../sass/breackpoints.scss';
+@import '../sass/variables.scss';
+//(ME FALTA MODIFICAR LA FUENTE DE LETRA, REDONDEO Y PADDINGS)
+//Medidas y padding para los contenedores
+//Tamaños: SM, MD, LG, XL, XXl.
+$container-padding-normal: 1rem;
+$container-padding-agrandado:3rem;
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+);
+
+//Asignando colores a los containers
+.container {
+    background-color: $temor-suave;
+  }
+
+  .container-fluid {
+    background-color: $vergüenza-nostalgica;
+  }
+
+  .container-sm {
+    background-color: $tristeza-profunda;
+  }
+  .container-md {
+    background-color: $envidia-marea;
+  }
+
+  .container-lg {
+    background-color: $aburrimiento-niebla;
+  }
+  .container-xl {
+    background-color: $desagrado-sarcastico;
+  }
+  .container-xxl {
+    background-color: $alegria-vibrante;
+  }
+
+//CONTAINER PRINCIPAL.
+.container {
+    width: 100%;
+    padding-right: $container-padding-normal;
+    padding-left: $container-padding-normal;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $furia-fuego;
+  
+    @each $breakpoint, $max-width in $container-max-widths {
+      @media (min-width: map-get($breakpoints, $breakpoint)) {
+        max-width: $max-width;
+      }
+    }
+  }
+
+  //CONTAINER FLUIDO
+  .container-fluid {
+    width: 100%;
+    padding-right: $container-padding-normal;
+    padding-left: $container-padding-normal;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  //CONTAINERS DE DIFERENTES SIZES.
+  @each $breakpoint, $max-width in $container-max-widths {
+    .container-#{$breakpoint} {
+      width: 100%;
+      max-width: $max-width;
+      padding-right: $container-padding-normal;
+      padding-left: $container-padding-normal;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+
+  //estilos adicionales para darle formato a los contenedores
+  .container, .container-fluid, .container-sm, .container-lg, .container-md, .container-xl, .container-xxl {
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: $furia-suave;
+  }
+
+  .container-sm, .container-lg, .container-fluid, .container-md, .container-xl, .container-xxl{
+    padding: $container-padding-normal;
+  }
+  .container {
+    padding: $container-padding-agrandado;
+  }

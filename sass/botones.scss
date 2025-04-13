@@ -1,5 +1,5 @@
 @import '../sass/variables.scss';
-
+//!!(ME FALTA AGREGAR DE LAS CLASES UTILITARIAS: LAS FUENTES DE LETRA, SOMBRAS, REDONDEO)!!
 //Estilos para los tamaños de los botones.
 //Contamos con 3 tamaños: L, M y P.
 // "L" Grande, "M" Mediano y "P" Pequeño.
@@ -97,10 +97,125 @@
       width: 250%;
     }
   }
+
+  //Boton de la emcion Temor
+  @mixin temor-style($bg, $color) {
+    position: relative;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1em 2.5em;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 6em;
+    transition: all 0.2s;
+    border: none;
+    font-family: inherit;
+    font-weight: 500;
+    color: $color;
+    background-color: $bg;
+  
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+  
+    &:active {
+      transform: translateY(-1px);
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+  
+    &::after {
+      content: "";
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      border-radius: 100px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      transition: all 0.4s;
+      background-color: $bg;
+    }
+  
+    &:hover::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  //Boton tristeza
+  @mixin tristeza-style($burbuja-color, $color2) {
+    position: relative;
+    display: inline-block;
+    padding: 12px 24px;
+    border: none;
+    font-size: 16px;
+    background-color: inherit;
+    border-radius: 100px;
+    font-weight: 600;
+    color: #ffffff40;
+    box-shadow: 0 0 0 2px #ffffff20;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  
+    span:last-child {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      background-color: $burbuja-color;
+      border-radius: 50%;
+      opacity: 0;
+      transition: all 0.8s cubic-bezier(0.23, 1, 0.320, 1);
+    }
+  
+    span:first-child {
+      position: relative;
+      z-index: 1;
+    }
+  
+    &:hover {
+      box-shadow: 0 0 0 5px $color2;
+      color: $furia-suave;
+    }
+  
+    &:active {
+      scale: 0.95;
+    }
+  
+    &:hover span:last-child {
+      width: 150px;
+      height: 150px;
+      opacity: 1;
+    }
+  }
   
 
-  // Alegría
-.alegria-1 { @include alegria-style($alegria-brillante, $alegria-electrisante); }
-.alegria-2 { @include alegria-style($alegria-tranquilidad, $alegria-vibrante); }
-.alegria-3 { @include alegria-style($alegria-electrisante, $alegria-tranquilidad); }
-.alegria-4 { @include alegria-style($alegria-brillante, $alegria-vibrante); }
+  //Alegría
+.alegria-A { @include alegria-style($alegria-brillante, $alegria-electrisante); }
+.alegria-O { @include alegria-style($alegria-tranquilidad, $alegria-vibrante); }
+.alegria-I { @include alegria-style($alegria-electrisante, $alegria-tranquilidad); }
+.alegria-D { @include alegria-style($alegria-brillante, $alegria-vibrante); }
+
+// Ansiedad
+.ansiedad-A { @include ansiedad-style($ansiedad-caotica, $ansiedad-explosiva); }
+.ansiedad-O { @include ansiedad-style($ansiedad-expontanea, $ansiedad-relajada); }
+.ansiedad-I { @include ansiedad-style($ansiedad-expontanea, $ansiedad-caotica); }
+.ansiedad-D { @include ansiedad-style($ansiedad-relajada, $ansiedad-explosiva); }
+
+// Temor
+.temor-A { @include temor-style($temor-adrenalina, $temor-suave); }
+.temor-O { @include temor-style($temor-caos, $temor-oscuridad); }
+.temor-I { @include temor-style($temor-oscuridad, $temor-adrenalina); }
+.temor-D { @include temor-style($temor-suave, $temor-caos);}
+
+//Trsiteza
+.tristeza-A { @include tristeza-style($tristeza-apagada, $tristeza-suspiro); }
+.tristeza-O { @include tristeza-style($tristeza-brillante, $tristeza-profunda); }
+.tristeza-I { @include tristeza-style($tristeza-profunda, $tristeza-apagada); }
+.tristeza-D { @include tristeza-style($tristeza-suspiro, $tristeza-brillante); }
