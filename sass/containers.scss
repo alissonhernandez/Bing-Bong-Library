@@ -12,6 +12,32 @@ $container-max-widths: (
   xxl: 1320px
 );
 
+//Asignando colores a los containers
+.container {
+    background-color: $temor-suave;
+  }
+
+  .container-fluid {
+    background-color: $vergüenza-fantastica;
+  }
+
+  .container-sm {
+    background-color: $tristeza-profunda;
+  }
+  .container-md {
+    background-color: $envidia-marea;
+  }
+
+  .container-lg {
+    background-color: $aburrimiento-niebla;
+  }
+  .container-xl {
+    background-color: $desagrado-sarcastico;
+  }
+  .container-xxl {
+    background-color: $alegria-vibrante;
+  }
+
 //CONTAINER PRINCIPAL.
 .container {
     width: 100%;
