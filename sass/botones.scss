@@ -1,0 +1,12 @@
+@import url(variables.scss);
+
+//Estilos para los tamaños de los botones.
+//Contamos con 3 tamaños: L, M y P.
+// "L" Grande, "M" Mediano y "P" Pequeño.
+.btn-l {
+    padding: 10px 16px !important;
+    font-size: 20px !important;
+    line-height: 1.3333333 !important;
+    width: 170px;
+    height: 62px;
+  }
