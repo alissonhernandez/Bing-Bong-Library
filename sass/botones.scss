@@ -1,0 +1,106 @@
+@import '../sass/variables.scss';
+
+//Estilos para los tamaños de los botones.
+//Contamos con 3 tamaños: L, M y P.
+// "L" Grande, "M" Mediano y "P" Pequeño.
+.btn-l {
+    padding: 10px 16px !important;
+    font-size: 20px !important;
+    line-height: 1.3333333 !important;
+    width: 170px;
+    height: 62px;
+  }
+  .btn-m {
+    padding: 10px 12px !important;
+    font-size: 12px !important;
+    line-height: 0.5 !important;
+    width: 140px;
+    height: 42px;
+  }
+  .btn-s {
+    padding: 5px 10px !important;
+    font-size: 8px !important;
+    line-height: 1.5 !important;
+    width: 95px;
+    height: 25px;
+  }
+
+  //Mixins para estilos de boton
+  //Esilos  para boton Alegria
+  @mixin alegria-style($color1, $color2) {
+    cursor: pointer;
+    color: $furia-suave;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: $furia-oscuro;
+    transition: 0.1s;
+  
+    &::after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle farthest-corner at 10% 20%, $color1 17.8%, $end-color 100.2%);
+      filter: blur(15px);
+      z-index: -1;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+  
+    &:active {
+      transform: scale(0.9) rotate(3deg);
+      background: radial-gradient(circle farthest-corner at 10% 20%, $start-color 17.8%, $color2 100.2%);
+      transition: 0.5s;
+    }
+  }
+
+  //Estilos para boton Ansiedad
+  @mixin ansiedad-style($base, $hover) {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: $base;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid $base;
+  
+    &:hover {
+      color: $furia-suave;
+      transform: scale(1.1);
+      outline: 2px solid $hover;
+      box-shadow: 4px 5px 17px -4px darken($hover, 10%);
+    }
+  
+    &::before {
+      content: "";
+      position: absolute;
+      left: -50px;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background-color: $base;
+      transform: skewX(45deg);
+      z-index: -1;
+      transition: width 1000ms;
+    }
+  
+    &:hover::before {
+      width: 250%;
+    }
+  }
+  
+
+  // Alegría
+.alegria-1 { @include alegria-style($alegria-brillante, $alegria-electrisante); }
+.alegria-2 { @include alegria-style($alegria-tranquilidad, $alegria-vibrante); }
+.alegria-3 { @include alegria-style($alegria-electrisante, $alegria-tranquilidad); }
+.alegria-4 { @include alegria-style($alegria-brillante, $alegria-vibrante); }
