@@ -99,8 +99,14 @@
   }
   
 
-  // Alegría
+  //Alegría
 .alegria-1 { @include alegria-style($alegria-brillante, $alegria-electrisante); }
 .alegria-2 { @include alegria-style($alegria-tranquilidad, $alegria-vibrante); }
 .alegria-3 { @include alegria-style($alegria-electrisante, $alegria-tranquilidad); }
 .alegria-4 { @include alegria-style($alegria-brillante, $alegria-vibrante); }
+
+// Ansiedad
+.ansiedad-1 { @include ansiedad-style($ansiedad-caotica, $ansiedad-explosiva); }
+.ansiedad-2 { @include ansiedad-style($ansiedad-expontanea, $ansiedad-relajada); }
+.ansiedad-3 { @include ansiedad-style($ansiedad-expontanea, $ansiedad-caotica); }
+.ansiedad-4 { @include ansiedad-style($ansiedad-relajada, $ansiedad-explosiva); }
