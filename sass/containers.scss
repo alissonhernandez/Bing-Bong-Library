@@ -3,7 +3,8 @@
 
 //Medidas y padding para los contenedores
 //Tamaños: SM, MD, LG, XL, XXl.
-$container-padding: 1rem;
+$container-padding-normal: 1rem;
+$container-padding-agrandado:3rem;
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -41,8 +42,8 @@ $container-max-widths: (
 //CONTAINER PRINCIPAL.
 .container {
     width: 100%;
-    padding-right: $container-padding;
-    padding-left: $container-padding;
+    padding-right: $container-padding-normal;
+    padding-left: $container-padding-normal;
     margin-right: auto;
     margin-left: auto;
     background-color: $furia-fuego;
@@ -57,8 +58,8 @@ $container-max-widths: (
   //CONTAINER FLUIDO
   .container-fluid {
     width: 100%;
-    padding-right: $container-padding;
-    padding-left: $container-padding;
+    padding-right: $container-padding-normal;
+    padding-left: $container-padding-normal;
     margin-right: auto;
     margin-left: auto;
   }
@@ -68,8 +69,8 @@ $container-max-widths: (
     .container-#{$breakpoint} {
       width: 100%;
       max-width: $max-width;
-      padding-right: $container-padding;
-      padding-left: $container-padding;
+      padding-right: $container-padding-normal;
+      padding-left: $container-padding-normal;
       margin-right: auto;
       margin-left: auto;
     }
