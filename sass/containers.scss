@@ -36,3 +36,15 @@ $container-max-widths: (
     margin-right: auto;
     margin-left: auto;
   }
+
+  //CONTAINERS DE DIFERENTES SIZES.
+  @each $breakpoint, $max-width in $container-max-widths {
+    .container-#{$breakpoint} {
+      width: 100%;
+      max-width: $max-width;
+      padding-right: $container-padding;
+      padding-left: $container-padding;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
