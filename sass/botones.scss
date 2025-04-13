@@ -26,6 +26,7 @@
   }
 
   //Mixins para estilos de boton
+  //Esilos  para boton Alegria
   @mixin alegria-style($color1, $color2) {
     cursor: pointer;
     color: $furia-suave;
@@ -55,4 +56,51 @@
       transition: 0.5s;
     }
   }
+
+  //Estilos para boton Ansiedad
+  @mixin ansiedad-style($base, $hover) {
+    padding: 1em 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: $base;
+    transition: all 1000ms;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    outline: 2px solid $base;
   
+    &:hover {
+      color: $furia-suave;
+      transform: scale(1.1);
+      outline: 2px solid $hover;
+      box-shadow: 4px 5px 17px -4px darken($hover, 10%);
+    }
+  
+    &::before {
+      content: "";
+      position: absolute;
+      left: -50px;
+      top: 0;
+      width: 0;
+      height: 100%;
+      background-color: $base;
+      transform: skewX(45deg);
+      z-index: -1;
+      transition: width 1000ms;
+    }
+  
+    &:hover::before {
+      width: 250%;
+    }
+  }
+  
+
+  // Alegría
+.alegria-1 { @include alegria-style($alegria-brillante, $alegria-electrisante); }
+.alegria-2 { @include alegria-style($alegria-tranquilidad, $alegria-vibrante); }
+.alegria-3 { @include alegria-style($alegria-electrisante, $alegria-tranquilidad); }
+.alegria-4 { @include alegria-style($alegria-brillante, $alegria-vibrante); }
