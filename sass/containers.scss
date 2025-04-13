@@ -11,3 +11,19 @@ $container-max-widths: (
   xl: 1140px,
   xxl: 1320px
 );
+
+//CONTAINER PRINCIPAL.
+.container {
+    width: 100%;
+    padding-right: $container-padding;
+    padding-left: $container-padding;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: $furia-fuego;
+  
+    @each $breakpoint, $max-width in $container-max-widths {
+      @media (min-width: map-get($breakpoints, $breakpoint)) {
+        max-width: $max-width;
+      }
+    }
+  }
