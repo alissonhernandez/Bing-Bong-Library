@@ -213,3 +213,9 @@
 .temor-O { @include temor-style($temor-caos, $temor-oscuridad); }
 .temor-I { @include temor-style($temor-oscuridad, $temor-adrenalina); }
 .temor-D { @include temor-style($temor-suave, $temor-caos);}
+
+//Trsiteza
+.tristeza-A { @include tristeza-style($tristeza-apagada, $tristeza-suspiro); }
+.tristeza-O { @include tristeza-style($tristeza-brillante, $tristeza-profunda); }
+.tristeza-I { @include tristeza-style($tristeza-profunda, $tristeza-apagada); }
+.tristeza-D { @include tristeza-style($tristeza-suspiro, $tristeza-brillante); }
