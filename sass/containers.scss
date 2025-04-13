@@ -1,6 +1,6 @@
 @import '../sass/breackpoints.scss';
 @import '../sass/variables.scss';
-
+//(ME FALTA MODIFICAR LA FUENTE DE LETRA, Y PADDINGS)
 //Medidas y padding para los contenedores
 //Tamaños: SM, MD, LG, XL, XXl.
 $container-padding-normal: 1rem;
@@ -19,7 +19,7 @@ $container-max-widths: (
   }
 
   .container-fluid {
-    background-color: $vergüenza-fantastica;
+    background-color: $vergüenza-nostalgica;
   }
 
   .container-sm {
@@ -77,7 +77,6 @@ $container-max-widths: (
   }
 
   //estilos adicionales para darle formato a los contenedores
-  //Estilos para mostrar los contenedores.
   .container, .container-fluid, .container-sm, .container-lg, .container-md, .container-xl, .container-xxl {
     box-sizing: border-box;
     border-radius: 4px;
