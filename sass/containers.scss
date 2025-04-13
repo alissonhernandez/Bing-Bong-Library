@@ -75,3 +75,19 @@ $container-max-widths: (
       margin-left: auto;
     }
   }
+
+  //estilos adicionales para darle formato a los contenedores
+  //Estilos para mostrar los contenedores.
+  .container, .container-fluid, .container-sm, .container-lg, .container-md, .container-xl, .container-xxl {
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: $furia-suave;
+  }
+
+  .container-sm, .container-lg, .container-fluid, .container-md, .container-xl, .container-xxl{
+    padding: $container-padding-normal;
+  }
+  .container {
+    padding: $container-padding-agrandado;
+  }
