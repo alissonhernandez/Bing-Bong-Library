@@ -1,0 +1,61 @@
+@import 'variables';
+
+// Escalas de redondeo
+$radius: (
+  none: 0,
+  sm: 0.125rem,   // 2px
+  md: 0.375rem,   // 6px
+  lg: 0.5rem,     // 8px
+  xl: 1rem,       // 16px
+  full: 9999px    // forma circular
+);
+
+// Paleta de emociones
+$emociones: (
+  furia: $furia-fuego,
+  envidia: $envidia-alarmante,
+  ansiedad: $ansiedad-expontanea,
+  alegria: $alegria-vibrante,
+  temor: $temor-adrenalina,
+  desagrado: $desagrado-dramatico,
+  verguenza: $vergüenza-fantastica,
+  tristeza: $tristeza-brillante,
+  aburrimiento: $aburrimiento-suspiro
+);
+
+// Clases generales de border-radius
+@each $name, $size in $radius {
+  .rounded-#{$name} {
+    border-radius: $size;
+  }
+
+  .rounded-t-#{$name} {
+    border-top-left-radius: $size;
+    border-top-right-radius: $size;
+  }
+
+  .rounded-b-#{$name} {
+    border-bottom-left-radius: $size;
+    border-bottom-right-radius: $size;
+  }
+
+  .rounded-l-#{$name} {
+    border-top-left-radius: $size;
+    border-bottom-left-radius: $size;
+  }
+
+  .rounded-r-#{$name} {
+    border-top-right-radius: $size;
+    border-bottom-right-radius: $size;
+  }
+
+  // clases de redondeo por emociones
+  @each $emo, $color in $emociones {
+    .rounded-emotion-#{$emo}-#{$name} {
+      border-radius: $size;
+      background-color: $color;
+      color: white;
+      padding: 0.5rem;
+    }
+  }
+}
