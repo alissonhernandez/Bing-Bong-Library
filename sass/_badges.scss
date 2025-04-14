@@ -1,0 +1,6 @@
+//Es un contenedor de fila para mantener los badges alineados.
+.badge-row {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
