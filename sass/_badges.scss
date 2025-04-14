@@ -15,7 +15,8 @@
     border-radius: 9999px;
     font-weight: 500;
     display: inline-block;
-  
+
+    //Tamaño para los badges 
     &.xs { font-size: 0.75rem; }
     &.sm { font-size: 0.875rem; }
 
@@ -29,4 +30,52 @@
     &.envidia {background-color: $envidia-marea; color: $envidia-alarmante;}
     &.verguenza {background-color: $vergüenza-nostalgica; color: $vergüenza-recuerdo;}
     &.aburrimiento {background-color: $aburrimiento-suspiro; color: $aburrimiento-silencioso;}
+  }
+
+  //Badge de la emocion envidia
+  .badge_envidia {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.75rem;
+    position: relative;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    line-height: 1.1;
+
+    &::before {
+        content: "★";
+        font-size: 2rem;
+        display: block;
+        margin-bottom: 0.25rem;
+      }
+
+      //Tamaños para los badges
+      &.sm {
+        width: 4rem;
+        height: 4rem;
+        font-size: 0.65rem;
+    
+        &::before {
+          font-size: 1.4rem;
+        }
+      }
+    
+      &.xs {
+        width: 3rem;
+        height: 3rem;
+        font-size: 0.55rem;
+    
+        &::before {
+          font-size: 1rem;
+        }
+      }
+
+      //Declaracion del estilo propio del badge
   }
