@@ -21,15 +21,15 @@
     &.sm { font-size: 0.875rem; }
 
     //declaracion de estilo propio de los badges
-    &.alegria  { background-color: $alegria-electrisante ; color: $alegria-vibrante;}
-    &.tristeza {background-color: $tristeza-apagada; color: $tristeza-profunda;}
-    &.furia {background-color: $furia-fuego; color: $furia-oscuro;}
-    &.temor {background-color: $temor-caos; color: $temor-suave;}
-    &.desagrado {background-color: $desagrado-sarcastico; color: $desagrado-autoridad;}
-    &.ansiedad {background-color: $ansiedad-expontanea; color: $ansiedad-relajada;}
-    &.envidia {background-color: $envidia-marea; color: $envidia-alarmante;}
-    &.verguenza {background-color: $vergüenza-nostalgica; color: $vergüenza-recuerdo;}
-    &.aburrimiento {background-color: $aburrimiento-suspiro; color: $aburrimiento-silencioso;}
+    &.a_alegria  { background-color: $alegria-electrisante ; color: $alegria-vibrante;}
+    &.a_tristeza {background-color: $tristeza-apagada; color: $tristeza-profunda;}
+    &.a_furia {background-color: $furia-fuego; color: $furia-oscuro;}
+    &.a_temor {background-color: $temor-caos; color: $temor-suave;}
+    &.a_desagrado {background-color: $desagrado-sarcastico; color: $desagrado-autoridad;}
+    &.a_ansiedad {background-color: $ansiedad-expontanea; color: $ansiedad-relajada;}
+    &.a_envidia {background-color: $envidia-marea; color: $envidia-alarmante;}
+    &.a_verguenza {background-color: $vergüenza-nostalgica; color: $vergüenza-recuerdo;}
+    &.a_aburrimiento {background-color: $aburrimiento-suspiro; color: $aburrimiento-silencioso;}
   }
 
   //Badge de la emocion envidia
@@ -78,4 +78,13 @@
       }
 
       //Declaracion del estilo propio del badge
+      &.e_alegria {background-color: $alegria-brillante; color: $alegria-electrisante;}
+      &.e_tristeza {background-color: $tristeza-apagada; color: $tristeza-suspiro;}
+      &.e_furia {background-color: $furia-ceniza; color: $furia-suave;}
+      &.e_temor {background-color: $temor-suave; color: $temor-adrenalina;}
+      &.e_desagrado {background-color: $desagrado-impertinente; color: $desagrado-autoridad;}
+      &.e_ansiedad {background-color: $ansiedad-caotica; color: $ansiedad-relajada;}
+      &.e_envidia {background-color: $envidia-suspiro; color: $envidia-alarmante;}
+      &.e_aburrimiento {background-color: $aburrimiento-silencioso; color: $aburrimiento-niebla;}
+      &.e_verguenza {background-color: $vergüenza-fantastica; color: $vergüenza-vulnerable;}
   }
