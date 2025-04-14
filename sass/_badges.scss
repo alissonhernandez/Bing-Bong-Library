@@ -108,8 +108,55 @@
     transform: scale(1.05);
     box-shadow: 0 0 12px currentColor, 0 0 20px currentColor;
   }
-  
+
   //Tamaño para los badges
    &.xs { font-size: 0.75rem; }
    &.sm { font-size: 0.875rem; }
+
+   //Definiendo estilos propios para los badges
+   &.f_furia {
+    background-color: $furia-ceniza;
+    color: $furia-suave;
+    box-shadow: 0 0 8px $furia-fuego;
+  }
+  &.f_alegria {
+    background-color: $alegria-tranquilidad;
+    color: $alegria-vibrante;
+    box-shadow: 0 0 8px $alegria-electrisante;
+  }
+  &.f_tristeza {
+    background-color: $tristeza-apagada;
+    color: $tristeza-profunda;
+    box-shadow: 0 0 8px $tristeza-suspiro;
+  }
+  &.f_temor {
+    background-color: $temor-caos;
+    color: $temor-suave;
+    box-shadow: 0 0 8px $temor-adrenalina;
+  }
+  &.f_desagrado {
+    background-color: $desagrado-autoridad;
+    color: $desagrado-dramatico;
+    box-shadow: 0 0 8px $desagrado-impertinente;
+  }
+  &.f_ansiedad {
+    background-color: $ansiedad-explosiva;
+    color: $ansiedad-relajada;
+    box-shadow: 0 0 8px $ansiedad-caotica;
+  }
+  &.f_envidia {
+    background-color: $envidia-oscura;
+    color: $envidia-suspiro;
+    box-shadow: 0 0 8px $envidia-marea;
+  }
+  &.f_verguenza {
+    background-color: $vergüenza-recuerdo;
+    color: $vergüenza-fantastica;
+    box-shadow: 0 0 8px $vergüenza-vulnerable;
+  }
+  &.f_aburrimiento {
+    background-color: $aburrimiento-suspiro;
+    color: $aburrimiento-silencioso;
+    box-shadow: 0 0 8px $aburrimiento-suave;
+  }
   }
