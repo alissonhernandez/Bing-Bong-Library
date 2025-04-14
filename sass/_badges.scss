@@ -88,3 +88,28 @@
       &.e_aburrimiento {background-color: $aburrimiento-silencioso; color: $aburrimiento-niebla;}
       &.e_verguenza {background-color: $vergüenza-fantastica; color: $vergüenza-vulnerable;}
   }
+
+  //Badge de la emocion Furia
+  .badge_furia {
+    padding-top: 0.1em;
+  padding-bottom: 0.1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 200px;
+  font-weight: 600;
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  letter-spacing: 0.05em;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px currentColor, 0 0 20px currentColor;
+  }
+  
+  //Tamaño para los badges
+   &.xs { font-size: 0.75rem; }
+   &.sm { font-size: 0.875rem; }
+  }
