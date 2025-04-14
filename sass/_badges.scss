@@ -181,4 +181,38 @@
       &.xs { font-size: 0.75rem; }
       &.sm { font-size: 0.875rem; }
 
+      //Declaracion de los estilos propios del baddge
+      &.furia-envidia {
+        background: linear-gradient(135deg, $furia-fuego, $envidia-marea);
+        color: $furia-suave;
+      }
+      &.verguenza-alegria {
+        background: linear-gradient(135deg, $vergüenza-nostalgica, $alegria-vibrante);
+        color: $furia-oscuro;
+      }
+      &.aburrimiento-temor {
+        background: linear-gradient(135deg, $aburrimiento-suspiro, $temor-suave);
+        color: $furia-suave;
+      }
+      &.ansiedad-desagrado {
+        background: linear-gradient(135deg, $ansiedad-expontanea, $desagrado-sarcastico);
+        color: $furia-oscuro;
+      }
+      &.tristeza-envidia {
+        background: linear-gradient(135deg, $tristeza-apagada, $envidia-oscura);
+        color: $furia-suave;
+      }
+      &.furia-alegria {
+        background: linear-gradient(135deg, $furia-humo, $alegria-tranquilidad);
+        color: $furia-oscuro;
+      }
+      &.verguenza-desagrado {
+        background: linear-gradient(135deg, $vergüenza-vulnerable, $desagrado-dramatico);
+        color: $furia-suave;
+      }
+      &.ansiedad-temor {
+        background: linear-gradient(135deg, $ansiedad-expontanea, $temor-oscuridad);
+        color: $furia-suave;
+      }
+
   }
