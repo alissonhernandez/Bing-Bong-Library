@@ -1,6 +1,26 @@
+@import '../sass/variables.scss';
 //Es un contenedor de fila para mantener los badges alineados.
 .badge-row {
     display: flex;
     gap: 0.5rem;
     flex-wrap: wrap;
+  }
+
+  //badge de la emocion aburrimiento.
+  .badge_aburrimiento {
+    padding-top: 0.1em;
+    padding-bottom: 0.1rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    border-radius: 9999px;
+    font-weight: 500;
+    display: inline-block;
+  
+    &.xs { font-size: 0.75rem; }
+    &.sm { font-size: 0.875rem; }
+
+    //declaracion de estilo propio de los badges
+    &.alegria  { background-color: $alegria-electrisante ; color: $alegria-vibrante;}
+    &.tristeza {background-color: $tristeza-apagada; color: $tristeza-profunda;}
+    
   }
