@@ -22,5 +22,11 @@
     //declaracion de estilo propio de los badges
     &.alegria  { background-color: $alegria-electrisante ; color: $alegria-vibrante;}
     &.tristeza {background-color: $tristeza-apagada; color: $tristeza-profunda;}
-    
+    &.furia {background-color: $furia-fuego; color: $furia-oscuro;}
+    &.temor {background-color: $temor-caos; color: $temor-suave;}
+    &.desagrado {background-color: $desagrado-sarcastico; color: $desagrado-autoridad;}
+    &.ansiedad {background-color: $ansiedad-expontanea; color: $ansiedad-relajada;}
+    &.envidia {background-color: $envidia-marea; color: $envidia-alarmante;}
+    &.verguenza {background-color: $vergüenza-nostalgica; color: $vergüenza-recuerdo;}
+    &.aburrimiento {background-color: $aburrimiento-suspiro; color: $aburrimiento-silencioso;}
   }
