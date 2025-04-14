@@ -1,0 +1,74 @@
+@import 'variables';
+
+// Variables de escala
+$spacing-xs: 0.25rem;  // 4px
+$spacing-sm: 0.5rem;   // 8px
+$spacing-md: 1rem;     // 16px
+$spacing-lg: 2rem;     // 32px
+$spacing-xl: 3rem;     // 48px
+
+// MIXINS de margenes
+@mixin margin($name, $size) {
+  .m-#{$name}   { margin: $size; }
+  .mt-#{$name}  { margin-top: $size; }
+  .mb-#{$name}  { margin-bottom: $size; }
+  .ml-#{$name}  { margin-left: $size; }
+  .mr-#{$name}  { margin-right: $size; }
+  .mx-#{$name}  { margin-left: $size; margin-right: $size; }
+  .my-#{$name}  { margin-top: $size; margin-bottom: $size; }
+}
+
+// MIXINS de padding
+@mixin padding($name, $size) {
+  .p-#{$name}   { padding: $size; }
+  .pt-#{$name}  { padding-top: $size; }
+  .pb-#{$name}  { padding-bottom: $size; }
+  .pl-#{$name}  { padding-left: $size; }
+  .pr-#{$name}  { padding-right: $size; }
+  .px-#{$name}  { padding-left: $size; padding-right: $size; }
+  .py-#{$name}  { padding-top: $size; padding-bottom: $size; }
+}
+
+// MIXINS de bordes
+@mixin border-utils {
+  .border-none     { border: none; }
+  .border          { border: 1px solid #ccc; }
+  .border-thick    { border: 2px solid #999; }
+  .border-dashed   { border: 2px dashed #bbb; }
+  .border-rounded  { border-radius: 0.5rem; }
+  .border-circle   { border-radius: 999px; }
+}
+
+// Aplicar mixins
+@include margin(xs, $spacing-xs);
+@include margin(sm, $spacing-sm);
+@include margin(md, $spacing-md);
+@include margin(lg, $spacing-lg);
+@include margin(xl, $spacing-xl);
+
+@include padding(xs, $spacing-xs);
+@include padding(sm, $spacing-sm);
+@include padding(md, $spacing-md);
+@include padding(lg, $spacing-lg);
+@include padding(xl, $spacing-xl);
+
+@include border-utils();
+
+// Mixin para generar clases de color por emocion
+@mixin emotion-colors($name, $color) {
+    .bg-#{$name} { background-color: $color; color: white; }
+    .border-#{$name} { border: 2px solid $color; }
+    .text-#{$name} { color: $color; }
+  }
+  
+  // Aplicar mixin a cada emocion
+  @include emotion-colors(furia, $furia-fuego);
+  @include emotion-colors(envidia, $envidia-alarmante);
+  @include emotion-colors(ansiedad, $ansiedad-expontanea);
+  @include emotion-colors(alegria, $alegria-vibrante);
+  @include emotion-colors(temor, $temor-adrenalina);
+  @include emotion-colors(desagrado, $desagrado-dramatico);
+  @include emotion-colors(verguenza, $vergüenza-fantastica);
+  @include emotion-colors(tristeza, $tristeza-brillante);
+  @include emotion-colors(aburrimiento, $aburrimiento-suspiro);
+  
