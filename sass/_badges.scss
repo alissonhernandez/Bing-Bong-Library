@@ -160,3 +160,25 @@
     box-shadow: 0 0 8px $aburrimiento-suave;
   }
   }
+
+  //Badge de la emocion desagrado
+  .badge_desagrado { 
+    padding: 0.1em 0.75rem;
+    font-weight: 600;
+    display: inline-block;
+    text-transform: uppercase;
+    font-family: 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.05em;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 10px currentColor, 0 0 20px currentColor;
+      }
+
+      //Tamaños para el badge 
+      &.xs { font-size: 0.75rem; }
+      &.sm { font-size: 0.875rem; }
+
+  }
