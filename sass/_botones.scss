@@ -1,25 +1,24 @@
 @import '../sass/_variables.scss';
-//!!(ME FALTA AGREGAR DE LAS CLASES UTILITARIAS: LAS FUENTES DE LETRA, SOMBRAS, REDONDEO)!!
 //Estilos para los tamaños de los botones.
 //Contamos con 3 tamaños: L, M y P.
 // "L" Grande, "M" Mediano y "P" Pequeño.
 .btn-l {
     padding: 10px 16px !important;
-    font-size: 20px !important;
+    font-size: $font-size-lg !important;
     line-height: 1.3333333 !important;
     width: 170px;
     height: 62px;
   }
   .btn-m {
     padding: 10px 12px !important;
-    font-size: 12px !important;
+    font-size: $font-size-sm !important;
     line-height: 0.5 !important;
     width: 140px;
     height: 42px;
   }
   .btn-s {
     padding: 5px 10px !important;
-    font-size: 8px !important;
+    font-size: $font-size-xs !important;
     line-height: 1.5 !important;
     width: 95px;
     height: 25px;
