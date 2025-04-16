@@ -153,10 +153,10 @@
     display: inline-block;
     padding: 12px 24px;
     border: none;
-    font-size: 16px;
+    font-size: $font-size-base;
     background-color: inherit;
     border-radius: 100px;
-    font-weight: 600;
+    font-weight: $font-weight-bold;
     color: #ffffff40;
     box-shadow: 0 0 0 2px #ffffff20;
     cursor: pointer;
