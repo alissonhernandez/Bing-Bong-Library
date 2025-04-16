@@ -1,4 +1,6 @@
 @import '../sass/_variables.scss';
+@import '../sass/textos';
+@import '../sass/redondear';
 //Estilos para los tamaños de los botones.
 //Contamos con 3 tamaños: L, M y P.
 // "L" Grande, "M" Mediano y "P" Pequeño.
@@ -29,9 +31,9 @@
   @mixin alegria-style($color1, $color2) {
     cursor: pointer;
     color: $furia-suave;
-    font-size: 17px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border-radius: 1rem;
+    font-size: $font-size-base;
+    font-family: $font-alegria;
+    border-radius: map-get($map: $radius, $key: xl);
     border: none;
     position: relative;
     background: $furia-oscuro;
@@ -60,14 +62,15 @@
   @mixin ansiedad-style($base, $hover) {
     padding: 1em 2em;
     border: none;
-    border-radius: 5px;
-    font-weight: bold;
+    border-radius: map-get($map: $radius, $key: md);
+    font-weight: $font-weight-bold;
     letter-spacing: 5px;
     text-transform: uppercase;
     cursor: pointer;
     color: $base;
     transition: all 1000ms;
-    font-size: 15px;
+    font-family: $font-ansiedad;
+    font-size: $font-size-base;
     position: relative;
     overflow: hidden;
     outline: 2px solid $base;
@@ -100,17 +103,17 @@
   //Boton de la emcion Temor
   @mixin temor-style($bg, $color) {
     position: relative;
-    font-size: 17px;
+    font-size: $font-size-base;
     text-transform: uppercase;
     text-decoration: none;
     padding: 1em 2.5em;
     display: inline-block;
     cursor: pointer;
-    border-radius: 6em;
+    border-radius: map-get($map: $radius, $key: xl);
     transition: all 0.2s;
     border: none;
-    font-family: inherit;
-    font-weight: 500;
+    font-family: $font-temor;
+    font-weight: $font-weight-normal;
     color: $color;
     background-color: $bg;
   
