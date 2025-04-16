@@ -1,6 +1,7 @@
 @import '../sass/_breackpoints.scss';
 @import '../sass/_variables.scss';
-//(ME FALTA MODIFICAR LA FUENTE DE LETRA, REDONDEO Y PADDINGS)
+@import '../sass/margenes';
+@import '../sass/textos';
 //Medidas y padding para los contenedores
 //Tamaños: SM, MD, LG, XL, XXl.
 $container-padding-normal: 1rem;
@@ -79,8 +80,8 @@ $container-max-widths: (
   //estilos adicionales para darle formato a los contenedores
   .container, .container-fluid, .container-sm, .container-lg, .container-md, .container-xl, .container-xxl {
     box-sizing: border-box;
-    border-radius: 4px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: map-get($map: $radius, $key: sm);
+    font-family: $font-envidia;
     color: $furia-suave;
   }
 

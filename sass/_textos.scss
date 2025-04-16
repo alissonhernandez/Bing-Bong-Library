@@ -13,6 +13,7 @@ $font-aburrimiento: 'M PLUS Rounded 1c', sans-serif;
 $font-envidia: 'Kanit', sans-serif;
 
 // Tamaños de fuente
+$font-size-xs:  0.75rem;
 $font-size-sm: 0.875rem;
 $font-size-base: 1rem;
 $font-size-lg: 1.25rem;
@@ -26,6 +27,7 @@ $font-weight-bold: 700;
 
 
 // Clases de utilidad
+.text-xs {font-size: $font-size-xs;}
 .text-sm { font-size: $font-size-sm; }
 .text-base { font-size: $font-size-base; }
 .text-lg { font-size: $font-size-lg; }
