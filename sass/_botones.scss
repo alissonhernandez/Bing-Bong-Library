@@ -1,6 +1,7 @@
-@import '../sass/_variables.scss';
-@import '../sass/textos';
-@import '../sass/redondear';
+@use '_variables' as *;
+@use '_textos' as *;
+@use '_redondear' as *;
+
 //Estilos para los tamaños de los botones.
 //Contamos con 3 tamaños: L, M y P.
 // "L" Grande, "M" Mediano y "P" Pequeño.
