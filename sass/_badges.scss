@@ -1,6 +1,6 @@
-@import '../sass/_variables.scss';
-@import '../sass/textos';
-@import '../sass/redondear';
+@use '_variables' as *;
+@use '_textos' as *;
+@use '_redondear' as *;
 
 //Es un contenedor de fila para mantener los badges alineados.
 .badge-row {
