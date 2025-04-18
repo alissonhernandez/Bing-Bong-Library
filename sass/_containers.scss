@@ -1,7 +1,7 @@
 @use '_variables' as *;
 @use '_textos' as *;
 @use '_redondear' as *;
-@use 'breackpoints' as *;
+@use '_breackpoints' as *;
 //Medidas y padding para los contenedores
 //Tamaños: SM, MD, LG, XL, XXl.
 $container-padding-normal: 1rem;
