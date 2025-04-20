@@ -44,7 +44,7 @@
       content: '';
       width: 100%;
       height: 100%;
-      background-image: radial-gradient(circle farthest-corner at 10% 20%, $color1 17.8%, $end-color 100.2%);
+      background-image: radial-gradient(circle farthest-corner at 10% 20%, $color1 17.8%, $color2 100.2%);
       filter: blur(15px);
       z-index: -1;
       position: absolute;
@@ -54,7 +54,7 @@
   
     &:active {
       transform: scale(0.9) rotate(3deg);
-      background: radial-gradient(circle farthest-corner at 10% 20%, $start-color 17.8%, $color2 100.2%);
+      background: radial-gradient(circle farthest-corner at 10% 20%, $color1 17.8%, $color2 100.2%);
       transition: 0.5s;
     }
   }
