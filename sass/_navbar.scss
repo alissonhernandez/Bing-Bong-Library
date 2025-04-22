@@ -1,0 +1,41 @@
+@use 'breackpoints' as *;
+@use 'variables' as *;
+@use 'margenes' as *;
+@use 'redondear' as *;
+@use 'texto' as *;
+
+//se usa como un formato general 
+@mixin navbar-base {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacing-md $spacing-lg;
+    li {
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+//usando el formato general y dando diseño al logo que solamente es texto
+@mixin navbar_logo_text {
+    @include navbar-base;
+    background-color: $alegria-tranquilidad;
+    font-family: $font-alegria;
+    justify-content: center;
+    font-size: $font-size-xl;
+    .nav_marca{
+        background: linear-gradient(to right, $alegria-vibrante, $alegria-tranquilidad);
+        background-clip: text;
+        color: transparent;
+        font-weight: $font-weight-bold;
+        font-size: $font-size-xxl;
+    }
+    .nav_items{
+        color: $alegria-brillante;
+        display: flex;
+        gap: 2.5rem;
+    }
+}
