@@ -1,0 +1,20 @@
+@import 'variables';
+
+// Mixin para generar clases de color por emocion
+@mixin emotion-colors($name, $color) {
+    .bg-#{$name} { background-color: $color; color: white; }
+    .border-#{$name} { border: 2px solid $color; }
+    .text-#{$name} { color: $color; }
+  }
+  
+  // Aplicar mixin a cada emocion
+  @include emotion-colors(furia, $furia-fuego);
+  @include emotion-colors(envidia, $envidia-alarmante);
+  @include emotion-colors(ansiedad, $ansiedad-expontanea);
+  @include emotion-colors(alegria, $alegria-vibrante);
+  @include emotion-colors(temor, $temor-adrenalina);
+  @include emotion-colors(desagrado, $desagrado-dramatico);
+  @include emotion-colors(verguenza, $vergüenza-fantastica);
+  @include emotion-colors(tristeza, $tristeza-brillante);
+  @include emotion-colors(aburrimiento, $aburrimiento-suspiro);
+  
