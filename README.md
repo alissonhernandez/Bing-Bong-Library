@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://getbootstrap.com/">
-    <img src="./img/BBLibrary.png" alt="Logo" width="400" height="400">
+    <img src="./img/Logo.png" alt="Logo" width="400" height="400">
   </a>
 </p>
 
