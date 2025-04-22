@@ -1,4 +1,4 @@
-@import 'variables';
+@use '_variables' as *;
 
 // Variables de escala
 $spacing-xs: 0.25rem;  // 4px

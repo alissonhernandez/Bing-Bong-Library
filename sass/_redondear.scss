@@ -1,4 +1,5 @@
-@import 'variables';
+@use '_variables' as *;
+
 
 // Escalas de redondeo
 $radius: (

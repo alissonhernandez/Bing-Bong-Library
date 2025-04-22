@@ -1,4 +1,7 @@
-@import 'variables';
+@use '_variables' as *;
+@use '_margenes' as *;
+@use '_fondos' as *;
+
 
 .contenedor-emociones {
   position: relative;
