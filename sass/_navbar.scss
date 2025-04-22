@@ -4,6 +4,7 @@
 @use 'redondear' as *;
 @use 'texto' as *;
 
+//mixins para el navbar
 //se usa como un formato general 
 @mixin navbar-base {
     display: flex;
@@ -37,5 +38,31 @@
         color: $alegria-brillante;
         display: flex;
         gap: 2.5rem;
+    }
+}
+
+//usando el formato general y dando diseño pero usando el logo osea una imagen
+@mixin navbar_logo_img($height: 100px){
+    @include navbar-base;
+    background-color: $tristeza-profunda;
+    color: $tristeza-apagada;
+    font-family: $font-tristeza;
+    font-size: $font-size-xl;
+    .logo{
+        height: $height;
+        img{
+            height: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+        &:hover{
+            transform: scale(1.3);
+        }
+    }
+    .nav_items{
+        display: flex;
+        gap: 2rem;
+    }
+    .nav_link:hover{
+        transform: scale(1.3);
     }
 }
