@@ -5,3 +5,25 @@
 @use 'margenes' as *;
 @use 'redondear' as *;
 @use 'botones' as*;
+
+//estilos para el formulario
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: $font-envidia;
+  border-radius: map-get($radius, md);
+  border: 1px solid $alegria-vibrante;
+  padding: $spacing-sm;
+  font-size: $font-size-base;
+  transition: 0.3s ease;
+}
+
+input[type="text"] {
+    background-color: $furia-ceniza;
+    color: $furia-suave;
+  }
+  
