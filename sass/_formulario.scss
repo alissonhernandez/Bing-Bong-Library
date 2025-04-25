@@ -32,5 +32,41 @@ input[type="text"] {
     color: $envidia-oscura;
   }
 
+input[type="submit"],
+input[type="reset"] {
+  cursor: pointer;
+  font-weight: $font-weight-bold;
+  border: none;
+}
+
+input[type="submit"] {
+  background-color: $ansiedad-caotica;
+  color: white;
+  gap: 15rem ;
+ 
+}
+
+input[type="reset"] {
+  background-color: $ansiedad-relajada;
+  color: white;
+ 
+}
+
+// Textos y etiquetas
+label,
+p {
+  font-size: $font-size-lg;
+  font-family: $font-furia;
+  color: $furia-suave;
+}
+
+// Layout de formulario
+form {
+  background-color: $ansiedad-expontanea;
+  padding: $spacing-xs;
+  border-radius: map-get($radius, lg);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 
   
