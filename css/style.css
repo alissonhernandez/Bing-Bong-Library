@@ -1,0 +1,25 @@
+/* Error: This variable is available from multiple global modules.
+ *     ,
+ * 1   | @use 'variables' as *;
+ *     | ===================== includes variable
+ * 2   | @use 'textos' as *;
+ *     | ================== includes variable
+ * 3   | @use 'redondear' as *;
+ *     | ===================== includes variable
+ * ... |
+ * 19  |     background-color: $temor-suave;
+ *     |                       ^^^^^^^^^^^^ variable use
+ *     '
+ *   sass\_containers.scss 19:23  @use
+ *   sass\main.scss 3:1           root stylesheet */
+
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: This variable is available from multiple global modules.\a     \2577 \a 1   \2502  @use 'variables' as *;\d\a     \2502  \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  includes variable\a 2   \2502  @use 'textos' as *;\d\a     \2502  \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  includes variable\a 3   \2502  @use 'redondear' as *;\d\a     \2502  \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501 \2501  includes variable\a... \2502 \a 19  \2502      background-color: $temor-suave;\d\a     \2502                        ^^^^^^^^^^^^ variable use\a     \2575 \a   sass\\_containers.scss 19:23  @use\a   sass\\main.scss 3:1           root stylesheet";
+}

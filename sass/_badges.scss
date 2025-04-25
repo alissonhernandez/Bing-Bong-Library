@@ -1,6 +1,6 @@
-@use '_variables' as *;
-@use '_textos' as *;
-@use '_redondear' as *;
+@use 'variables' as *;
+@use 'textos' as *;
+@use 'redondear' as *;
 
 //Es un contenedor de fila para mantener los badges alineados.
 .badge-row {
