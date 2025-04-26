@@ -41,7 +41,7 @@ $container-max-widths: (
 
 //DECLARANDO CONTAINERS CON COLOR Y DIFERENTES TAMAÑOS
 
-@include container-basic('container-principal', $furia-fuego, $container-padding-normal);
+@include container-basic('container-principal', $furia-fuego, $container-padding-agrandado);
 @include container-basic('container-fluid', $verguenza-recuerdo);
 @include container-basic('container-sm', $tristeza-apagada);
 @include container-basic('container-md', $envidia-suspiro);
@@ -51,3 +51,11 @@ $container-max-widths: (
 
 
 //DECLARANDO CONTAINERS SIN COLOR Y DIFERENTES TAMAÑOS
+
+@include container-basic('container-principal-sc', null, $container-padding-agrandado);
+@include container-basic('container-fluid-sc');
+@include container-basic('container-sm-sc');
+@include container-basic('container-md-sc');
+@include container-basic('container-lg-sc');
+@include container-basic('container-xl-sc');
+@include container-basic('container-xxl-sc');
