@@ -207,8 +207,8 @@
 
 // Ansiedad
 .ansiedad-A { @include ansiedad-style($ansiedad-caotica, $ansiedad-explosiva); }
-.ansiedad-O { @include ansiedad-style($ansiedad-expontanea, $ansiedad-relajada); }
-.ansiedad-I { @include ansiedad-style($ansiedad-expontanea, $ansiedad-caotica); }
+.ansiedad-O { @include ansiedad-style($ansiedad-espontanea, $ansiedad-relajada); }
+.ansiedad-I { @include ansiedad-style($ansiedad-espontanea, $ansiedad-caotica); }
 .ansiedad-D { @include ansiedad-style($ansiedad-relajada, $ansiedad-explosiva); }
 
 // Temor
