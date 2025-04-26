@@ -1,0 +1,83 @@
+@use '_variables' as *;
+@use '_textos' as *;
+@use '_redondear' as *;
+@use '_mover' as *;
+@use '_fondos' as *;
+@use '_margenes' as *;
+@use '_sombras' as *;
+
+// Estilos base para todas las tarjetas
+.tarjeta {
+  width: 280px;
+  padding: 1rem;
+  margin: 1rem;
+  font-family: $font-temor;
+  border-radius: map-get($radius, lg);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-family: $font-alegria;
+  }
+
+  p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+// Diseño para tarjeta de Furia
+.tarjeta-furia {
+  @extend .bg-furia;
+  @extend .shadow-furia-lg;
+  border: 3px solid $furia-suave;
+  @extend .rounded-xl;
+
+  h3 {
+    color: $furia-fuego;
+  }
+}
+
+// Diseño para tarjeta de Alegria
+.tarjeta-alegria {
+  @extend .bg-alegria;
+  @extend .shadow-alegria-lg;
+  border: 3px dashed $alegria-brillante;
+  @extend .rounded-full;
+
+  h3 {
+    color: $alegria-vibrante;
+  }
+}
+
+// Diseño para tarjeta de Tristeza
+.tarjeta-tristeza {
+  @extend .bg-tristeza;
+  @extend .shadow-tristeza-md;
+  border: 2px dotted $tristeza-profunda;
+  @extend .rounded-emotion-tristeza-md;
+
+  h3 {
+    color: $tristeza-apagada;
+  }
+}
+
+// Diseño para tarjeta de Desagrado
+.tarjeta-desagrado {
+  @extend .bg-desagrado;
+  @extend .shadow-desagrado-md;
+  border: 2px solid $desagrado-dramatico;
+  @extend .rounded-emotion-desagrado-lg;
+
+  h3 {
+    color: $desagrado-dramatico;
+  }
+}

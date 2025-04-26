@@ -1,0 +1,43 @@
+@use '_variables' as *;
+@use '_margenes' as *;
+@use '_fondos' as *;
+
+
+.contenedor-emociones {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background-color: #aac6cf;
+}
+
+.emocion {
+  position: absolute;
+  
+  // Utilidades de padding y bordes
+  @extend .p-sm;
+  @extend .border-none;
+  @extend .border-rounded;
+
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Posiciones usando margin */
+.izquierda              { top: $spacing-sm; left: $spacing-sm; }
+.derecha                { top: $spacing-sm; right: $spacing-sm; }
+.centrado               { top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.centrado-arriba        { top: $spacing-sm; left: 50%; transform: translateX(-50%); }
+.centrado-abajo         { bottom: $spacing-sm; left: 50%; transform: translateX(-50%); }
+.abajo                  { bottom: $spacing-sm; left: $spacing-sm; }
+.centrado-izquierda     { top: 50%; left: $spacing-sm; transform: translateY(-50%); }
+.centrado-derecha       { top: 50%; right: $spacing-sm; transform: translateY(-50%); }
+.derecha-abajo          { bottom: $spacing-sm; right: $spacing-sm; }
+
+/* Estilos por emoción, generados desde el mixin emotion-colors */
+.move-furia      { @extend .bg-furia; }
+.move-envidia    { @extend .bg-envidia; }
+.move-alegria    { @extend .bg-alegria; }
+.move-temor      { @extend .bg-temor; }
+.move-desagrado  { @extend .bg-desagrado; }
+.move-tristeza   { @extend .bg-tristeza; }

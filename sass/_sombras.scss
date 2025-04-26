@@ -1,4 +1,5 @@
-@import 'variables'; 
+@use '_variables' as *;
+
 
 // Mixin para generar 4 tipos de sombra por emocion
 @mixin sombras-por-emocion($nombre, $color) {
