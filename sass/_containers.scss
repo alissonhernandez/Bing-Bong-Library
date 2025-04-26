@@ -14,80 +14,48 @@ $container-max-widths: (
   xxl: 1320px
 );
 
-//Asignando colores a los containers
-.container {
-    background-color: $temor-suave;
-  }
-
-  .container-fluid {
-    background-color: $verguenza-nostalgica;
-  }
-
-  .container-sm {
-    background-color: $tristeza-profunda;
-  }
-  .container-md {
-    background-color: $envidia-marea;
-  }
-
-  .container-lg {
-    background-color: $aburrimiento-niebla;
-  }
-  .container-xl {
-    background-color: $desagrado-sarcastico;
-  }
-  .container-xxl {
-    background-color: $alegria-vibrante;
-  }
-
-//CONTAINER PRINCIPAL.
-.container {
+//Mixin para contenedor
+@mixin container-basic($nombre, $background: null, $padding: $container-padding-normal) {
+  .#{$nombre} {
     width: 100%;
-    padding-right: $container-padding-normal;
-    padding-left: $container-padding-normal;
+    padding-right: $padding;
+    padding-left: $padding;
     margin-right: auto;
     margin-left: auto;
-    background-color: $furia-fuego;
-  
+    box-sizing: border-box;
+    border-radius: map-get($map: $radius, $key: sm);
+    font-family: $font-envidia;
+    color: $furia-suave;
+
+    @if $background != null {
+      background-color: $background;
+    }
+
     @each $breakpoint, $max-width in $container-max-widths {
       @media (min-width: map-get($breakpoints, $breakpoint)) {
         max-width: $max-width;
       }
     }
   }
+}
 
-  //CONTAINER FLUIDO
-  .container-fluid {
-    width: 100%;
-    padding-right: $container-padding-normal;
-    padding-left: $container-padding-normal;
-    margin-right: auto;
-    margin-left: auto;
-  }
+//DECLARANDO CONTAINERS CON COLOR Y DIFERENTES TAMAÑOS
 
-  //CONTAINERS DE DIFERENTES SIZES.
-  @each $breakpoint, $max-width in $container-max-widths {
-    .container-#{$breakpoint} {
-      width: 100%;
-      max-width: $max-width;
-      padding-right: $container-padding-normal;
-      padding-left: $container-padding-normal;
-      margin-right: auto;
-      margin-left: auto;
-    }
-  }
+@include container-basic('container-principal', $furia-fuego, $container-padding-agrandado);
+@include container-basic('container-fluid', $verguenza-recuerdo);
+@include container-basic('container-sm', $tristeza-apagada);
+@include container-basic('container-md', $envidia-suspiro);
+@include container-basic('container-lg', $aburrimiento-niebla);
+@include container-basic('container-xl', $desagrado-sarcastico);
+@include container-basic('container-xxl', $alegria-brillante);
 
-  //estilos adicionales para darle formato a los contenedores
-  .container, .container-fluid, .container-sm, .container-lg, .container-md, .container-xl, .container-xxl {
-    box-sizing: border-box;
-    border-radius: map-get($map: $radius, $key: sm);
-    font-family: $font-envidia;
-    color: $furia-suave;
-  }
 
-  .container-sm, .container-lg, .container-fluid, .container-md, .container-xl, .container-xxl{
-    padding: $container-padding-normal;
-  }
-  .container {
-    padding: $container-padding-agrandado;
-  }
+//DECLARANDO CONTAINERS SIN COLOR Y DIFERENTES TAMAÑOS
+
+@include container-basic('container-principal-sc', null, $container-padding-agrandado);
+@include container-basic('container-fluid-sc');
+@include container-basic('container-sm-sc');
+@include container-basic('container-md-sc');
+@include container-basic('container-lg-sc');
+@include container-basic('container-xl-sc');
+@include container-basic('container-xxl-sc');
