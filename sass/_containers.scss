@@ -15,7 +15,7 @@ $container-max-widths: (
 );
 
 //Mixin para contenedor
-@mixin generar-container($nombre, $background: null, $padding: $container-padding-normal) {
+@mixin container-basic($nombre, $background: null, $padding: $container-padding-normal) {
   .#{$nombre} {
     width: 100%;
     padding-right: $padding;
