@@ -12,10 +12,10 @@
 // Aplicar mixin a cada emocion
 @include sombras-por-emocion(furia, $furia-fuego);
 @include sombras-por-emocion(envidia, $envidia-alarmante);
-@include sombras-por-emocion(ansiedad, $ansiedad-expontanea);
+@include sombras-por-emocion(ansiedad, $ansiedad-espontanea);
 @include sombras-por-emocion(alegria, $alegria-vibrante);
 @include sombras-por-emocion(temor, $temor-adrenalina);
 @include sombras-por-emocion(desagrado, $desagrado-dramatico);
-@include sombras-por-emocion(verguenza, $vergüenza-fantastica);
+@include sombras-por-emocion(verguenza, $verguenza-fantastica);
 @include sombras-por-emocion(tristeza, $tristeza-brillante);
 @include sombras-por-emocion(aburrimiento, $aburrimiento-suspiro);

@@ -2,7 +2,7 @@
 @use 'variables' as *;
 @use 'margenes' as *;
 @use 'redondear' as *;
-@use 'texto' as *;
+@use 'textos' as *;
 
 //mixins para el navbar
 //se usa como un formato general 
@@ -121,7 +121,7 @@
     @include navbar__img($desagrado-autoridad, $desagrado-sarcastico, $font-desagrado, $font-size-xl);
 }
 .navbar_verguenza_img{
-    @include navbar__img($vergüenza-fantastica, $vergüenza-vulnerable, $font-vergüenza, $font-size-xl);
+    @include navbar__img($verguenza-fantastica, $verguenza-vulnerable, $font-verguenza, $font-size-xl);
 }
 .navbar_tristeza_img{
     @include navbar__img($tristeza-profunda, $tristeza-apagada, $font-tristeza, $font-size-xl);
@@ -150,7 +150,7 @@
     @include navbar-logo-text($desagrado-sarcastico, $font-desagrado, $desagrado-dramatico, $desagrado-sarcastico, $desagrado-autoridad);
 }
 .navbar_verguenza_nametext{
-    @include navbar-logo-text($vergüenza-vulnerable, $font-vergüenza, $vergüenza-recuerdo, $vergüenza-vulnerable, $vergüenza-fantastica);
+    @include navbar-logo-text($verguenza-vulnerable, $font-verguenza, $verguenza-recuerdo, $verguenza-vulnerable, $verguenza-fantastica);
 }
 .navbar_tristeza_nametext{
     @include navbar-logo-text($tristeza-apagada, $font-tristeza, $tristeza-brillante, $tristeza-apagada, $tristeza-profunda);
