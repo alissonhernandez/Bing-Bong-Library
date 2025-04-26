@@ -14,77 +14,27 @@ $container-max-widths: (
   xxl: 1320px
 );
 
-//Asignando colores a los containers para mostrar
-
-  .container-fluid {
-    background-color: $verguenza-nostalgica;
-  }
-
-  .container-sm {
-    background-color: $tristeza-profunda;
-  }
-  .container-md {
-    background-color: $envidia-marea;
-  }
-
-  .container-lg {
-    background-color: $aburrimiento-niebla;
-  }
-  .container-xl {
-    background-color: $desagrado-sarcastico;
-  }
-  .container-xxl {
-    background-color: $alegria-vibrante;
-  }
-
-//CONTAINER PRINCIPAL.
-.container-principal {
+//Mixin para contenedor
+@mixin generar-container($nombre, $background: null, $padding: $container-padding-normal) {
+  .#{$nombre} {
     width: 100%;
-    padding-right: $container-padding-normal;
-    padding-left: $container-padding-normal;
+    padding-right: $padding;
+    padding-left: $padding;
     margin-right: auto;
     margin-left: auto;
-    background-color: $furia-fuego;
-  
+    box-sizing: border-box;
+    border-radius: map-get($map: $radius, $key: sm);
+    font-family: $font-envidia;
+    color: $furia-suave;
+
+    @if $background != null {
+      background-color: $background;
+    }
+
     @each $breakpoint, $max-width in $container-max-widths {
       @media (min-width: map-get($breakpoints, $breakpoint)) {
         max-width: $max-width;
       }
     }
   }
-
-  //CONTAINER FLUIDO
-  .container-fluid {
-    width: 100%;
-    padding-right: $container-padding-normal;
-    padding-left: $container-padding-normal;
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  //CONTAINERS DE DIFERENTES SIZES.
-  @each $breakpoint, $max-width in $container-max-widths {
-    .container-#{$breakpoint} {
-      width: 100%;
-      max-width: $max-width;
-      padding-right: $container-padding-normal;
-      padding-left: $container-padding-normal;
-      margin-right: auto;
-      margin-left: auto;
-    }
-  }
-
-  //estilos adicionales para darle formato a los contenedores
-  .container, .container-fluid, .container-sm, .container-lg, .container-md, .container-xl, .container-xxl {
-    box-sizing: border-box;
-    border-radius: map-get($map: $radius, $key: sm);
-    font-family: $font-envidia;
-    color: $furia-suave;
-  }
-
-  .container-sm, .container-lg, .container-fluid, .container-md, .container-xl, .container-xxl{
-    padding: $container-padding-normal;
-  }
-  .container {
-    padding: $container-padding-agrandado;
-  }
+}
