@@ -14,10 +14,7 @@ $container-max-widths: (
   xxl: 1320px
 );
 
-//Asignando colores a los containers
-.container {
-    background-color: $temor-suave;
-  }
+//Asignando colores a los containers para mostrar
 
   .container-fluid {
     background-color: $verguenza-nostalgica;
@@ -41,7 +38,7 @@ $container-max-widths: (
   }
 
 //CONTAINER PRINCIPAL.
-.container {
+.container-principal {
     width: 100%;
     padding-right: $container-padding-normal;
     padding-left: $container-padding-normal;
