@@ -1,10 +1,10 @@
-@use '_variables' as *;
-@use '_textos' as *;
-@use '_redondear' as *;
-@use '_mover' as *;
-@use '_fondos' as *;
-@use '_margenes' as *;
-@use '_sombras' as *;
+@use 'variables' as *;
+@use 'textos' as *;
+@use 'redondear' as *;
+@use 'mover' as *;
+@use 'fondos' as *;
+@use 'margenes' as *;
+@use 'sombras' as *;
 
 // Estilos base para todas las tarjetas
 .tarjeta {

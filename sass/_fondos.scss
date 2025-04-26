@@ -1,4 +1,4 @@
-@use '_variables' as *;
+@use 'variables' as *;
 
 // Mixin para generar clases de color por emocion
 @mixin emotion-colors($name, $color) {
