@@ -40,4 +40,14 @@ $container-max-widths: (
 }
 
 //DECLARANDO CONTAINERS CON COLOR Y DIFERENTES TAMAÑOS
+
+@include container-basic('container-principal', $furia-fuego, $container-padding-normal);
+@include container-basic('container-fluid', $verguenza-recuerdo);
+@include container-basic('container-sm', $tristeza-apagada);
+@include container-basic('container-md', $envidia-suspiro);
+@include container-basic('container-lg', $aburrimiento-niebla);
+@include container-basic('container-xl', $desagrado-sarcastico);
+@include container-basic('container-xxl', $alegria-brillante);
+
+
 //DECLARANDO CONTAINERS SIN COLOR Y DIFERENTES TAMAÑOS
