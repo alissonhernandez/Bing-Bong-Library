@@ -1,0 +1,189 @@
+@use 'breackpoints' as *;
+@use 'variables' as *;
+@use 'margenes' as *;
+@use 'redondear' as *;
+@use 'texto' as *;
+
+//mixins para el navbar
+//se usa como un formato general 
+@mixin navbar-base {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacing-md $spacing-lg;
+    li {
+        list-style: none;
+    }
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+}
+
+//usando el formato general y dando diseño pero usando el logo osea una imagen
+@mixin navbar__img($bg-color, $text-color, $font-family, $font-size){
+    @include navbar-base;
+    background-color: $bg-color;
+    color: $text-color;
+    font-family: $font-family;
+    font-size: $font-size;
+    .logo{
+        height: 100px;
+        img{
+            height: 100%;
+            transition: transform 0.3s ease-in-out;
+        }
+        &:hover{
+            transform: scale(1.3);
+        }
+    }
+    .nav_items{
+        display: flex;
+        gap: 2rem;
+        font-weight: $font-weight-bold;
+    }
+    .nav_link:hover{
+        transform: scale(1.3);
+    }
+}
+
+//usando el formato general y dando diseño pero usando el logo formato texto
+@mixin navbar_logo_text($bg-color, $font-family, $logo-gradient-start, $logo-gradient-end, $text-color, $logo-font-size: $font-size-xxl, $items-gap:2.5rem){
+    @include navbar-base;
+    background-color: $bg-color;
+    font-family: $font-family;
+    justify-content: center;
+    font-size: $font-size-xl;
+    .nav_marca{
+        background: linear-gradient(to right, $logo-gradient-start, $logo-gradient-end);
+        background-clip: text;
+        color: transparent;
+        font-weight: $font-weight-bold;
+        font-size: $logo-font-size;
+    }
+    .nav_items{
+        color: $text-color;
+        display: flex;
+        gap: $items-gap;
+    }
+}
+
+//usando el formato general y dando diseño al texto
+@mixin navbar-text($bg-color, $text-color, $hover-bg-color, $hover-text-color, $font-family-nav, $spacing: 1rem, $font-size: $font-size-lg){
+    @include navbar-base;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    background-color: $bg-color;
+    font-family: $font-family-nav;
+    align-items: flex-start;
+    justify-content: flex-start;
+    .nav_items{
+        display: flex;
+        flex-direction: column;
+        gap: $spacing;
+        .nav-link{
+            font-size: $font-size;
+            font-family: $font-family-nav;
+            padding: $spacing-sm $spacing-md;
+            width: 100%;
+            text-align: left;
+            transition: all 0.3s ease;
+            color: $text-color;
+        }
+        .nav-link:hover{
+            color: $hover-text-color;
+            background-color: $hover-bg-color;
+            border-radius: map-get($map: $radius, $key: xl);
+            transform: scale(1.05);
+        }
+    }
+}
+
+//clases especificas
+//clase para navbar con img
+.navbar_furia_img{
+    @include navbar__img($furia-fuego, $furia-suave, $font-furia, $font-size-xl);
+}
+.navbar_envidia_img{
+    @include navbar__img($envidia-oscura, $envidia-marea, $font-envidia, $font-size-xl);
+}
+.navbar_ansiedad_img{
+    @include navbar__img($ansiedad-caotica, $ansiedad-relajada, $font-ansiedad, $font-size-lg);
+}
+.navbar_alegria_img{
+    @include navbar__img($alegria-vibrante, $alegria-brillante, $font-alegria, $font-size-xl);
+}
+.navbar_temor_img{
+    @include navbar__img($temor-oscuridad, $temor-suave, $font-temor, $font-size-xl);
+}
+.navbar_desagrado_img{
+    @include navbar__img($desagrado-autoridad, $desagrado-sarcastico, $font-desagrado, $font-size-xl);
+}
+.navbar_verguenza_img{
+    @include navbar__img($vergüenza-fantastica, $vergüenza-vulnerable, $font-vergüenza, $font-size-xl);
+}
+.navbar_tristeza_img{
+    @include navbar__img($tristeza-profunda, $tristeza-apagada, $font-tristeza, $font-size-xl);
+}
+.navbar_tristeza_img{
+    @include navbar__img($aburrimiento-silencioso, $aburrimiento-suave, $font-aburrimiento, $font-size-xl);
+}
+
+//clase para navbar usando logo de texto
+.navbar_furia_nametext {
+    @include navbar-logo-text($furia-humo, $font-furia, $furia-fuego, $furia-humo, $furia-ceniza);
+}
+.navbar_envidia_nametext{
+    @include navbar-logo-text($envidia-suspiro, $font-envidia, $envidia-marea, $envidia-suspiro, $envidia-alarmante);
+}
+.navbar_ansiedad_nametext{
+    @include navbar-logo-text($ansiedad-relajada, $font-ansiedad, $ansiedad-explosiva, $ansiedad-relajada, $ansiedad-caotica);
+}
+.navbar_alegria_nametext{
+    @include navbar-logo-text($alegria-tranquilidad, $font-alegria, $alegria-vibrante, $alegria-tranquilidad, $alegria-brillante);
+}
+.navbar_temor_nametext{
+    @include navbar-logo-text($temor-suave, $font-temor, $temor-adrenalina, $temor-suave, $temor-caos);
+}
+.navbar_desagrado_nametext{
+    @include navbar-logo-text($desagrado-sarcastico, $font-desagrado, $desagrado-dramatico, $desagrado-sarcastico, $desagrado-autoridad);
+}
+.navbar_verguenza_nametext{
+    @include navbar-logo-text($vergüenza-vulnerable, $font-vergüenza, $vergüenza-recuerdo, $vergüenza-vulnerable, $vergüenza-fantastica);
+}
+.navbar_tristeza_nametext{
+    @include navbar-logo-text($tristeza-apagada, $font-tristeza, $tristeza-brillante, $tristeza-apagada, $tristeza-profunda);
+}
+.navbar_aburrimiento_nametext{
+    @include navbar-logo-text($aburrimiento-niebla, $font-aburrimiento, $aburrimiento-suave, $aburrimiento-niebla, $aburrimiento-silencioso);
+}
+
+//clase para navbar para texto
+.navbar_furia_text {
+    @include navbar-text($furia-humo, $furia-oscuro, $furia-oscuro, $furia-suave, $font-furia);
+}
+.navbar_envidia_text {
+    @include navbar-text($envidia-suspiro, $envidia-oscura, $envidia-oscura, $envidia-marea, $font-envidia);
+}
+.navbar_ansiedad_text {
+    @include navbar-text($ansiedad-relajada, $ansiedad-caotica, $ansiedad-caotica, $ansiedad-explosiva, $font-ansiedad);
+}
+.navbar_alegria_text {
+    @include navbar-text($alegria-tranquilidad, $alegria-electrisante, $alegria-electrisante, $alegria-vibrante, $font-alegria);
+}
+.navbar_temor_text {
+    @include navbar-text($temor-suave, $temor-oscuridad, $temor-oscuridad, $temor-adrenalina, $font-temor);
+}
+.navbar_desagrado_text {
+    @include navbar-text($desagrado-sarcastico, $desagrado-autoridad, $desagrado-autoridad, $desagrado-impertinente, $font-desagrado);
+}
+.navbar_verguenza_text {
+    @include navbar-text($verguenza-vulnerable, $verguenza-nostalgica, $verguenza-nostalgica, $verguenza-fantastica, $font-verguenza);
+}
+.navbar_tristeza_text {
+    @include navbar-text($tristeza-apagada, $tristeza-profunda, $tristeza-profunda, $tristeza-brillante, $font-tristeza);
+}
+.navbar_aburrimiento_text {
+    @include navbar-text($aburrimiento-suspiro, $aburrimiento-silencioso, $aburrimiento-silencioso, $aburrimiento-suave, $font-aburrimiento);
+}
