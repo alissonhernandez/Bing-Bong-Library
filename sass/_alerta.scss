@@ -1,7 +1,11 @@
+@use 'textos' as *;
+@use 'redondear' as *;
+@use 'variables' as *;
+@use 'margenes' as *;
 @mixin alerta($padding: $spacing-md, $bg-color, $text-color, $border-color, $font-family: $font-envidia, $link-color: $text-color) {
     padding: $padding;
     border-radius: map-get($map: $radius, $key: xl);
-    background-color: rgba($color, 0.15);
+    background-color: rgba($bg-color, 0.15);
     color: $text-color;
     border: 1px solid $border-color;
     font-family: $font-family;
