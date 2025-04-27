@@ -1,0 +1,50 @@
+@mixin alerta($padding: $spacing-md, $bg-color, $text-color, $border-color, $font-family: $font-envidia, $link-color: $text-color) {
+    padding: $padding;
+    border-radius: map-get($map: $radius, $key: xl);
+    background-color: rgba($color, 0.15);
+    color: $text-color;
+    border: 1px solid $border-color;
+    font-family: $font-family;
+    margin-bottom: 1rem;
+
+    a {
+      color: $link-color;
+      font-weight: bold;
+      text-decoration: underline;
+  
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    i {
+      margin-right: 0.5rem;
+      font-style: normal;
+    }
+}
+.alert {
+    &-advertencia{
+        @include alerta($bg-color: $ansiedad-relajada, $text-color: darken($ansiedad-relajada, 15%), $border-color: $ansiedad-relajada);
+    }
+
+    &-peligro{
+        @include alerta($bg-color: $furia-fuego, $text-color: darken($furia-fuego, 15%), $border-color: $furia-fuego);
+    }
+
+    &-exito{
+        @include alerta($bg-color: $desagrado-sarcastico, $text-color: darken($desagrado-sarcastico, 15%), $border-color: $desagrado-sarcastico);
+    }
+
+    &-info{
+        @include alerta($bg-color: $tristeza-suspiro, $text-color: darken($tristeza-suspiro, 15%), $border-color: $tristeza-suspiro);
+    }
+
+    &-importante{
+        &-oscuro{
+            @include alerta($bg-color: $furia-oscuro, $text-color: darken($furia-oscuro, 15%), $border-color: $furia-oscuro);
+        }
+        &-claro{
+            @include alerta($bg-color: $furia-suave, $text-color: darken($furia-suave, 15%), $border-color: $furia-suave);
+        }
+    }
+}
