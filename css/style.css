@@ -4314,4 +4314,131 @@ code {
   margin: 0 auto;
 }
 
+.container-bg {
+  width: 25%;
+  height: 200px;
+  padding: 30px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-furia {
+  background-color: #b11009;
+  color: white;
+}
+
+.border-furia {
+  border: 2px solid #b11009;
+}
+
+.text-furia {
+  color: #b11009;
+}
+
+.bg-envidia {
+  background-color: #0db3bc;
+  color: white;
+}
+
+.border-envidia {
+  border: 2px solid #0db3bc;
+}
+
+.text-envidia {
+  color: #0db3bc;
+}
+
+.bg-ansiedad {
+  background-color: #e04f06;
+  color: white;
+}
+
+.border-ansiedad {
+  border: 2px solid #e04f06;
+}
+
+.text-ansiedad {
+  color: #e04f06;
+}
+
+.bg-alegria {
+  background-color: #e1ec56;
+  color: white;
+}
+
+.border-alegria {
+  border: 2px solid #e1ec56;
+}
+
+.text-alegria {
+  color: #e1ec56;
+}
+
+.bg-temor {
+  background-color: #7b65a6;
+  color: white;
+}
+
+.border-temor {
+  border: 2px solid #7b65a6;
+}
+
+.text-temor {
+  color: #7b65a6;
+}
+
+.bg-desagrado {
+  background-color: #78AB65;
+  color: white;
+}
+
+.border-desagrado {
+  border: 2px solid #78AB65;
+}
+
+.text-desagrado {
+  color: #78AB65;
+}
+
+.bg-verguenza {
+  background-color: #D86289;
+  color: white;
+}
+
+.border-verguenza {
+  border: 2px solid #D86289;
+}
+
+.text-verguenza {
+  color: #D86289;
+}
+
+.bg-tristeza {
+  background-color: #40B2E3;
+  color: white;
+}
+
+.border-tristeza {
+  border: 2px solid #40B2E3;
+}
+
+.text-tristeza {
+  color: #40B2E3;
+}
+
+.bg-aburrimiento {
+  background-color: #484BA9;
+  color: white;
+}
+
+.border-aburrimiento {
+  border: 2px solid #484BA9;
+}
+
+.text-aburrimiento {
+  color: #484BA9;
+}
+
 /*# sourceMappingURL=style.css.map */
