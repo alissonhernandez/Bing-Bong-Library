@@ -277,6 +277,7 @@
   width: 100px;
   height: 100px;
   border-radius: 9999px;
+  text-align: center;
 }
 
 .rounded-none {
