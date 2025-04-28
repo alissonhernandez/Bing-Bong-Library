@@ -155,7 +155,7 @@
     padding: 12px 24px;
     border: none;
     font-size: $font-size-base;
-    background-color: inherit;
+    background-color: $color2;
     border-radius: 100px;
     font-weight: $font-weight-bold;
     color: #ffffff40;
@@ -184,7 +184,7 @@
   
     &:hover {
       box-shadow: 0 0 0 5px $color2;
-      color: $furia-suave;
+      color: #ffffff;
     }
   
     &:active {
