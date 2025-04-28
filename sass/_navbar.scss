@@ -129,6 +129,9 @@
 .navbar_tristeza_img{
     @include navbar__img($aburrimiento-silencioso, $aburrimiento-suave, $font-aburrimiento, $font-size-xl);
 }
+.navbar_bingbong_img {
+    @include navbar__img(#ffc8dd, $aburrimiento-silencioso, $font-desagrado, $font-size-xl);
+}
 
 //clase para navbar usando logo de texto
 .navbar_furia_nametext {

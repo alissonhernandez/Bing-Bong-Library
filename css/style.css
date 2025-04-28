@@ -3531,6 +3531,42 @@ body {
   transform: scale(1.3);
 }
 
+.navbar_bingbong_img {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #ffc8dd;
+  color: #0F1156;
+  font-family: "Lilita One", cursive;
+  font-size: 1.5rem;
+}
+.navbar_bingbong_img li {
+  list-style: none;
+}
+.navbar_bingbong_img a {
+  text-decoration: none;
+  color: inherit;
+}
+.navbar_bingbong_img .logo {
+  height: 100px;
+}
+.navbar_bingbong_img .logo img {
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+.navbar_bingbong_img .logo:hover {
+  transform: scale(1.3);
+}
+.navbar_bingbong_img .nav_items {
+  display: flex;
+  gap: 2rem;
+  font-weight: 700;
+}
+.navbar_bingbong_img .nav_link:hover {
+  transform: scale(1.3);
+}
+
 .navbar_furia_nametext {
   display: flex;
   align-items: center;
