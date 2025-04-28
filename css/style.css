@@ -263,6 +263,22 @@
   color: #8181C6;
 }
 
+.box {
+  width: 800px;
+  height: 50px;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.rounded-full {
+  width: 100px;
+  height: 100px;
+  border-radius: 9999px;
+}
+
 .rounded-none {
   border-radius: 0;
 }
@@ -290,412 +306,412 @@
 .rounded-emotion-furia-none {
   border-radius: 0;
   background-color: #b11009;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-envidia-none {
   border-radius: 0;
-  background-color: #850e8b;
-  color: white;
+  background-color: #0db3bc;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-ansiedad-none {
   border-radius: 0;
   background-color: #e04f06;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-alegria-none {
   border-radius: 0;
-  background-color: #f89b29;
-  color: white;
+  background-color: #e1ec56;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-temor-none {
   border-radius: 0;
-  background-color: #a71f67;
-  color: white;
+  background-color: #7b65a6;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-desagrado-none {
   border-radius: 0;
-  background-color: #994398;
-  color: white;
+  background-color: #78AB65;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-verguenza-none {
   border-radius: 0;
-  background-color: #834186;
-  color: white;
+  background-color: #D86289;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-tristeza-none {
   border-radius: 0;
   background-color: #40B2E3;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-aburrimiento-none {
   border-radius: 0;
-  background-color: #484BA9;
-  color: white;
+  background-color: #8181C6;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-sm {
-  border-radius: 0.125rem;
+  border-radius: 10px;
 }
 
 .rounded-t-sm {
-  border-top-left-radius: 0.125rem;
-  border-top-right-radius: 0.125rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
 .rounded-b-sm {
-  border-bottom-left-radius: 0.125rem;
-  border-bottom-right-radius: 0.125rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .rounded-l-sm {
-  border-top-left-radius: 0.125rem;
-  border-bottom-left-radius: 0.125rem;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 .rounded-r-sm {
-  border-top-right-radius: 0.125rem;
-  border-bottom-right-radius: 0.125rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 .rounded-emotion-furia-sm {
-  border-radius: 0.125rem;
+  border-radius: 10px;
   background-color: #b11009;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-envidia-sm {
-  border-radius: 0.125rem;
-  background-color: #850e8b;
-  color: white;
+  border-radius: 10px;
+  background-color: #0db3bc;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-ansiedad-sm {
-  border-radius: 0.125rem;
+  border-radius: 10px;
   background-color: #e04f06;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-alegria-sm {
-  border-radius: 0.125rem;
-  background-color: #f89b29;
-  color: white;
+  border-radius: 10px;
+  background-color: #e1ec56;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-temor-sm {
-  border-radius: 0.125rem;
-  background-color: #a71f67;
-  color: white;
+  border-radius: 10px;
+  background-color: #7b65a6;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-desagrado-sm {
-  border-radius: 0.125rem;
-  background-color: #994398;
-  color: white;
+  border-radius: 10px;
+  background-color: #78AB65;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-verguenza-sm {
-  border-radius: 0.125rem;
-  background-color: #834186;
-  color: white;
+  border-radius: 10px;
+  background-color: #D86289;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-tristeza-sm {
-  border-radius: 0.125rem;
+  border-radius: 10px;
   background-color: #40B2E3;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-aburrimiento-sm {
-  border-radius: 0.125rem;
-  background-color: #484BA9;
-  color: white;
+  border-radius: 10px;
+  background-color: #8181C6;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-md {
-  border-radius: 0.375rem;
+  border-radius: 25px;
 }
 
 .rounded-t-md {
-  border-top-left-radius: 0.375rem;
-  border-top-right-radius: 0.375rem;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 .rounded-b-md {
-  border-bottom-left-radius: 0.375rem;
-  border-bottom-right-radius: 0.375rem;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .rounded-l-md {
-  border-top-left-radius: 0.375rem;
-  border-bottom-left-radius: 0.375rem;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
 }
 
 .rounded-r-md {
-  border-top-right-radius: 0.375rem;
-  border-bottom-right-radius: 0.375rem;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 
 .rounded-emotion-furia-md {
-  border-radius: 0.375rem;
+  border-radius: 25px;
   background-color: #b11009;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-envidia-md {
-  border-radius: 0.375rem;
-  background-color: #850e8b;
-  color: white;
+  border-radius: 25px;
+  background-color: #0db3bc;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-ansiedad-md {
-  border-radius: 0.375rem;
+  border-radius: 25px;
   background-color: #e04f06;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-alegria-md {
-  border-radius: 0.375rem;
-  background-color: #f89b29;
-  color: white;
+  border-radius: 25px;
+  background-color: #e1ec56;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-temor-md {
-  border-radius: 0.375rem;
-  background-color: #a71f67;
-  color: white;
+  border-radius: 25px;
+  background-color: #7b65a6;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-desagrado-md {
-  border-radius: 0.375rem;
-  background-color: #994398;
-  color: white;
+  border-radius: 25px;
+  background-color: #78AB65;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-verguenza-md {
-  border-radius: 0.375rem;
-  background-color: #834186;
-  color: white;
+  border-radius: 25px;
+  background-color: #D86289;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-tristeza-md {
-  border-radius: 0.375rem;
+  border-radius: 25px;
   background-color: #40B2E3;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-aburrimiento-md {
-  border-radius: 0.375rem;
-  background-color: #484BA9;
-  color: white;
+  border-radius: 25px;
+  background-color: #8181C6;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-lg {
-  border-radius: 0.5rem;
+  border-radius: 35px;
 }
 
 .rounded-t-lg {
-  border-top-left-radius: 0.5rem;
-  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 35px;
+  border-top-right-radius: 35px;
 }
 
 .rounded-b-lg {
-  border-bottom-left-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
 }
 
 .rounded-l-lg {
-  border-top-left-radius: 0.5rem;
-  border-bottom-left-radius: 0.5rem;
+  border-top-left-radius: 35px;
+  border-bottom-left-radius: 35px;
 }
 
 .rounded-r-lg {
-  border-top-right-radius: 0.5rem;
-  border-bottom-right-radius: 0.5rem;
+  border-top-right-radius: 35px;
+  border-bottom-right-radius: 35px;
 }
 
 .rounded-emotion-furia-lg {
-  border-radius: 0.5rem;
+  border-radius: 35px;
   background-color: #b11009;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-envidia-lg {
-  border-radius: 0.5rem;
-  background-color: #850e8b;
-  color: white;
+  border-radius: 35px;
+  background-color: #0db3bc;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-ansiedad-lg {
-  border-radius: 0.5rem;
+  border-radius: 35px;
   background-color: #e04f06;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-alegria-lg {
-  border-radius: 0.5rem;
-  background-color: #f89b29;
-  color: white;
+  border-radius: 35px;
+  background-color: #e1ec56;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-temor-lg {
-  border-radius: 0.5rem;
-  background-color: #a71f67;
-  color: white;
+  border-radius: 35px;
+  background-color: #7b65a6;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-desagrado-lg {
-  border-radius: 0.5rem;
-  background-color: #994398;
-  color: white;
+  border-radius: 35px;
+  background-color: #78AB65;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-verguenza-lg {
-  border-radius: 0.5rem;
-  background-color: #834186;
-  color: white;
+  border-radius: 35px;
+  background-color: #D86289;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-tristeza-lg {
-  border-radius: 0.5rem;
+  border-radius: 35px;
   background-color: #40B2E3;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-aburrimiento-lg {
-  border-radius: 0.5rem;
-  background-color: #484BA9;
-  color: white;
+  border-radius: 35px;
+  background-color: #8181C6;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-xl {
-  border-radius: 1rem;
+  border-radius: 50px;
 }
 
 .rounded-t-xl {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
 .rounded-b-xl {
-  border-bottom-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .rounded-l-xl {
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
 
 .rounded-r-xl {
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
 }
 
 .rounded-emotion-furia-xl {
-  border-radius: 1rem;
+  border-radius: 50px;
   background-color: #b11009;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-envidia-xl {
-  border-radius: 1rem;
-  background-color: #850e8b;
-  color: white;
+  border-radius: 50px;
+  background-color: #0db3bc;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-ansiedad-xl {
-  border-radius: 1rem;
+  border-radius: 50px;
   background-color: #e04f06;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-alegria-xl {
-  border-radius: 1rem;
-  background-color: #f89b29;
-  color: white;
+  border-radius: 50px;
+  background-color: #e1ec56;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-temor-xl {
-  border-radius: 1rem;
-  background-color: #a71f67;
-  color: white;
+  border-radius: 50px;
+  background-color: #7b65a6;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-desagrado-xl {
-  border-radius: 1rem;
-  background-color: #994398;
-  color: white;
+  border-radius: 50px;
+  background-color: #78AB65;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-verguenza-xl {
-  border-radius: 1rem;
-  background-color: #834186;
-  color: white;
+  border-radius: 50px;
+  background-color: #D86289;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-tristeza-xl {
-  border-radius: 1rem;
+  border-radius: 50px;
   background-color: #40B2E3;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-aburrimiento-xl {
-  border-radius: 1rem;
-  background-color: #484BA9;
-  color: white;
+  border-radius: 50px;
+  background-color: #8181C6;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-full {
@@ -725,64 +741,64 @@
 .rounded-emotion-furia-full {
   border-radius: 9999px;
   background-color: #b11009;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-envidia-full {
   border-radius: 9999px;
-  background-color: #850e8b;
-  color: white;
+  background-color: #0db3bc;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-ansiedad-full {
   border-radius: 9999px;
   background-color: #e04f06;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-alegria-full {
   border-radius: 9999px;
-  background-color: #f89b29;
-  color: white;
+  background-color: #e1ec56;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-temor-full {
   border-radius: 9999px;
-  background-color: #a71f67;
-  color: white;
+  background-color: #7b65a6;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-desagrado-full {
   border-radius: 9999px;
-  background-color: #994398;
-  color: white;
+  background-color: #78AB65;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-verguenza-full {
   border-radius: 9999px;
-  background-color: #834186;
-  color: white;
+  background-color: #D86289;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-tristeza-full {
   border-radius: 9999px;
   background-color: #40B2E3;
-  color: white;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .rounded-emotion-aburrimiento-full {
   border-radius: 9999px;
-  background-color: #484BA9;
-  color: white;
+  background-color: #8181C6;
   padding: 0.5rem;
+  text-align: center;
 }
 
 .m-xs {
@@ -1111,7 +1127,7 @@
 
 .alert-advertencia {
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 50px;
   background-color: rgba(251, 163, 32, 0.15);
   color: #cb7b04;
   border: 1px solid #fba320;
@@ -1132,7 +1148,7 @@
 }
 .alert-peligro {
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 50px;
   background-color: rgba(177, 16, 9, 0.15);
   color: #680905;
   border: 1px solid #b11009;
@@ -1153,7 +1169,7 @@
 }
 .alert-exito {
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 50px;
   background-color: rgba(120, 171, 101, 0.15);
   color: #557f45;
   border: 1px solid #78AB65;
@@ -1174,7 +1190,7 @@
 }
 .alert-info {
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 50px;
   background-color: rgba(12, 97, 157, 0.15);
   color: #073556;
   border: 1px solid #0C619D;
@@ -1195,7 +1211,7 @@
 }
 .alert-importante-oscuro {
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 50px;
   background-color: rgba(21, 15, 15, 0.15);
   color: black;
   border: 1px solid #150f0f;
@@ -1216,7 +1232,7 @@
 }
 .alert-importante-claro {
   padding: 1rem;
-  border-radius: 1rem;
+  border-radius: 50px;
   background-color: rgba(255, 255, 255, 0.15);
   color: #d9d9d9;
   border: 1px solid white;
@@ -1376,7 +1392,7 @@
   padding-bottom: 0.1rem;
   padding-left: 0.75rem;
   padding-right: 0.75rem;
-  border-radius: 0.5rem;
+  border-radius: 35px;
   font-weight: 700;
   display: inline-block;
   text-transform: uppercase;
@@ -1523,7 +1539,7 @@
   color: white;
   font-size: 1rem;
   font-family: "Baloo 2", cursive;
-  border-radius: 1rem;
+  border-radius: 50px;
   border: none;
   position: relative;
   background: #150f0f;
@@ -1551,7 +1567,7 @@
   color: white;
   font-size: 1rem;
   font-family: "Baloo 2", cursive;
-  border-radius: 1rem;
+  border-radius: 50px;
   border: none;
   position: relative;
   background: #150f0f;
@@ -1579,7 +1595,7 @@
   color: white;
   font-size: 1rem;
   font-family: "Baloo 2", cursive;
-  border-radius: 1rem;
+  border-radius: 50px;
   border: none;
   position: relative;
   background: #150f0f;
@@ -1607,7 +1623,7 @@
   color: white;
   font-size: 1rem;
   font-family: "Baloo 2", cursive;
-  border-radius: 1rem;
+  border-radius: 50px;
   border: none;
   position: relative;
   background: #150f0f;
@@ -1633,7 +1649,7 @@
 .ansiedad-A {
   padding: 1em 2em;
   border: none;
-  border-radius: 0.375rem;
+  border-radius: 25px;
   font-weight: 700;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -1671,7 +1687,7 @@
 .ansiedad-O {
   padding: 1em 2em;
   border: none;
-  border-radius: 0.375rem;
+  border-radius: 25px;
   font-weight: 700;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -1709,7 +1725,7 @@
 .ansiedad-I {
   padding: 1em 2em;
   border: none;
-  border-radius: 0.375rem;
+  border-radius: 25px;
   font-weight: 700;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -1747,7 +1763,7 @@
 .ansiedad-D {
   padding: 1em 2em;
   border: none;
-  border-radius: 0.375rem;
+  border-radius: 25px;
   font-weight: 700;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -1790,7 +1806,7 @@
   padding: 1em 2.5em;
   display: inline-block;
   cursor: pointer;
-  border-radius: 1rem;
+  border-radius: 50px;
   transition: all 0.2s;
   border: none;
   font-family: "Creepster", cursive;
@@ -1832,7 +1848,7 @@
   padding: 1em 2.5em;
   display: inline-block;
   cursor: pointer;
-  border-radius: 1rem;
+  border-radius: 50px;
   transition: all 0.2s;
   border: none;
   font-family: "Creepster", cursive;
@@ -1874,7 +1890,7 @@
   padding: 1em 2.5em;
   display: inline-block;
   cursor: pointer;
-  border-radius: 1rem;
+  border-radius: 50px;
   transition: all 0.2s;
   border: none;
   font-family: "Creepster", cursive;
@@ -1916,7 +1932,7 @@
   padding: 1em 2.5em;
   display: inline-block;
   cursor: pointer;
-  border-radius: 1rem;
+  border-radius: 50px;
   transition: all 0.2s;
   border: none;
   font-family: "Creepster", cursive;
@@ -2133,7 +2149,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   font-family: "Kanit", sans-serif;
   color: white;
   background-color: #b11009;
@@ -2171,7 +2187,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   font-family: "Kanit", sans-serif;
   color: white;
   background-color: #D86289;
@@ -2209,7 +2225,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   font-family: "Kanit", sans-serif;
   color: white;
   background-color: #89ABC3;
@@ -2247,7 +2263,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   font-family: "Kanit", sans-serif;
   color: white;
   background-color: #6f75a4;
@@ -2285,7 +2301,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   font-family: "Kanit", sans-serif;
   color: white;
   background-color: #818AA2;
@@ -2323,7 +2339,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   font-family: "Kanit", sans-serif;
   color: white;
   background-color: #78AB65;
@@ -2361,7 +2377,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   font-family: "Kanit", sans-serif;
   color: white;
   background-color: #e1ec56;
@@ -2399,7 +2415,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   font-family: "Kanit", sans-serif;
   color: white;
 }
@@ -2436,7 +2452,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   font-family: "Kanit", sans-serif;
   color: white;
 }
@@ -2473,7 +2489,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   font-family: "Kanit", sans-serif;
   color: white;
 }
@@ -2510,7 +2526,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   font-family: "Kanit", sans-serif;
   color: white;
 }
@@ -2547,7 +2563,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   font-family: "Kanit", sans-serif;
   color: white;
 }
@@ -2584,7 +2600,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   font-family: "Kanit", sans-serif;
   color: white;
 }
@@ -2621,7 +2637,7 @@
   margin-right: auto;
   margin-left: auto;
   box-sizing: border-box;
-  border-radius: 0.125rem;
+  border-radius: 10px;
   font-family: "Kanit", sans-serif;
   color: white;
 }
@@ -2659,7 +2675,7 @@ select {
   width: 100%;
   box-sizing: border-box;
   font-family: "Kanit", sans-serif;
-  border-radius: 0.375rem;
+  border-radius: 25px;
   border: 1px solid #f89b29;
   padding: 0.5rem;
   font-size: 1rem;
@@ -2704,7 +2720,7 @@ p {
 form {
   background-color: #e04f06;
   padding: 0.25rem;
-  border-radius: 0.5rem;
+  border-radius: 35px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -3821,7 +3837,7 @@ body {
 .navbar_furia_text .nav_items .nav-link:hover {
   color: white;
   background-color: #150f0f;
-  border-radius: 1rem;
+  border-radius: 50px;
   transform: scale(1.05);
 }
 
@@ -3862,7 +3878,7 @@ body {
 .navbar_envidia_text .nav_items .nav-link:hover {
   color: #0db3bc;
   background-color: #1c246f;
-  border-radius: 1rem;
+  border-radius: 50px;
   transform: scale(1.05);
 }
 
@@ -3903,7 +3919,7 @@ body {
 .navbar_ansiedad_text .nav_items .nav-link:hover {
   color: #b11009;
   background-color: #543227;
-  border-radius: 1rem;
+  border-radius: 50px;
   transform: scale(1.05);
 }
 
@@ -3944,7 +3960,7 @@ body {
 .navbar_alegria_text .nav_items .nav-link:hover {
   color: #f89b29;
   background-color: #203b95;
-  border-radius: 1rem;
+  border-radius: 50px;
   transform: scale(1.05);
 }
 
@@ -3985,7 +4001,7 @@ body {
 .navbar_temor_text .nav_items .nav-link:hover {
   color: #a71f67;
   background-color: #101918;
-  border-radius: 1rem;
+  border-radius: 50px;
   transform: scale(1.05);
 }
 
@@ -4026,7 +4042,7 @@ body {
 .navbar_desagrado_text .nav_items .nav-link:hover {
   color: #58B2B3;
   background-color: #20441F;
-  border-radius: 1rem;
+  border-radius: 50px;
   transform: scale(1.05);
 }
 
@@ -4067,7 +4083,7 @@ body {
 .navbar_verguenza_text .nav_items .nav-link:hover {
   color: #834186;
   background-color: #9C254E;
-  border-radius: 1rem;
+  border-radius: 50px;
   transform: scale(1.05);
 }
 
@@ -4108,7 +4124,7 @@ body {
 .navbar_tristeza_text .nav_items .nav-link:hover {
   color: #40B2E3;
   background-color: #213054;
-  border-radius: 1rem;
+  border-radius: 50px;
   transform: scale(1.05);
 }
 
@@ -4149,7 +4165,7 @@ body {
 .navbar_aburrimiento_text .nav_items .nav-link:hover {
   color: #8181C6;
   background-color: #0F1156;
-  border-radius: 1rem;
+  border-radius: 50px;
   transform: scale(1.05);
 }
 
