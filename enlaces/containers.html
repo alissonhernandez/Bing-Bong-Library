@@ -7,6 +7,7 @@
     <title>Contenedores</title>
 </head>
 <body>
+
     <aside class="row navbar_furia_nametext">
         <h2 class="navbar__brand">Menú</h2>
         <ul class="nav_items">
@@ -17,22 +18,25 @@
             <li><a class="nav-link" href="#">Contacto</a></li>
         </ul>
     </aside>
-    <div class="container-principal-sc">
+    
+    <div class="container-principal-sc col-xxl-7">
             <div class="grupo-info">
                 <h1 class="font-ansiedad text-ansiedad-espontanea">CONTENEDORES</h1>
             </div>
+        //Descripcion acerca del componente
             <div class="col-xxl-8">
                 <p class="font-tristeza text-alegria-vibrante">
                     Nuestros contenedores temáticos de Intensamente 2 están diseñados para capturar toda la magia, color y emociones de la película de Disney y Pixar.
                     Los colores vibrantes, las ilustraciones detalladas y los acabados brillantes hacen de estos contenedores una opción divertida y emotiva para almacenar tus componentes favoritos.
                 </p>
-                <p class="font-aburrimiento text-ansiedad-caotica">Los contenedores son elementos esenciales que organizan, 
+                <p class="font-aburrimiento text-alegria-vibrante">Los contenedores son elementos esenciales que organizan, 
                     alinean y ajustan tu contenido dentro de un dispositivo. Con ellos, 
                     puedes elegir entre distintos tamaños y disponemos de contenedores "sin color"
                     para adaptarte fácilmente a tus necesidades.
                 </p>
             </div>
 
+            //Agregando los contenedores a mostrar anidados
             <div class="container-principal col-xxl-8">
                 <p class="font-envidia">.container principal</p>
            
@@ -60,9 +64,13 @@
                  </div>
                </div>
              </div>
+             //Fin del contenedores anidados
 
-             //Detallando el codigo
-             <div class="row">
+        
+             //agregamos una column para que se muestre el contenido ordenados
+             <div class="col-xxl-9">
+
+                //Ejemplo de como usar contenedores sin color
                <p class="font-aburrimiento text-alegria-electrisante">Si desea usar los contenedores "sin color", solo se debe agregar un "-sc" a 
                    continuación de la clase, ejemplo: </p>
                    <code> 
@@ -71,9 +79,13 @@
                     &lt;/div&gt;
                   </code>
              </div>
-           <div class="container-principal-sc ">
+
+             //Detallando el codigo y mostrando por separado los contenedores
+           <div class="container-principal-sc col-xxl-10">
 
             <p class="font-aburrimiento text-alegria-electrisante">De esta manera puedes utilizar los contenedores con color, ejemplo: </p>
+
+            //CONTENEDOR PRINCIPAL
             <div class="container-principal">Contenedor Principal</div>
             <br>
             <code>
@@ -83,6 +95,7 @@
             </code>
               <br>
 
+              //CONTENEDOR FLUIDO
             <div class="container-fluid">Contenedor fluido</div>
              <br>
               <code> 
@@ -92,6 +105,7 @@
               </code>
               <br>
 
+              //CONTENEDOR XXL
               <div class="container-xxl">Contenedor XXL</div>
               <br>
               <code> 
@@ -101,6 +115,7 @@
               </code>
               <br>
 
+              //CONTENEDEDOR XL
               <div class="container-xl">Contenedor XL</div>
               <br>
               <code> 
@@ -110,6 +125,7 @@
               </code>
               <br>
 
+              //CONTENEDOR LG
               <div class="container-lg">Contenedor LG</div>
               <br>
               <code> 
@@ -119,6 +135,7 @@
               </code>
               <br>
 
+              //CONTENEDOR MD
               <div class="container-md">Contenedor MD</div>
              <br>
               <code> 
@@ -128,6 +145,7 @@
               </code>
               <br>
 
+              //CONTENEDOR SM
               <div class="container-sm">Contenedor SM</div>
              <br>
               <code> 
