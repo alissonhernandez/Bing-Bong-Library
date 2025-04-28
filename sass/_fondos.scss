@@ -10,7 +10,7 @@
   // Aplicar mixin a cada emocion
   @include emotion-colors(furia, $furia-fuego);
   @include emotion-colors(envidia, $envidia-alarmante);
-  @include emotion-colors(ansiedad, $ansiedad-expontanea);
+  @include emotion-colors(ansiedad, $ansiedad-espontanea);
   @include emotion-colors(alegria, $alegria-vibrante);
   @include emotion-colors(temor, $temor-adrenalina);
   @include emotion-colors(desagrado, $desagrado-dramatico);
