@@ -2,107 +2,157 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Bebas+Neue&family=Comfortaa&family=Creepster&family=Fredoka&family=Gloria+Hallelujah&family=Kanit&family=Lilita+One&family=M+PLUS+Rounded+1c&family=Orbitron&family=Quicksand&family=Righteous&family=Rubik+Mono+One&family=Special+Elite&family=Syncopate&display=swap');
 
-// Tipografia por emocion
-$font-alegria: 'Baloo 2', cursive;
-$font-tristeza: 'Comfortaa', sans-serif;
-$font-furia: 'Bebas Neue', sans-serif;
-$font-temor: 'Creepster', cursive;
-$font-ansiedad: 'Rubik Mono One', sans-serif;
-$font-desagrado: 'Lilita One', cursive;
-$font-verguenza: 'Gloria Hallelujah', cursive;
-$font-aburrimiento: 'M PLUS Rounded 1c', sans-serif;
-$font-envidia: 'Kanit', sans-serif;
-
-// Tamaños de fuente
-$font-size-xs:  0.75rem;
-$font-size-sm: 0.875rem;
-$font-size-base: 1rem;
-$font-size-lg: 1.25rem;
-$font-size-xl: 1.5rem;
-$font-size-xxl: 2rem;
-
-// Peso
-$font-weight-light: 300;
-$font-weight-normal: 400;
-$font-weight-bold: 700;
-
-
-// Clases de utilidad
-.text-xs {font-size: $font-size-xs;}
-.text-sm { font-size: $font-size-sm; }
-.text-base { font-size: $font-size-base; }
-.text-lg { font-size: $font-size-lg; }
-.text-xl { font-size: $font-size-xl; }
-.text-xxl { font-size: $font-size-xxl; }
-
-.font-light { font-weight: $font-weight-light; }
-.font-normal { font-weight: $font-weight-normal; }
-.font-bold { font-weight: $font-weight-bold; }
-
-// Fuentes por emocion
-.font-alegria { font-family: $font-alegria; }
-.font-tristeza { font-family: $font-tristeza; }
-.font-furia { font-family: $font-furia; }
-.font-temor { font-family: $font-temor; }
-.font-ansiedad { font-family: $font-ansiedad; }
-.font-desagrado { font-family: $font-desagrado; }
-.font-verguenza { font-family: $font-verguenza; }
-.font-aburrimiento { font-family: $font-aburrimiento; }
-.font-envidia { font-family: $font-envidia; }
-
-// Colores de texto por emocion
-
-// furia
-.text-furia-fuego { color: $furia-fuego; }
-.text-furia-humo { color: $furia-humo; }
-.text-furia-ceniza { color: $furia-ceniza; }
-.text-furia-oscuro { color: $furia-oscuro; }
-.text-furia-suave { color: $furia-suave; }
-
-// envidia
-.text-envidia-oscura { color: $envidia-oscura; }
-.text-envidia-marea { color: $envidia-marea; }
-.text-envidia-alarmante { color: $envidia-alarmante; }
-.text-envidia-suspiro { color: $envidia-suspiro; }
-
-// ansiedad
-.text-ansiedad-explosiva { color: $ansiedad-explosiva; }
-.text-ansiedad-espontanea { color: $ansiedad-espontanea; }
-.text-ansiedad-relajada { color: $ansiedad-relajada; }
-.text-ansiedad-caotica { color: $ansiedad-caotica; }
-
-// alegria
-.text-alegria-electrisante { color: $alegria-electrisante; }
-.text-alegria-tranquilidad { color: $alegria-tranquilidad; }
-.text-alegria-vibrante { color: $alegria-vibrante; }
-.text-alegria-brillante { color: $alegria-brillante; }
-
-// temor
-.text-temor-suave { color: $temor-suave; }
-.text-temor-oscuridad { color: $temor-oscuridad; }
-.text-temor-adrenalina { color: $temor-adrenalina; }
-.text-temor-caos { color: $temor-caos; }
-
-// desagrado
-.text-desagrado-sarcastico { color: $desagrado-sarcastico; }
-.text-desagrado-autoridad { color: $desagrado-autoridad; }
-.text-desagrado-impertinente { color: $desagrado-impertinente; }
-.text-desagrado-dramatico { color: $desagrado-dramatico; }
-
-// verguenza
-.text-verguenza-nostalgica { color: $verguenza-nostalgica; }
-.text-verguenza-fantastica { color: $verguenza-fantastica; }
-.text-verguenza-vulnerable { color: $verguenza-vulnerable; }
-.text-verguenza-recuerdo { color: $verguenza-recuerdo; }
-
-// tristeza
-.text-tristeza-suspiro { color: $tristeza-suspiro; }
-.text-tristeza-brillante { color: $tristeza-brillante; }
-.text-tristeza-apagada { color: $tristeza-apagada; }
-.text-tristeza-profunda { color: $tristeza-profunda; }
-
-// aburrimiento
-.text-aburrimiento-silencioso { color: $aburrimiento-silencioso; }
-.text-aburrimiento-suspiro { color: $aburrimiento-suspiro; }
-.text-aburrimiento-niebla { color: $aburrimiento-niebla; }
-.text-aburrimiento-suave { color: $aburrimiento-suave; }
+.grupo-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%; 
+  }
+  .grupo {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem;
+      margin: 1.5rem auto;
+      border-radius: 12px;
+      max-width: 500px; 
+      width: 100%;  
+    
+      .contenido-texto {
+        display: flex;
+        flex-direction: column; 
+        flex: 1;
+    
+        h1 {
+          text-align: center; 
+        }
+  
+        h2 {
+          font-size: 2rem;
+          margin-bottom: 1rem;
+        }
+    
+        p {
+          margin: 0.4rem 0;
+        }
+      }
+    
+      .img-emocion {
+        width: 140px;
+        height: auto;
+        margin: 0 auto;  
+        display: block; 
+        transition: transform 0.3s ease;
+    
+        &:hover {
+          transform: scale(1.05) rotate(2deg);
+        }
+      }
+    }
+    
+  
+  // Tipografia por emocion
+  $font-alegria: 'Baloo 2', cursive;
+  $font-tristeza: 'Comfortaa', sans-serif;
+  $font-furia: 'Bebas Neue', sans-serif;
+  $font-temor: 'Creepster', cursive;
+  $font-ansiedad: 'Rubik Mono One', sans-serif;
+  $font-desagrado: 'Lilita One', cursive;
+  $font-verguenza: 'Gloria Hallelujah', cursive;
+  $font-aburrimiento: 'M PLUS Rounded 1c', sans-serif;
+  $font-envidia: 'Kanit', sans-serif;
+  
+  // Tamaños de fuente
+  $font-size-xs:  0.75rem;
+  $font-size-sm: 0.875rem;
+  $font-size-base: 1rem;
+  $font-size-lg: 1.25rem;
+  $font-size-xl: 1.5rem;
+  $font-size-xxl: 2rem;
+  
+  // Peso
+  $font-weight-light: 300;
+  $font-weight-normal: 400;
+  $font-weight-bold: 700;
+  
+  
+  // Clases de utilidad
+  .text-xs {font-size: $font-size-xs;}
+  .text-sm { font-size: $font-size-sm; }
+  .text-base { font-size: $font-size-base; }
+  .text-lg { font-size: $font-size-lg; }
+  .text-xl { font-size: $font-size-xl; }
+  .text-xxl { font-size: $font-size-xxl; }
+  
+  .font-light { font-weight: $font-weight-light; }
+  .font-normal { font-weight: $font-weight-normal; }
+  .font-bold { font-weight: $font-weight-bold; }
+  
+  // Fuentes por emocion
+  .font-alegria { font-family: $font-alegria; }
+  .font-tristeza { font-family: $font-tristeza; }
+  .font-furia { font-family: $font-furia; }
+  .font-temor { font-family: $font-temor; }
+  .font-ansiedad { font-family: $font-ansiedad; }
+  .font-desagrado { font-family: $font-desagrado; }
+  .font-verguenza { font-family: $font-verguenza; }
+  .font-aburrimiento { font-family: $font-aburrimiento; }
+  .font-envidia { font-family: $font-envidia; }
+  
+  // Colores de texto por emocion
+  
+  // furia
+  .text-furia-fuego { color: $furia-fuego; }
+  .text-furia-humo { color: $furia-humo; }
+  .text-furia-ceniza { color: $furia-ceniza; }
+  .text-furia-oscuro { color: $furia-oscuro; }
+  .text-furia-suave { color: $furia-suave; }
+  
+  // envidia
+  .text-envidia-oscura { color: $envidia-oscura; }
+  .text-envidia-marea { color: $envidia-marea; }
+  .text-envidia-alarmante { color: $envidia-alarmante; }
+  .text-envidia-suspiro { color: $envidia-suspiro; }
+  
+  // ansiedad
+  .text-ansiedad-explosiva { color: $ansiedad-explosiva; }
+  .text-ansiedad-espontanea { color: $ansiedad-espontanea; }
+  .text-ansiedad-relajada { color: $ansiedad-relajada; }
+  .text-ansiedad-caotica { color: $ansiedad-caotica; }
+  
+  // alegria
+  .text-alegria-electrisante { color: $alegria-electrisante; }
+  .text-alegria-tranquilidad { color: $alegria-tranquilidad; }
+  .text-alegria-vibrante { color: $alegria-vibrante; }
+  .text-alegria-brillante { color: $alegria-brillante; }
+  
+  // temor
+  .text-temor-suave { color: $temor-suave; }
+  .text-temor-oscuridad { color: $temor-oscuridad; }
+  .text-temor-adrenalina { color: $temor-adrenalina; }
+  .text-temor-caos { color: $temor-caos; }
+  
+  // desagrado
+  .text-desagrado-sarcastico { color: $desagrado-sarcastico; }
+  .text-desagrado-autoridad { color: $desagrado-autoridad; }
+  .text-desagrado-impertinente { color: $desagrado-impertinente; }
+  .text-desagrado-dramatico { color: $desagrado-dramatico; }
+  
+  // verguenza
+  .text-verguenza-nostalgica { color: $verguenza-nostalgica; }
+  .text-verguenza-fantastica { color: $verguenza-fantastica; }
+  .text-verguenza-vulnerable { color: $verguenza-vulnerable; }
+  .text-verguenza-recuerdo { color: $verguenza-recuerdo; }
+  
+  // tristeza
+  .text-tristeza-suspiro { color: $tristeza-suspiro; }
+  .text-tristeza-brillante { color: $tristeza-brillante; }
+  .text-tristeza-apagada { color: $tristeza-apagada; }
+  .text-tristeza-profunda { color: $tristeza-profunda; }
+  
+  // aburrimiento
+  .text-aburrimiento-silencioso { color: $aburrimiento-silencioso; }
+  .text-aburrimiento-suspiro { color: $aburrimiento-suspiro; }
+  .text-aburrimiento-niebla { color: $aburrimiento-niebla; }
+  .text-aburrimiento-suave { color: $aburrimiento-suave; }
+  

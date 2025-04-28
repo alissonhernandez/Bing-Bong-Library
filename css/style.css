@@ -1,5 +1,48 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Baloo+2&family=Bebas+Neue&family=Comfortaa&family=Creepster&family=Fredoka&family=Gloria+Hallelujah&family=Kanit&family=Lilita+One&family=M+PLUS+Rounded+1c&family=Orbitron&family=Quicksand&family=Righteous&family=Rubik+Mono+One&family=Special+Elite&family=Syncopate&display=swap");
+.grupo-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.grupo {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+}
+.grupo .contenido-texto {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.grupo .contenido-texto h1 {
+  text-align: center;
+}
+.grupo .contenido-texto h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.grupo .contenido-texto p {
+  margin: 0.4rem 0;
+}
+.grupo .img-emocion {
+  width: 140px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.grupo .img-emocion:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
 .text-xs {
   font-size: 0.75rem;
 }
@@ -4252,6 +4295,23 @@ body {
 
 .shadow-aburrimiento-xl {
   box-shadow: 0 12px 24px rgba(72, 75, 169, 0.4);
+}
+
+code {
+  background-color: #f4f4f4;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  color: #333;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  display: block;
+  line-height: 1.6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=style.css.map */
