@@ -113,7 +113,7 @@
     border-radius: map-get($map: $radius, $key: xl);
     transition: all 0.2s;
     border: none;
-    font-family: $font-temor;
+    font-family: $font-furia;
     font-weight: $font-weight-normal;
     color: $color;
     background-color: $bg;
@@ -215,7 +215,7 @@
 .temor-A { @include temor-style($temor-adrenalina, $temor-suave); }
 .temor-O { @include temor-style($temor-caos, $temor-oscuridad); }
 .temor-I { @include temor-style($temor-oscuridad, $temor-adrenalina); }
-.temor-D { @include temor-style($temor-suave, $temor-caos);}
+.temor-D { @include temor-style($temor-suave, $furia-suave);}
 
 //Trsiteza
 .tristeza-A { @include tristeza-style($tristeza-apagada, $tristeza-suspiro); }

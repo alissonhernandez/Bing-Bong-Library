@@ -1810,7 +1810,7 @@
   border-radius: 50px;
   transition: all 0.2s;
   border: none;
-  font-family: "Creepster", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   color: #7b65a6;
   background-color: #a71f67;
@@ -1852,7 +1852,7 @@
   border-radius: 50px;
   transition: all 0.2s;
   border: none;
-  font-family: "Creepster", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   color: #101918;
   background-color: #231d4b;
@@ -1894,7 +1894,7 @@
   border-radius: 50px;
   transition: all 0.2s;
   border: none;
-  font-family: "Creepster", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
   color: #a71f67;
   background-color: #101918;
@@ -1936,9 +1936,9 @@
   border-radius: 50px;
   transition: all 0.2s;
   border: none;
-  font-family: "Creepster", cursive;
+  font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
-  color: #231d4b;
+  color: white;
   background-color: #7b65a6;
 }
 .temor-D:hover {
@@ -2666,6 +2666,26 @@
   .container-xxl-sc {
     max-width: 1320px;
   }
+}
+
+.content_welcome {
+  background: linear-gradient(135deg, #D86289, #58B2B3);
+  color: white;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+.content_welcome .content {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.content_welcome .content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.content_welcome .content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 body {
@@ -4031,10 +4051,10 @@ form {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
-  background-color: #ffc8dd;
-  color: #0F1156;
-  font-family: "Lilita One", cursive;
-  font-size: 1.5rem;
+  background-color: #D86289;
+  color: white;
+  font-family: "Kanit", sans-serif;
+  font-size: 1.25rem;
   position: relative;
 }
 .navbar_bingbong_img li {
@@ -4096,7 +4116,7 @@ form {
     transform: translateX(-50%);
     width: 100%;
     flex-direction: column;
-    background-color: #ffc8dd;
+    background-color: #D86289;
     padding: 0;
     overflow: hidden;
     max-height: 0;
