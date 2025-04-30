@@ -1,7 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-    <symbol id="menu" viewBox="0,0,256,256" width="30px" height="30px" fill-rule="nonzero">
+    <symbol id="menu" viewBox="0,0,256,256" width="20px" height="20px" fill-rule="nonzero">
     <g fill="#fefefe" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
     <g transform="scale(5.12,5.12)">
     <path d="M5,8c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,23c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175zM5,38c-0.72127,-0.0102 -1.39216,0.36875 -1.75578,0.99175c-0.36361,0.623 -0.36361,1.39351 0,2.01651c0.36361,0.623 1.0345,1.00195 1.75578,0.99175h40c0.72127,0.0102 1.39216,-0.36875 1.75578,-0.99175c0.36361,-0.623 0.36361,-1.39351 0,-2.01651c-0.36361,-0.623 -1.0345,-1.00195 -1.75578,-0.99175z"></path></g></g>
+    </symbol>
+
+    <symbol id="menu_puntos" style="color:white" viewBox="0 0 256 512" width="auto" height="auto">
+        <g><circle cx="128" cy="53.333" r="53.333"/>
+            <circle cx="128" cy="256" r="53.333"/>
+            <circle cx="128" cy="458.667" r="53.333"/>
+        </g>
     </symbol>
 </svg>

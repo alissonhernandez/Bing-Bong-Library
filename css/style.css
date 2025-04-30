@@ -2691,6 +2691,7 @@
 body {
   padding: 0;
   margin: 0;
+  width: 100%;
 }
 
 .row {
@@ -3246,7 +3247,7 @@ form {
   color: inherit;
 }
 .navbar_furia_img .logo {
-  height: 100px;
+  height: 80px;
 }
 .navbar_furia_img .logo img {
   height: 100%;
@@ -3280,7 +3281,7 @@ form {
     padding-left: 1rem;
   }
   .navbar_furia_img label {
-    margin: 20px;
+    margin: 10px;
     display: inline-flex;
     align-self: flex-end;
     padding: 1rem;
@@ -3337,7 +3338,7 @@ form {
   color: inherit;
 }
 .navbar_envidia_img .logo {
-  height: 100px;
+  height: 80px;
 }
 .navbar_envidia_img .logo img {
   height: 100%;
@@ -3371,7 +3372,7 @@ form {
     padding-left: 1rem;
   }
   .navbar_envidia_img label {
-    margin: 20px;
+    margin: 10px;
     display: inline-flex;
     align-self: flex-end;
     padding: 1rem;
@@ -3428,7 +3429,7 @@ form {
   color: inherit;
 }
 .navbar_ansiedad_img .logo {
-  height: 100px;
+  height: 80px;
 }
 .navbar_ansiedad_img .logo img {
   height: 100%;
@@ -3462,7 +3463,7 @@ form {
     padding-left: 1rem;
   }
   .navbar_ansiedad_img label {
-    margin: 20px;
+    margin: 10px;
     display: inline-flex;
     align-self: flex-end;
     padding: 1rem;
@@ -3519,7 +3520,7 @@ form {
   color: inherit;
 }
 .navbar_alegria_img .logo {
-  height: 100px;
+  height: 80px;
 }
 .navbar_alegria_img .logo img {
   height: 100%;
@@ -3553,7 +3554,7 @@ form {
     padding-left: 1rem;
   }
   .navbar_alegria_img label {
-    margin: 20px;
+    margin: 10px;
     display: inline-flex;
     align-self: flex-end;
     padding: 1rem;
@@ -3610,7 +3611,7 @@ form {
   color: inherit;
 }
 .navbar_temor_img .logo {
-  height: 100px;
+  height: 80px;
 }
 .navbar_temor_img .logo img {
   height: 100%;
@@ -3644,7 +3645,7 @@ form {
     padding-left: 1rem;
   }
   .navbar_temor_img label {
-    margin: 20px;
+    margin: 10px;
     display: inline-flex;
     align-self: flex-end;
     padding: 1rem;
@@ -3701,7 +3702,7 @@ form {
   color: inherit;
 }
 .navbar_desagrado_img .logo {
-  height: 100px;
+  height: 80px;
 }
 .navbar_desagrado_img .logo img {
   height: 100%;
@@ -3735,7 +3736,7 @@ form {
     padding-left: 1rem;
   }
   .navbar_desagrado_img label {
-    margin: 20px;
+    margin: 10px;
     display: inline-flex;
     align-self: flex-end;
     padding: 1rem;
@@ -3792,7 +3793,7 @@ form {
   color: inherit;
 }
 .navbar_verguenza_img .logo {
-  height: 100px;
+  height: 80px;
 }
 .navbar_verguenza_img .logo img {
   height: 100%;
@@ -3826,7 +3827,7 @@ form {
     padding-left: 1rem;
   }
   .navbar_verguenza_img label {
-    margin: 20px;
+    margin: 10px;
     display: inline-flex;
     align-self: flex-end;
     padding: 1rem;
@@ -3883,7 +3884,7 @@ form {
   color: inherit;
 }
 .navbar_tristeza_img .logo {
-  height: 100px;
+  height: 80px;
 }
 .navbar_tristeza_img .logo img {
   height: 100%;
@@ -3917,7 +3918,7 @@ form {
     padding-left: 1rem;
   }
   .navbar_tristeza_img label {
-    margin: 20px;
+    margin: 10px;
     display: inline-flex;
     align-self: flex-end;
     padding: 1rem;
@@ -3974,7 +3975,7 @@ form {
   color: inherit;
 }
 .navbar_tristeza_img .logo {
-  height: 100px;
+  height: 80px;
 }
 .navbar_tristeza_img .logo img {
   height: 100%;
@@ -4008,7 +4009,7 @@ form {
     padding-left: 1rem;
   }
   .navbar_tristeza_img label {
-    margin: 20px;
+    margin: 10px;
     display: inline-flex;
     align-self: flex-end;
     padding: 1rem;
@@ -4065,7 +4066,7 @@ form {
   color: inherit;
 }
 .navbar_bingbong_img .logo {
-  height: 100px;
+  height: 80px;
 }
 .navbar_bingbong_img .logo img {
   height: 100%;
@@ -4099,7 +4100,7 @@ form {
     padding-left: 1rem;
   }
   .navbar_bingbong_img label {
-    margin: 20px;
+    margin: 10px;
     display: inline-flex;
     align-self: flex-end;
     padding: 1rem;
@@ -4413,7 +4414,8 @@ form {
   justify-content: space-between;
   padding: 1rem 2rem;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
+  max-height: auto;
   width: auto;
   background-color: #eedbd3;
   font-family: "Bebas Neue", sans-serif;
@@ -4431,14 +4433,14 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 .navbar_furia_text .nav_items .nav-link {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "Bebas Neue", sans-serif;
   padding: 0.5rem 1rem;
   width: 100%;
-  text-align: left;
+  text-align: center;
   transition: all 0.3s ease;
   color: #150f0f;
 }
@@ -4455,7 +4457,8 @@ form {
   justify-content: space-between;
   padding: 1rem 2rem;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
+  max-height: auto;
   width: auto;
   background-color: #6f75a4;
   font-family: "Kanit", sans-serif;
@@ -4473,14 +4476,14 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 .navbar_envidia_text .nav_items .nav-link {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "Kanit", sans-serif;
   padding: 0.5rem 1rem;
   width: 100%;
-  text-align: left;
+  text-align: center;
   transition: all 0.3s ease;
   color: #1c246f;
 }
@@ -4497,7 +4500,8 @@ form {
   justify-content: space-between;
   padding: 1rem 2rem;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
+  max-height: auto;
   width: auto;
   background-color: #fba320;
   font-family: "Rubik Mono One", sans-serif;
@@ -4515,14 +4519,14 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 .navbar_ansiedad_text .nav_items .nav-link {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "Rubik Mono One", sans-serif;
   padding: 0.5rem 1rem;
   width: 100%;
-  text-align: left;
+  text-align: center;
   transition: all 0.3s ease;
   color: #543227;
 }
@@ -4539,7 +4543,8 @@ form {
   justify-content: space-between;
   padding: 1rem 2rem;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
+  max-height: auto;
   width: auto;
   background-color: #6587c1;
   font-family: "Baloo 2", cursive;
@@ -4557,14 +4562,14 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 .navbar_alegria_text .nav_items .nav-link {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "Baloo 2", cursive;
   padding: 0.5rem 1rem;
   width: 100%;
-  text-align: left;
+  text-align: center;
   transition: all 0.3s ease;
   color: #203b95;
 }
@@ -4581,7 +4586,8 @@ form {
   justify-content: space-between;
   padding: 1rem 2rem;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
+  max-height: auto;
   width: auto;
   background-color: #7b65a6;
   font-family: "Creepster", cursive;
@@ -4599,14 +4605,14 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 .navbar_temor_text .nav_items .nav-link {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "Creepster", cursive;
   padding: 0.5rem 1rem;
   width: 100%;
-  text-align: left;
+  text-align: center;
   transition: all 0.3s ease;
   color: #101918;
 }
@@ -4623,7 +4629,8 @@ form {
   justify-content: space-between;
   padding: 1rem 2rem;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
+  max-height: auto;
   width: auto;
   background-color: #78AB65;
   font-family: "Lilita One", cursive;
@@ -4641,14 +4648,14 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 .navbar_desagrado_text .nav_items .nav-link {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "Lilita One", cursive;
   padding: 0.5rem 1rem;
   width: 100%;
-  text-align: left;
+  text-align: center;
   transition: all 0.3s ease;
   color: #20441F;
 }
@@ -4665,7 +4672,8 @@ form {
   justify-content: space-between;
   padding: 1rem 2rem;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
+  max-height: auto;
   width: auto;
   background-color: #816F96;
   font-family: "Gloria Hallelujah", cursive;
@@ -4683,14 +4691,14 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 .navbar_verguenza_text .nav_items .nav-link {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "Gloria Hallelujah", cursive;
   padding: 0.5rem 1rem;
   width: 100%;
-  text-align: left;
+  text-align: center;
   transition: all 0.3s ease;
   color: #9C254E;
 }
@@ -4707,7 +4715,8 @@ form {
   justify-content: space-between;
   padding: 1rem 2rem;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
+  max-height: auto;
   width: auto;
   background-color: #89ABC3;
   font-family: "Comfortaa", sans-serif;
@@ -4725,14 +4734,14 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 .navbar_tristeza_text .nav_items .nav-link {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "Comfortaa", sans-serif;
   padding: 0.5rem 1rem;
   width: 100%;
-  text-align: left;
+  text-align: center;
   transition: all 0.3s ease;
   color: #213054;
 }
@@ -4749,7 +4758,8 @@ form {
   justify-content: space-between;
   padding: 1rem 2rem;
   flex-direction: column;
-  height: 100vh;
+  height: auto;
+  max-height: auto;
   width: auto;
   background-color: #484BA9;
   font-family: "M PLUS Rounded 1c", sans-serif;
@@ -4767,14 +4777,14 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding: 2rem;
+  padding: 1rem;
 }
 .navbar_aburrimiento_text .nav_items .nav-link {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-family: "M PLUS Rounded 1c", sans-serif;
   padding: 0.5rem 1rem;
   width: 100%;
-  text-align: left;
+  text-align: center;
   transition: all 0.3s ease;
   color: #0F1156;
 }

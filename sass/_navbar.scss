@@ -29,7 +29,7 @@
     font-size: $font-size;
     position: relative;
     .logo{
-        height: 100px;
+        height: 80px;
         img{
             height: 100%;
             transition: transform 0.3s ease-in-out;
@@ -61,7 +61,7 @@
             padding-left: 1rem;
         }
         label{
-            margin: 20px;
+            margin: 10px;
             display: inline-flex;
             align-self: flex-end;
             padding: 1rem;
@@ -122,10 +122,11 @@
 }
 
 //usando el formato general y dando diseño al texto
-@mixin navbar-text($bg-color, $text-color, $hover-bg-color, $hover-text-color, $font-family-nav, $spacing: 1rem, $font-size: $font-size-lg){
+@mixin navbar-text($bg-color, $text-color, $hover-bg-color, $hover-text-color, $font-family-nav, $spacing: 1rem, $font-size: $font-size-base){
     @include navbar-base;
     flex-direction: column;
-    height: 100vh;
+    height: auto;
+    max-height: auto;
     width: auto;
     background-color: $bg-color;
     font-family: $font-family-nav;
@@ -135,13 +136,13 @@
         display: flex;
         flex-direction: column;
         gap: $spacing;
-        padding: $spacing-lg;
+        padding: $spacing-md;
         .nav-link{
             font-size: $font-size;
             font-family: $font-family-nav;
             padding: $spacing-sm $spacing-md;
             width: 100%;
-            text-align: left;
+            text-align: center;
             transition: all 0.3s ease;
             color: $text-color;
         }
