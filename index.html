@@ -8,13 +8,16 @@
     <title>Bing Bong Library</title>
 </head>
 <body>
+    <object type="image/svg+xml" data="iconos/icons.svg" style="display: none;"></object>
     <nav class="navbar_bingbong_img">
         <div class="logo">
             <img src="img/BBLibrary.png" alt="logo">
         </div>
         <input type="checkbox" id="toggler">
         <label for="toggler">
-            <svg class="icon"></svg>
+            <svg class="icon">
+                <use xlink:href="iconos/icons.svg#menu"></use>
+            </svg>
         </label>
         <div class="nav_items">
             <a href="index.html" class="nav_link">Inicio</a>
