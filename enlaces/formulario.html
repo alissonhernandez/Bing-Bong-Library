@@ -7,12 +7,57 @@
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+  <object type="image/svg+xml" data="../iconos/icons.svg" style="display: none;"></object>
+    <nav class="navbar_bingbong_img row">
+        <div class="logo">
+            <img src="../img/BBLibrary.png" alt="logo">
+        </div>
+        <input type="checkbox" id="toggler">
+        <label for="toggler">
+            <svg class="icon">
+                <use xlink:href="../iconos/icons.svg#menu"></use>
+            </svg>
+        </label>
+        <div class="nav_items">
+            <a href="../index.html" class="nav_link">Inicio</a>
+            <a href="/enlaces/badges.html" class="nav_link col">Documentación</a>
+            <a href="https://github.com/alissonhernandez/Bing-Bong-Library" class="nav_link col">Github</a>
+        </div>
+    </nav>
   
+    <div class="row">
+      <div class="navbar_furia_text col-2">
+          <input type="checkbox" id="toggler-vertical">
+          <label for="toggler-vertical">
+              <svg class="icon">
+                  <use xlink:href="../iconos/icons.svg#menu_puntos"></use>
+              </svg>
+          </label>
+          <ul class="nav_items">
+              <h2 class="navbar__brand">Componentes </h2>
+              <li><a class="nav-link" href="#">Alertas</a></li>
+              <li><a class="nav-link" href="#">Barra de Navegación</a></li>
+              <li><a class="nav-link" href="#">Badges</a></li>
+              <li><a class="nav-link" href="#">Botones</a></li>
+              <li><a class="nav-link" href="#">Containers</a></li>
+              <li><a class="nav-link" href="#">Formularios</a></li>
+              <li><a class="nav-link" href="#">Tarjetas</a></li>
+              <h2 class="navbar__brand">Clases utilitarias</h2>
+              <li><a class="nav-link" href="#">Colores de fondo</a></li>
+              <li><a class="nav-link" href="#">Margenes, padding y bordes</a></li>
+              <li><a class="nav-link" href="#">Mover elementos</a></li>
+              <li><a class="nav-link" href="#">ocultar elementos</a></li>
+              <li><a class="nav-link" href="#">Containers</a></li>
+              <li><a class="nav-link" href="#">Sombras</a></li>
+              <li><a class="nav-link" href="#">Tipos de Textos</a></li>
+          </ul>
+        </div>
+    <div class="col-7">
+      <div class="container-principal-sc">
     <!--form-->
-    <div class="container-sm">
+    <div class="container-sm col-10">
       <form>
         <h2 class="text-furia-suave font-furia text-xl mb-md">Formulario Emocional</h2>
-  
         <div class="mb-md">
           <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo">
@@ -62,5 +107,29 @@
       </form>
     </div>
   </div>
+</div>
+</div>
+</div>
+  <footer class="row">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="/img/BBLibrary.png" alt="Logo">
+        </div>
+        <div class="footer-links col">
+            <a href="index.html">Inicio</a>
+            <a href="/enlaces/badges.html">Documentación</a>
+            <a href="https://github.com/alissonhernandez/Bing-Bong-Library">Github</a>
+        </div>
+        <div class="footer-colaboradores col">
+            <a href="https://github.com/alissonhernandez">Alisson Hernandéz</a>
+            <a href="https://github.com/DianaEspinal">Diana Espinal</a>
+            <a href="https://github.com/isabeCastillo">Miriam Castillo</a>
+            <a href="https://github.com/Osiris30">Osiris Andrade</a>
+        </div>
+        <div class="copyright row">
+            <p>&copy; 2025 Bing Bong Library. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

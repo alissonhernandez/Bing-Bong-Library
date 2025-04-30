@@ -5,7 +5,7 @@
 @use 'margenes' as *;
 @use 'redondear' as *;
 @use 'botones' as*;
-@use 'grid' as *;
+
 
 //estilos para el formulario
 input[type="text"],
@@ -68,6 +68,3 @@ form {
   border-radius: map-get($radius, lg);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-
-
-  
