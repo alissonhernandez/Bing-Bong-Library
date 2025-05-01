@@ -8,24 +8,51 @@
     <title>Botones</title>
 </head>
 <body>
-    <object type="image/svg+xml" data="iconos/icons.svg" style="display: none;"></object>
-    <nav class="navbar_bingbong_img">
+    <object type="image/svg+xml" data="../iconos/icons.svg" style="display: none;"></object>
+    <nav class="navbar_bingbong_img row">
         <div class="logo">
             <img src="../img/BBLibrary.png" alt="logo">
         </div>
         <input type="checkbox" id="toggler">
         <label for="toggler">
             <svg class="icon">
-                <use xlink:href="iconos/icons.svg#menu"></use>
+                <use xlink:href="../iconos/icons.svg#menu"></use>
             </svg>
         </label>
         <div class="nav_items">
             <a href="../index.html" class="nav_link">Inicio</a>
-            <a href="./enlaces/badges.html" class="nav_link col">Documentación</a>
+            <a href="../enlaces/documentacion.html" class="nav_link col">Documentación</a>
             <a href="https://github.com/alissonhernandez/Bing-Bong-Library" class="nav_link col">Github</a>
         </div>
     </nav>
-    <div class="container-principal-sc col-xxl-7">
+    <div class="row">
+        <div class="navbar_furia_text col-2">
+          <input type="checkbox" id="toggler-vertical">
+            <label for="toggler-vertical">
+              <svg class="icon">
+                <use xlink:href="../iconos/icons.svg#menu_flecha"></use>
+              </svg>
+            </label>
+        <ul class="nav_items">
+            <h2 class="navbar__brand">Componentes </h2>
+            <li><a class="nav-link" href="../enlaces/alertas.html">Alertas</a></li>
+            <li><a class="nav-link" href="../enlaces/navegacion.html">Barra de navegación</a></li>
+            <li><a class="nav-link" href="../enlaces/badges.html">Badges</a></li>
+            <li><a class="nav-link" href="../enlaces/botones.html">Botones</a></li>
+            <li><a class="nav-link" href="../enlaces/containers.html">Containers</a></li>
+            <li><a class="nav-link" href="../enlaces/formulario.html">Formularios</a></li>
+            <li><a class="nav-link" href="../enlaces/tarjetas.html">Tarjetas</a></li>
+            <h2 class="navbar__brand">Clases utilitarias</h2>
+            <li><a class="nav-link" href="../enlaces/fondos.html">Colores de fondo</a></li>
+            <li><a class="nav-link" href="../enlaces/margenes.html">Margenes, padding y bordes</a></li>
+            <li><a class="nav-link" href="../enlaces/mover.html">Mover elementos</a></li>
+            <li><a class="nav-link" href="../enlaces/ocultar.html">Ocultar elementos</a></li>
+            <li><a class="nav-link" href="../enlaces/sombras.html">Sombras</a></li>
+            <li><a class="nav-link" href="../enlaces/textos.html">Tipos de textos</a></li>
+            <li><a class="nav-link" href="../enlaces/redondear.html">Redondear elementos</a></li>
+          </ul>
+        </div>
+    <div class="container-principal-sc col-9">
         <div class="grupo-info">
             <h1 class="font-aburrimiento text-temor-adrenalina">BOTONES</h1>
         </div>
@@ -40,7 +67,7 @@
                 importantes en formularios, diálogos y otras interacciones."
             </p>
         </div>
-        <div class="container-xl-sc col-xxl-10">
+        <div class="col-9">
             <h2 class="font-desagrado text-envidia-oscura">Botones de Alegria.</h2>
             <p class="font-tristeza text-furia-oscuro">Los botones de Alegria representan esa intensidad de colores vibranntes que destacará
                 en tus paginas.
@@ -61,7 +88,7 @@
               
         </div>
 
-        <div class="container-xl-sc col-xxl-10">
+        <div class="col-9">
             <h2 class="font-desagrado text-envidia-oscura">Botones de Ansiedad.</h2>
             <p class="font-tristeza text-furia-oscuro">Los botones de Ansiedad, tienen un efecto de relleno lento que se visualiza hasta completar el efecto.
             </p>
@@ -81,7 +108,7 @@
               
         </div>
 
-        <div class="container-xl-sc col-xxl-10">
+        <div class="col-9">
             <h2 class="font-desagrado text-envidia-oscura">Botones de Temor.</h2>
             <p class="font-tristeza text-furia-oscuro">Los botones de Temor, tienen un ligera animacion que representa el susto en la emoción.
             </p>
@@ -101,7 +128,7 @@
               
         </div>
 
-        <div class="container-xl-sc col-xxl-10">
+        <div class="col-9">
             <h2 class="font-desagrado text-envidia-oscura">Botones de Tristeza.</h2>
             <p class="font-tristeza text-furia-oscuro">Los botones de triteza son ocultos, al deslizar el cursor tienen ese efecto de prenderse
                 y se mantienen tristes.
@@ -122,7 +149,7 @@
               
         </div>
 
-        <div class="container-xl-sc col-xxl-10">
+        <div class="col-9">
             <h2 class="font-desagrado text-envidia-oscura">Tamaños para botones.</h2>
             <p class="font-tristeza text-furia-oscuro">Esta libreria cuenta con tres tamaños para los
                 diferentes tipos de botones. <br>
