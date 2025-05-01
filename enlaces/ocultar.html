@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/BBLibrary.png">
+    <title>Ocultar Elementos</title>
+</head>
+<body>
+    <object type="image/svg+xml" data="../iconos/icons.svg" style="display: none;"></object>
+    <nav class="navbar_bingbong_img row">
+        <div class="logo">
+            <img src="../img/BBLibrary.png" alt="logo">
+        </div>
+        <input type="checkbox" id="toggler">
+        <label for="toggler">
+            <svg class="icon">
+                <use xlink:href="../iconos/icons.svg#menu"></use>
+            </svg>
+        </label>
+        <div class="nav_items">
+            <a href="../index.html" class="nav_link">Inicio</a>
+            <a href="../enlaces/documentacion.html" class="nav_link col">Documentación</a>
+            <a href="https://github.com/alissonhernandez/Bing-Bong-Library" class="nav_link col">Github</a>
+        </div>
+    </nav>
+  
+    <div class="row">
+      <div class="navbar_furia_text col-2">
+          
+          <ul class="nav_items">
+              <h2 class="navbar__brand">Componentes </h2>
+              <li><a class="nav-link" href="../enlaces/alertas.html">Alertas</a></li>
+              <li><a class="nav-link" href="../enlaces/navegacion.html">Barra de Navegación</a></li>
+              <li><a class="nav-link" href="../enlaces/badges.html">Badges</a></li>
+              <li><a class="nav-link" href="../enlaces/botones.html">Botones</a></li>
+              <li><a class="nav-link" href="../enlaces/containers.html">Containers</a></li>
+              <li><a class="nav-link" href="../enlaces/formulario.html">Formularios</a></li>
+              <li><a class="nav-link" href="../enlaces/tarjetas.html">Tarjetas</a></li>
+              <h2 class="navbar__brand">Clases utilitarias</h2>
+              <li><a class="nav-link" href="../enlaces/fondos.html">Colores de fondo</a></li>
+              <li><a class="nav-link" href="../enlaces/margenes.html">Margenes, padding y bordes</a></li>
+              <li><a class="nav-link" href="../enlaces/mover.html">Mover elementos</a></li>
+              <li><a class="nav-link" href="../enlaces/ocultar.html">ocultar elementos</a></li>
+              <li><a class="nav-link" href="../enlaces/containers.html">Containers</a></li>
+              <li><a class="nav-link" href="../enlaces/sombras.html">Sombras</a></li>
+              <li><a class="nav-link" href="../enlaces/textos.html">Tipos de Textos</a></li>
+              <li><a class="nav-link" href="../enlaces/redondear.html">Redondear Elementos</a></li>
+          </ul>
+        </div>
+        <div class="col-9">
+          <div class="container-principal-sc">
+            <div class="grupo-info">
+                <h1 class="font-verguenza text-verguenza-fantastica">OCULTAR Y MOSTRAR ELEMENTOS</h1>
+              </div>
+              
+              <p class="font-envidia text-furia-oscuro">
+                ¡Bienvenido a la sección de visibilidad dinámica! Aquí descubrirás cómo mostrar u ocultar contenido. 
+              </p>
+
+              
+              <p class="font-ansiedad text-ansiedad-espontanea text-xxl">Usando Checkbox</p>
+              
+            <div class="contenedor-toggle">
+                <input type="checkbox" id="toggle" />
+                <label for="toggle" class="boton-toggle">Mostrar/Ocultar Mensaje</label>
+                <div class="caja">Shh... soy Envidia. A veces es mejor no ser vista, pero siempre estoy cerca.</div>
+            </div>
+
+            <code>
+                &lt;div class="contenedor-toggle"&gt;<br>
+                &nbsp;&nbsp;&lt;input type="checkbox" id="toggle" /&gt;<br>
+                &nbsp;&nbsp;&lt;label for="toggle" class="boton-toggle"&gt;Mostrar/Ocultar Mensaje&lt;/label&gt;<br>
+                &nbsp;&nbsp;&lt;div class="caja"&gt;Shh... soy Envidia. A veces es mejor no ser vista, pero siempre estoy cerca.&lt;/div&gt;<br>
+                &lt;/div&gt;
+            </code>  
+            
+            <p class="font-temor text-temor-caos text-xxl">Usando Hover</p>
+
+            <div class="contenedor-hover">
+                <button class="boton-toggle">Pasa el mouse</button>
+                <div class="caja tooltip">¡Hola! Soy Temor y aparezco cuando hay movimiento.</div><br>
+            </div>
+
+            <code>
+                &lt;div class="contenedor-hover"&gt;<br>
+                &nbsp;&nbsp;&lt;button class="boton-toggle"&gt;Pasa el mouse&lt;/button&gt;<br>
+                &nbsp;&nbsp;&lt;div class="caja tooltip"&gt;¡Hola! Soy Temor y aparezco cuando hay movimiento.&lt;/div&gt;<br>
+                &lt;/div&gt;
+            </code>        
+        </div>
+    </div>
+</div>
+<footer class="row">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="/img/BBLibrary.png" alt="Logo">
+        </div>
+        <div class="footer-links col">
+            <a href="index.html">Inicio</a>
+            <a href="/enlaces/badges.html">Documentación</a>
+            <a href="https://github.com/alissonhernandez/Bing-Bong-Library">Github</a>
+        </div>
+        <div class="footer-colaboradores col">
+            <a href="https://github.com/alissonhernandez">Alisson Hernandéz</a>
+            <a href="https://github.com/DianaEspinal">Diana Espinal</a>
+            <a href="https://github.com/isabeCastillo">Miriam Castillo</a>
+            <a href="https://github.com/Osiris30">Osiris Andrade</a>
+        </div>
+        <div class="copyright row">
+            <p>&copy; 2025 Bing Bong Library. Todos los derechos reservados.</p>
+        </div>  
+    </div>
+</div>
+</body>
+</html>

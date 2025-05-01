@@ -1,0 +1,78 @@
+@use 'variables' as *;
+
+// Forma 1 
+.contenedor-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  #toggle {
+    display: none;
+  }
+
+  .boton-toggle {
+    background-color: $ansiedad-relajada;
+    color: $ansiedad-explosiva;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+
+    &:hover {
+      background-color: $ansiedad-espontanea;
+    }
+  }
+
+  .caja {
+    display: none;
+    padding: 1rem;
+    background-color: $envidia-marea;
+    border: 2px solid $envidia-oscura;
+    color: $envidia-oscura;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  #toggle:checked ~ .caja {
+    display: block;
+  }
+}
+
+// Forma 2
+.contenedor-hover {
+  margin-top: 2rem;
+  position: relative;
+  display: inline-block;
+
+  .boton-toggle {
+    background-color: $temor-adrenalina;
+    color: $furia-humo;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+
+    &:hover {
+      background-color: $temor-suave;
+    }
+  }
+
+  .tooltip {
+    display: none;
+    position: absolute;
+    top: 120%;
+    left: 0;
+    background-color: $verguenza-recuerdo;
+    color: $verguenza-nostalgica;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    z-index: 10;
+    width: max-content;
+  }
+
+  &:hover .tooltip {
+    display: block;
+  }
+}
