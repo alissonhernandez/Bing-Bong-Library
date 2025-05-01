@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://alissonhernandez.github.io/Bing-Bong-Library/">
-    <img src="https://img.shields.io/badge/🌐-Ver%20Demo-blue?style=for-the-badge" alt="Ver demo">
+    <img src="https://img.shields.io/badge/🌐-Ver%20Demo-ff69b4?style=for-the-badge" alt="SITIO WEB">
   </a>
 </p>
 
