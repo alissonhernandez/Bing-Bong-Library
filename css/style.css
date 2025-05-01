@@ -5255,23 +5255,6 @@ body {
   box-shadow: 0 0 15px 6px rgba(129, 129, 198, 0.8);
 }
 
-code {
-  background-color: #f4f4f4;
-  padding: 8px 12px;
-  border-radius: 6px;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 1rem;
-  color: #333;
-  overflow-x: auto;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  display: block;
-  line-height: 1.6;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 80%;
-  margin: 0 auto;
-}
-
 .container-bg {
   width: 25%;
   height: 200px;
@@ -5283,7 +5266,7 @@ code {
   text-align: center;
 }
 
-.bg-furia {
+.bg-furia, .move-furia {
   background-color: #b11009;
   color: white;
 }
@@ -5296,7 +5279,20 @@ code {
   color: #b11009;
 }
 
-.bg-envidia {
+.bg-furia-humo {
+  background-color: #eedbd3;
+  color: white;
+}
+
+.border-furia-humo {
+  border: 2px solid #eedbd3;
+}
+
+.text-furia-humo {
+  color: #eedbd3;
+}
+
+.bg-envidia, .move-envidia {
   background-color: #0db3bc;
   color: white;
 }
@@ -5322,7 +5318,7 @@ code {
   color: #e04f06;
 }
 
-.bg-alegria {
+.bg-alegria, .move-alegria {
   background-color: #e1ec56;
   color: white;
 }
@@ -5335,7 +5331,7 @@ code {
   color: #e1ec56;
 }
 
-.bg-temor {
+.bg-temor, .move-temor {
   background-color: #7b65a6;
   color: white;
 }
@@ -5348,7 +5344,7 @@ code {
   color: #7b65a6;
 }
 
-.bg-desagrado {
+.bg-desagrado, .move-desagrado {
   background-color: #78AB65;
   color: white;
 }
@@ -5374,7 +5370,7 @@ code {
   color: #D86289;
 }
 
-.bg-tristeza {
+.bg-tristeza, .move-tristeza {
   background-color: #40B2E3;
   color: white;
 }
@@ -5398,6 +5394,93 @@ code {
 
 .text-aburrimiento {
   color: #484BA9;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.izquierda {
+  position: absolute;
+  left: 0;
+  margin: auto;
+}
+
+.arriba {
+  position: absolute;
+  top: 0;
+  margin: auto;
+}
+
+.abajo {
+  position: absolute;
+  bottom: 0;
+  margin: auto;
+}
+
+.derecha {
+  position: absolute;
+  right: 0;
+  margin: auto;
+}
+
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centrado-arriba {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.centrado-abajo {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.centrado-derecha {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.derecha-abajo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.centrado-izquierda {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+/* Estilos por emoción, generados desde el mixin emotion-colors */
+code {
+  background-color: #f4f4f4;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
+  color: #333;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  display: block;
+  line-height: 1.6;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 .icon {
@@ -5516,6 +5599,72 @@ footer .footer-content .copyright p {
     text-align: center;
     margin-top: 15px;
   }
+}
+
+.contenedor-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contenedor-toggle #toggle {
+  display: none;
+}
+.contenedor-toggle .boton-toggle {
+  background-color: #fba320;
+  color: #b11009;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+.contenedor-toggle .boton-toggle:hover {
+  background-color: #e04f06;
+}
+.contenedor-toggle .caja {
+  display: none;
+  padding: 1rem;
+  background-color: #0db3bc;
+  border: 2px solid #1c246f;
+  color: #1c246f;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+.contenedor-toggle #toggle:checked ~ .caja {
+  display: block;
+}
+
+.contenedor-hover {
+  margin-top: 2rem;
+  position: relative;
+  display: inline-block;
+}
+.contenedor-hover .boton-toggle {
+  background-color: #a71f67;
+  color: #eedbd3;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.contenedor-hover .boton-toggle:hover {
+  background-color: #7b65a6;
+}
+.contenedor-hover .tooltip {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color: #D86289;
+  color: #9C254E;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  z-index: 10;
+  width: max-content;
+}
+.contenedor-hover:hover .tooltip {
+  display: block;
 }
 
 .img-emocion {
