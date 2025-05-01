@@ -7,7 +7,7 @@ $spacing-md: 1rem;     // 16px
 $spacing-lg: 2rem;     // 32px
 $spacing-xl: 3rem;     // 48px
 
-// MIXINS de margenes
+// MIXINS de márgenes
 @mixin margin($name, $size) {
   .m-#{$name}   { margin: $size; }
   .mt-#{$name}  { margin-top: $size; }
@@ -18,7 +18,7 @@ $spacing-xl: 3rem;     // 48px
   .my-#{$name}  { margin-top: $size; margin-bottom: $size; }
 }
 
-// MIXINS de padding
+// MIXINS de paddings
 @mixin padding($name, $size) {
   .p-#{$name}   { padding: $size; }
   .pt-#{$name}  { padding-top: $size; }
@@ -32,11 +32,10 @@ $spacing-xl: 3rem;     // 48px
 // MIXINS de bordes
 @mixin border-utils {
   .border-none     { border: none; }
-  .border          { border: 1px solid #ccc; }
-  .border-thick    { border: 2px solid #999; }
-  .border-dashed   { border: 2px dashed #bbb; }
+  .border          { border: 1px solid $desagrado-dramatico; }
+  .border-thick    { border: 2px solid $desagrado-dramatico; }
+  .border-dashed   { border: 2px dashed $desagrado-dramatico; }
   .border-rounded  { border-radius: 0.5rem; }
-  .border-circle   { border-radius: 999px; }
 }
 
 // Aplicar mixins
@@ -53,4 +52,14 @@ $spacing-xl: 3rem;     // 48px
 @include padding(xl, $spacing-xl);
 
 @include border-utils();
+
+.container-utils {
+  width: 300px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+
 

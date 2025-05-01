@@ -1107,23 +1107,27 @@
 }
 
 .border {
-  border: 1px solid #ccc;
+  border: 1px solid #994398;
 }
 
 .border-thick {
-  border: 2px solid #999;
+  border: 2px solid #994398;
 }
 
 .border-dashed {
-  border: 2px dashed #bbb;
+  border: 2px dashed #994398;
 }
 
 .border-rounded {
   border-radius: 0.5rem;
 }
 
-.border-circle {
-  border-radius: 999px;
+.container-utils {
+  width: 300px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
 }
 
 .alert-advertencia {
@@ -2688,6 +2692,63 @@
   font-family: "Bebas Neue", sans-serif;
 }
 
+input[type=text],
+input[type=email],
+input[type=password],
+textarea,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Kanit", sans-serif;
+  border-radius: 25px;
+  border: 1px solid #f89b29;
+  padding: 0.5rem;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+input[type=text] {
+  background-color: #5b392e;
+  color: white;
+}
+
+input[type=email] {
+  background-color: #6f75a4;
+  color: #1c246f;
+}
+
+input[type=submit],
+input[type=reset] {
+  cursor: pointer;
+  font-weight: 700;
+  border: none;
+}
+
+input[type=submit] {
+  background-color: #543227;
+  color: white;
+  gap: 15rem;
+}
+
+input[type=reset] {
+  background-color: #fba320;
+  color: white;
+}
+
+label,
+p {
+  font-size: 1.25rem;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+}
+
+form {
+  background-color: #e04f06;
+  padding: 0.25rem;
+  border-radius: 35px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -3169,63 +3230,6 @@ body {
 .row > .col > .row > .col {
   padding-left: calc(1rem / 2);
   padding-right: calc(1rem / 2);
-}
-
-input[type=text],
-input[type=email],
-input[type=password],
-textarea,
-select {
-  width: 100%;
-  box-sizing: border-box;
-  font-family: "Kanit", sans-serif;
-  border-radius: 25px;
-  border: 1px solid #f89b29;
-  padding: 0.5rem;
-  font-size: 1rem;
-  transition: 0.3s ease;
-}
-
-input[type=text] {
-  background-color: #5b392e;
-  color: white;
-}
-
-input[type=email] {
-  background-color: #6f75a4;
-  color: #1c246f;
-}
-
-input[type=submit],
-input[type=reset] {
-  cursor: pointer;
-  font-weight: 700;
-  border: none;
-}
-
-input[type=submit] {
-  background-color: #543227;
-  color: white;
-  gap: 15rem;
-}
-
-input[type=reset] {
-  background-color: #fba320;
-  color: white;
-}
-
-label,
-p {
-  font-size: 1.25rem;
-  font-family: "Bebas Neue", sans-serif;
-  color: white;
-}
-
-form {
-  background-color: #e04f06;
-  padding: 0.25rem;
-  border-radius: 35px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .navbar_furia_img {
