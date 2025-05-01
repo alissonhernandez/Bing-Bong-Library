@@ -6,9 +6,10 @@
 
 <p align="center">
   <a href="https://alissonhernandez.github.io/Bing-Bong-Library/">
-    <img src="https://img.shields.io/badge/🌐-Ver%20Demo-ff69b4?style=for-the-badge" alt="SITIO WEB">
+    <img src="https://img.shields.io/badge/SITIO%20WEB-ff69b4?style=for-the-badge" alt="SITIO WEB">
   </a>
 </p>
+
 
 ## TABLA DE CONTENIDOS
 
