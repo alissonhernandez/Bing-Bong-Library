@@ -97,6 +97,17 @@ $container-max-widths: (
   white-space: normal;
 }
 
+// Para alertas
+.container-alertas {
+  display: flex;
+  flex-direction: column; 
+  overflow-wrap: break-word; 
+  word-break: break-word;    
+  white-space: normal;
+  gap: 1rem; 
+}
+
+
 // Para margenes
 .container-utils {
   width: 300px;
@@ -130,4 +141,3 @@ $container-max-widths: (
   gap: 3rem; 
   padding: 2rem;
 }
-

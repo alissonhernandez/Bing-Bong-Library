@@ -2731,6 +2731,15 @@
   white-space: normal;
 }
 
+.container-alertas {
+  display: flex;
+  flex-direction: column;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+  gap: 1rem;
+}
+
 .container-utils {
   width: 300px;
   font-weight: bold;
@@ -2849,6 +2858,10 @@
   flex-direction: column;
   gap: 1.5rem;
   text-align: center;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
