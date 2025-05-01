@@ -3,127 +3,196 @@
 <head>
   <meta charset="UTF-8">
   <title>Sombras por Emoción</title>
+  <link rel="icon" href="../img/BBLibrary.png">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
+  <object type="image/svg+xml" data="../iconos/icons.svg" style="display: none;"></object>
+    <nav class="navbar_bingbong_img row">
+        <div class="logo">
+            <img src="../img/BBLibrary.png" alt="logo">
+        </div>
+        <input type="checkbox" id="toggler">
+        <label for="toggler">
+            <svg class="icon">
+                <use xlink:href="../iconos/icons.svg#menu"></use>
+            </svg>
+        </label>
+        <div class="nav_items">
+            <a href="../index.html" class="nav_link">Inicio</a>
+            <a href="../enlaces/documentacion.html" class="nav_link col">Documentación</a>
+            <a href="https://github.com/alissonhernandez/Bing-Bong-Library" class="nav_link col">Github</a>
+        </div>
+    </nav>
+  
+    <div class="row">
+      <div class="navbar_furia_text col-2">
+          
+          <ul class="nav_items">
+              <h2 class="navbar__brand">Componentes </h2>
+              <li><a class="nav-link" href="../enlaces/alertas.html">Alertas</a></li>
+              <li><a class="nav-link" href="../enlaces/navegacion.html">Barra de Navegación</a></li>
+              <li><a class="nav-link" href="../enlaces/badges.html">Badges</a></li>
+              <li><a class="nav-link" href="../enlaces/botones.html">Botones</a></li>
+              <li><a class="nav-link" href="../enlaces/containers.html">Containers</a></li>
+              <li><a class="nav-link" href="../enlaces/formulario.html">Formularios</a></li>
+              <li><a class="nav-link" href="../enlaces/tarjetas.html">Tarjetas</a></li>
+              <h2 class="navbar__brand">Clases utilitarias</h2>
+              <li><a class="nav-link" href="../enlaces/fondos.html">Colores de fondo</a></li>
+              <li><a class="nav-link" href="../enlaces/margenes.html">Margenes, padding y bordes</a></li>
+              <li><a class="nav-link" href="../enlaces/mover.html">Mover elementos</a></li>
+              <li><a class="nav-link" href="../enlaces/ocultar.html">ocultar elementos</a></li>
+              <li><a class="nav-link" href="../enlaces/containers.html">Containers</a></li>
+              <li><a class="nav-link" href="../enlaces/sombras.html">Sombras</a></li>
+              <li><a class="nav-link" href="../enlaces/textos.html">Tipos de Textos</a></li>
+          </ul>
+        </div>
+        <div class="col-7">
+          <div class="container-principal-sc">
 
-    <div class="grupo-info">
-    <h1 class="font-verguenza text-verguenza-fantastica">Sombras por Emoción</h1>
+            <div class="grupo-info">
+              <h1 class="font-verguenza text-verguenza-fantastica">Sombras por Emoción</h1>
+            </div>
+            <p class="font-alegria text-furia-oscuro text-xl">
+              Explorá cómo cada emoción deja su huella en forma de sombra.  
+              Desde la chispa de la Alegría hasta la profundidad de la Tristeza, 
+              cada sombra refleja una emoción única. ¡Elegí tu favorita y descubrí 
+              el poder del diseño con estilo y personalidad!
+            </p>
+          
+            <div class="container-sb shadow-furia">
+              <h2 class="font-furia text-furia-fuego">Furia 😡</h2>
+              <p class="text-furia-ceniza">Sombra furia</p>
+            </div>
+          
+            <code>
+              &lt;div class="container-sb shadow-furia"&gt;
+                &lt;h2 class="font-furia text-furia-fuego"&gt;Furia 😡&lt;/h2&gt;
+                &lt;p class="text-furia-ceniza"&gt;Sombra furia&lt;/p&gt;
+              &lt;/div&gt;
+            </code>  
+          
+            <div class="container-sb shadow-envidia-sm">
+              <h2 class="font-envidia text-envidia-oscura">Envidia 😒</h2>
+              <p class="text-envidia-alarmante">Sombra envidia sm</p>
+            </div>
+          
+            <code>
+              &lt;div class="container-sb shadow-envidia-sm"&gt;
+                &lt;h2 class="font-envidia text-envidia-oscura"&gt;Envidia 😒&lt;/h2&gt;
+                &lt;p class="text-envidia-alarmante"&gt;Sombra envidia sm&lt;/p&gt;
+              &lt;/div&gt;
+            </code>  
+          
+            <div class="container-sb shadow-ansiedad-md">
+              <h2 class="font-ansiedad text-ansiedad-explosiva">Ansiedad 😰</h2>
+              <p class="text-ansiedad-relajada">Sombra ansiedad-md</p>
+            </div>
+          
+            <code>
+              &lt;div class="container-sb shadow-ansiedad-md"&gt;
+                &lt;h2 class="font-ansiedad text-ansiedad-explosiva"&gt;Ansiedad 😰&lt;/h2&gt;
+                &lt;p class="text-ansiedad-relajada"&gt;Sombra ansiedad md&lt;/p&gt;
+              &lt;/div&gt;
+            </code>  
+          
+            <div class="container-sb shadow-alegria-lg">
+              <h2 class="font-alegria text-alegria-electrisante">Alegría 😄</h2>
+              <p class="text-alegria-tranquilidad">Sombra alegría lg</p>
+            </div>
+          
+            <code>
+              &lt;div class="container-sb shadow-alegria-lg"&gt;
+                &lt;h2 class="font-alegria text-alegria-electrisante"&gt;Alegría 😄&lt;/h2&gt;
+                &lt;p class="text-alegria-tranquilidad"&gt;Sombra alegría lg&lt;/p&gt;
+              &lt;/div&gt;
+            </code>  
+          
+            <div class="container-sb shadow-temor-xl">
+              <h2 class="font-temor text-temor-adrenalina">Temor 😱</h2>
+              <p class="text-temor-caos">Sombra temor xl</p>
+            </div>
+          
+            <code>
+              &lt;div class="container-sb shadow-temor-xl"&gt;
+                &lt;h2 class="font-temor text-temor-adrenalina"&gt;Temor 😱&lt;/h2&gt;
+                &lt;p class="text-temor-caos"&gt;Sombra temor xl&lt;/p&gt;
+              &lt;/div&gt;
+            </code>  
+          
+            <div class="container-sb shadow-desagrado-2xl">
+              <h2 class="font-desagrado text-desagrado-impertinente">Desagrado 🤢</h2>
+              <p class="text-desagrado-dramatico">Sombra desagrado 2xl</p>
+            </div>
+          
+            <code>
+              &lt;div class="container-sb shadow-desagrado-2xl"&gt;
+                &lt;h2 class="font-desagrado text-desagrado-impertinente"&gt;Desagrado 🤢&lt;/h2&gt;
+                &lt;p class="text-desagrado-dramatico"&gt;Sombra desagrado 2xl&lt;/p&gt;
+              &lt;/div&gt;
+            </code>  
+          
+            <div class="container-sb shadow-verguenza-3xl">
+              <h2 class="font-verguenza text-verguenza-nostalgica">Vergüenza 😳</h2>
+              <p class="text-verguenza-vulnerable">Sombra vergüenza 3xl</p>
+            </div>
+          
+            <code>
+              &lt;div class="container-sb shadow-verguenza-3xl"&gt;
+                &lt;h2 class="font-verguenza text-verguenza-nostalgica"&gt;Vergüenza 😳&lt;/h2&gt;
+                &lt;p class="text-verguenza-vulnerable"&gt;Sombra vergüenza 3xl&lt;/p&gt;
+              &lt;/div&gt;
+            </code>  
+          
+            <div class="container-sb shadow-tristeza-inner">
+              <h2 class="font-tristeza text-tristeza-suspiro">Tristeza 😢</h2>
+              <p class="text-tristeza-apagada">Sombra tristeza inner</p>
+            </div>
+          
+            <code>
+              &lt;div class="container-sb shadow-tristeza-inner"&gt;
+                &lt;h2 class="font-tristeza text-tristeza-suspiro"&gt;Tristeza 😢&lt;/h2&gt;
+                &lt;p class="text-tristeza-apagada"&gt;Sombra tristeza inner&lt;/p&gt;
+              &lt;/div&gt;
+            </code>  
+          
+            <div class="container-sb shadow-aburrimiento-glow">
+              <h2 class="font-aburrimiento text-aburrimiento-silencioso">Aburrimiento 😐</h2>
+              <p class="text-aburrimiento-niebla">Sombra aburrimiento glow</p>
+            </div>
+          
+            <code>
+              &lt;div class="container-sb shadow-aburrimiento-glow"&gt;
+                &lt;h2 class="font-aburrimiento text-aburrimiento-silencioso"&gt;Aburrimiento 😐&lt;/h2&gt;
+                &lt;p class="text-aburrimiento-niebla"&gt;Sombra aburrimiento glow&lt;/p&gt;
+              &lt;/div&gt;
+            </code>  
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
-  <p class="font-alegria text-furia-oscuro text-xl">
-    Explorá cómo cada emoción deja su huella en forma de sombra.  
-    Desde la chispa de la Alegría hasta la profundidad de la Tristeza, 
-    cada sombra refleja una emoción única. ¡Elegí tu favorita y descubrí 
-    el poder del diseño con estilo y personalidad!
-  </p>
-
-  <div class="container-sb shadow-furia">
-    <h2 class="font-furia text-furia-fuego">Furia 😡</h2>
-    <p class="text-furia-ceniza">Sombra furia</p>
-  </div>
-
-  <code>
-    &lt;div class="container-sb shadow-furia"&gt;
-      &lt;h2 class="font-furia text-furia-fuego"&gt;Furia 😡&lt;/h2&gt;
-      &lt;p class="text-furia-ceniza"&gt;Sombra furia&lt;/p&gt;
-    &lt;/div&gt;
-  </code>  
-
-  <div class="container-sb shadow-envidia-sm">
-    <h2 class="font-envidia text-envidia-oscura">Envidia 😒</h2>
-    <p class="text-envidia-alarmante">Sombra envidia sm</p>
-  </div>
-
-  <code>
-    &lt;div class="container-sb shadow-envidia-sm"&gt;
-      &lt;h2 class="font-envidia text-envidia-oscura"&gt;Envidia 😒&lt;/h2&gt;
-      &lt;p class="text-envidia-alarmante"&gt;Sombra envidia sm&lt;/p&gt;
-    &lt;/div&gt;
-  </code>  
-
-  <div class="container-sb shadow-ansiedad-md">
-    <h2 class="font-ansiedad text-ansiedad-explosiva">Ansiedad 😰</h2>
-    <p class="text-ansiedad-relajada">Sombra ansiedad-md</p>
-  </div>
-
-  <code>
-    &lt;div class="container-sb shadow-ansiedad-md"&gt;
-      &lt;h2 class="font-ansiedad text-ansiedad-explosiva"&gt;Ansiedad 😰&lt;/h2&gt;
-      &lt;p class="text-ansiedad-relajada"&gt;Sombra ansiedad md&lt;/p&gt;
-    &lt;/div&gt;
-  </code>  
-
-  <div class="container-sb shadow-alegria-lg">
-    <h2 class="font-alegria text-alegria-electrisante">Alegría 😄</h2>
-    <p class="text-alegria-tranquilidad">Sombra alegría lg</p>
-  </div>
-
-  <code>
-    &lt;div class="container-sb shadow-alegria-lg"&gt;
-      &lt;h2 class="font-alegria text-alegria-electrisante"&gt;Alegría 😄&lt;/h2&gt;
-      &lt;p class="text-alegria-tranquilidad"&gt;Sombra alegría lg&lt;/p&gt;
-    &lt;/div&gt;
-  </code>  
-
-  <div class="container-sb shadow-temor-xl">
-    <h2 class="font-temor text-temor-adrenalina">Temor 😱</h2>
-    <p class="text-temor-caos">Sombra temor xl</p>
-  </div>
-
-  <code>
-    &lt;div class="container-sb shadow-temor-xl"&gt;
-      &lt;h2 class="font-temor text-temor-adrenalina"&gt;Temor 😱&lt;/h2&gt;
-      &lt;p class="text-temor-caos"&gt;Sombra temor xl&lt;/p&gt;
-    &lt;/div&gt;
-  </code>  
-
-  <div class="container-sb shadow-desagrado-2xl">
-    <h2 class="font-desagrado text-desagrado-impertinente">Desagrado 🤢</h2>
-    <p class="text-desagrado-dramatico">Sombra desagrado 2xl</p>
-  </div>
-
-  <code>
-    &lt;div class="container-sb shadow-desagrado-2xl"&gt;
-      &lt;h2 class="font-desagrado text-desagrado-impertinente"&gt;Desagrado 🤢&lt;/h2&gt;
-      &lt;p class="text-desagrado-dramatico"&gt;Sombra desagrado 2xl&lt;/p&gt;
-    &lt;/div&gt;
-  </code>  
-
-  <div class="container-sb shadow-verguenza-3xl">
-    <h2 class="font-verguenza text-verguenza-nostalgica">Vergüenza 😳</h2>
-    <p class="text-verguenza-vulnerable">Sombra vergüenza 3xl</p>
-  </div>
-
-  <code>
-    &lt;div class="container-sb shadow-verguenza-3xl"&gt;
-      &lt;h2 class="font-verguenza text-verguenza-nostalgica"&gt;Vergüenza 😳&lt;/h2&gt;
-      &lt;p class="text-verguenza-vulnerable"&gt;Sombra vergüenza 3xl&lt;/p&gt;
-    &lt;/div&gt;
-  </code>  
-
-  <div class="container-sb shadow-tristeza-inner">
-    <h2 class="font-tristeza text-tristeza-suspiro">Tristeza 😢</h2>
-    <p class="text-tristeza-apagada">Sombra tristeza inner</p>
-  </div>
-
-  <code>
-    &lt;div class="container-sb shadow-tristeza-inner"&gt;
-      &lt;h2 class="font-tristeza text-tristeza-suspiro"&gt;Tristeza 😢&lt;/h2&gt;
-      &lt;p class="text-tristeza-apagada"&gt;Sombra tristeza inner&lt;/p&gt;
-    &lt;/div&gt;
-  </code>  
-
-  <div class="container-sb shadow-aburrimiento-glow">
-    <h2 class="font-aburrimiento text-aburrimiento-silencioso">Aburrimiento 😐</h2>
-    <p class="text-aburrimiento-niebla">Sombra aburrimiento glow</p>
-  </div>
-
-  <code>
-    &lt;div class="container-sb shadow-aburrimiento-glow"&gt;
-      &lt;h2 class="font-aburrimiento text-aburrimiento-silencioso"&gt;Aburrimiento 😐&lt;/h2&gt;
-      &lt;p class="text-aburrimiento-niebla"&gt;Sombra aburrimiento glow&lt;/p&gt;
-    &lt;/div&gt;
-  </code>  
-
+  <footer class="row">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="/img/BBLibrary.png" alt="Logo">
+        </div>
+        <div class="footer-links col">
+            <a href="index.html">Inicio</a>
+            <a href="/enlaces/badges.html">Documentación</a>
+            <a href="https://github.com/alissonhernandez/Bing-Bong-Library">Github</a>
+        </div>
+        <div class="footer-colaboradores col">
+            <a href="https://github.com/alissonhernandez">Alisson Hernandéz</a>
+            <a href="https://github.com/DianaEspinal">Diana Espinal</a>
+            <a href="https://github.com/isabeCastillo">Miriam Castillo</a>
+            <a href="https://github.com/Osiris30">Osiris Andrade</a>
+        </div>
+        <div class="copyright row">
+          <p>&copy; 2025 Bing Bong Library. Todos los derechos reservados.</p>
+        </div>
+      </div> 
+    </div> 
+  </div>  
 </body>
 </html>

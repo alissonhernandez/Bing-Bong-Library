@@ -5,74 +5,142 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Redondeo de Emociones</title>
   <link rel="stylesheet" href="../css/style.css">
+  <link rel="icon" href="../img/BBLibrary.png">
 </head>
 <body>
-    <div class="grupo-info">
-        <h1 class="font-verguenza text-verguenza-fantastica">REDONDEO POR EMOCION</h1>
-    </div>
-    <p class="font-tristeza text-furia-oscuro text-xl">
-        Bienvenido a la sección de redondeo, donde podrás ver cómo las emociones afectan la 
-        forma de los elementos. ¡Descubre cómo cada emoción tiene su propio estilo de borde redondeado!
-    </p>
-    
-    <div class="box rounded-emotion-alegria-none">
-      <p class="font-alegria text-alegria-vibrante">Alegría Redondado none</p>
-    </div>
-
-    <code>
-      &lt;div class="box rounded-emotion-alegria-none"&gt;
-        &lt;p class="font-alegria text-alegria-vibrante"&gt;Alegría Redondeado none&lt;/p&gt;
-      &lt;/div&gt;
-    </code>
-    
-    <div class="box rounded-emotion-tristeza-sm">
-      <p class="font-tristeza text-tristeza-suspiro">Tristeza Redondeado sm</p>
-    </div>
-
-    <code>
-      &lt;div class="box rounded-emotion-tristeza-sm"&gt;
-        &lt;p class="font-tristeza text-tristeza-suspiro"&gt;Tristeza Redondeado sm&lt;/p&gt;
-      &lt;/div&gt;
-    </code>    
-
-    <div class="box rounded-emotion-furia-md">
-      <p class="font-furia text-furia-humo">Furia Redondeado md</p>
-    </div>
-
-    <code>
-      &lt;div class="box rounded-emotion-furia-md"&gt;
-        &lt;p class="font-furia text-furia-humo"&gt;Furia Redondeado md&lt;/p&gt;
-      &lt;/div&gt;
-    </code>    
- 
-    <div class="box rounded-emotion-temor-lg">
-      <p class="font-temor text-temor-adrenalina">Temor Redondeado lg</p>
-    </div>
-
-    <code>
-      &lt;div class="box rounded-emotion-temor-lg"&gt;
-        &lt;p class="font-temor text-temor-adrenalina"&gt;Temor Redondeado lg&lt;/p&gt;
-      &lt;/div&gt;
-    </code>    
+  <object type="image/svg+xml" data="../iconos/icons.svg" style="display: none;"></object>
+    <nav class="navbar_bingbong_img row">
+        <div class="logo">
+            <img src="../img/BBLibrary.png" alt="logo">
+        </div>
+        <input type="checkbox" id="toggler">
+        <label for="toggler">
+            <svg class="icon">
+                <use xlink:href="../iconos/icons.svg#menu"></use>
+            </svg>
+        </label>
+        <div class="nav_items">
+            <a href="../index.html" class="nav_link">Inicio</a>
+            <a href="../enlaces/documentacion.html" class="nav_link col">Documentación</a>
+            <a href="https://github.com/alissonhernandez/Bing-Bong-Library" class="nav_link col">Github</a>
+        </div>
+    </nav>
   
-    <div class="box rounded-emotion-desagrado-xl">
-      <p class="font-desagrado text-desagrado-autoridad">Desagrado Redondeado xl</p>
+    <div class="row">
+      <div class="navbar_furia_text col-2">
+          
+          <ul class="nav_items">
+              <h2 class="navbar__brand">Componentes </h2>
+              <li><a class="nav-link" href="../enlaces/alertas.html">Alertas</a></li>
+              <li><a class="nav-link" href="../enlaces/navegacion.html">Barra de Navegación</a></li>
+              <li><a class="nav-link" href="../enlaces/badges.html">Badges</a></li>
+              <li><a class="nav-link" href="../enlaces/botones.html">Botones</a></li>
+              <li><a class="nav-link" href="../enlaces/containers.html">Containers</a></li>
+              <li><a class="nav-link" href="../enlaces/formulario.html">Formularios</a></li>
+              <li><a class="nav-link" href="../enlaces/tarjetas.html">Tarjetas</a></li>
+              <h2 class="navbar__brand">Clases utilitarias</h2>
+              <li><a class="nav-link" href="../enlaces/fondos.html">Colores de fondo</a></li>
+              <li><a class="nav-link" href="../enlaces/margenes.html">Margenes, padding y bordes</a></li>
+              <li><a class="nav-link" href="../enlaces/mover.html">Mover elementos</a></li>
+              <li><a class="nav-link" href="../enlaces/ocultar.html">ocultar elementos</a></li>
+              <li><a class="nav-link" href="../enlaces/containers.html">Containers</a></li>
+              <li><a class="nav-link" href="../enlaces/sombras.html">Sombras</a></li>
+              <li><a class="nav-link" href="../enlaces/textos.html">Tipos de Textos</a></li>
+          </ul>
+        </div>
+        <div class="col-7">
+          <div class="container-principal-sc">
+            <div class="grupo-info">
+              <h1 class="font-verguenza text-verguenza-fantastica">REDONDEO POR EMOCION</h1>
+          </div>
+          <p class="font-tristeza text-furia-oscuro text-xl">
+              Bienvenido a la sección de redondeo, donde podrás ver cómo las emociones afectan la 
+              forma de los elementos. ¡Descubre cómo cada emoción tiene su propio estilo de borde redondeado!
+          </p>
+          
+          <div class="box rounded-emotion-alegria-none">
+            <p class="font-alegria text-alegria-vibrante">Alegría Redondado none</p>
+          </div>
+      
+          <code>
+            &lt;div class="box rounded-emotion-alegria-none"&gt;
+              &lt;p class="font-alegria text-alegria-vibrante"&gt;Alegría Redondeado none&lt;/p&gt;
+            &lt;/div&gt;
+          </code>
+          
+          <div class="box rounded-emotion-tristeza-sm">
+            <p class="font-tristeza text-tristeza-suspiro">Tristeza Redondeado sm</p>
+          </div>
+      
+          <code>
+            &lt;div class="box rounded-emotion-tristeza-sm"&gt;
+              &lt;p class="font-tristeza text-tristeza-suspiro"&gt;Tristeza Redondeado sm&lt;/p&gt;
+            &lt;/div&gt;
+          </code>    
+      
+          <div class="box rounded-emotion-furia-md">
+            <p class="font-furia text-furia-humo">Furia Redondeado md</p>
+          </div>
+      
+          <code>
+            &lt;div class="box rounded-emotion-furia-md"&gt;
+              &lt;p class="font-furia text-furia-humo"&gt;Furia Redondeado md&lt;/p&gt;
+            &lt;/div&gt;
+          </code>    
+       
+          <div class="box rounded-emotion-temor-lg">
+            <p class="font-temor text-temor-adrenalina">Temor Redondeado lg</p>
+          </div>
+      
+          <code>
+            &lt;div class="box rounded-emotion-temor-lg"&gt;
+              &lt;p class="font-temor text-temor-adrenalina"&gt;Temor Redondeado lg&lt;/p&gt;
+            &lt;/div&gt;
+          </code>    
+        
+          <div class="box rounded-emotion-desagrado-xl">
+            <p class="font-desagrado text-desagrado-autoridad">Desagrado Redondeado xl</p>
+          </div>
+      
+          <code>
+            &lt;div class="box rounded-emotion-desagrado-xl"&gt;
+              &lt;p class="font-desagrado text-desagrado-autoridad"&gt;Desagrado Redondeado xl&lt;/p&gt;
+            &lt;/div&gt;
+          </code>    
+       
+          <div class="box rounded-full bg-envidia">
+            <p class=" font-envidia text-envidia-oscura">Envidia full</p></div>
+          <code>
+            &lt;div class="box rounded-full bg-envidia"&gt;
+              &lt;p class="font-envidia text-envidia-oscura"&gt;Envidia full&lt;/p&gt;
+            &lt;/div&gt;
+          </code>
+        </div>
+      </div>
     </div>
-
-    <code>
-      &lt;div class="box rounded-emotion-desagrado-xl"&gt;
-        &lt;p class="font-desagrado text-desagrado-autoridad"&gt;Desagrado Redondeado xl&lt;/p&gt;
-      &lt;/div&gt;
-    </code>    
- 
-    <div class="box rounded-full bg-envidia">
-      <p class=" font-envidia text-envidia-oscura">Envidia full</p></div>
-    <code>
-      &lt;div class="box rounded-full bg-envidia"&gt;
-        &lt;p class="font-envidia text-envidia-oscura"&gt;Envidia full&lt;/p&gt;
-      &lt;/div&gt;
-    </code>
-    
+  </div>
+  <footer class="row">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <img src="/img/BBLibrary.png" alt="Logo">
+        </div>
+        <div class="footer-links col">
+            <a href="index.html">Inicio</a>
+            <a href="/enlaces/badges.html">Documentación</a>
+            <a href="https://github.com/alissonhernandez/Bing-Bong-Library">Github</a>
+        </div>
+        <div class="footer-colaboradores col">
+            <a href="https://github.com/alissonhernandez">Alisson Hernandéz</a>
+            <a href="https://github.com/DianaEspinal">Diana Espinal</a>
+            <a href="https://github.com/isabeCastillo">Miriam Castillo</a>
+            <a href="https://github.com/Osiris30">Osiris Andrade</a>
+        </div>
+        <div class="copyright row">
+            <p>&copy; 2025 Bing Bong Library. Todos los derechos reservados.</p>
+        </div>  
+      </div>
+    </div>
+  </div>
 </body>
 </html>
 
