@@ -63,7 +63,101 @@
            de manera efectiva mientras experimentas un enfoque distintivo que se adapta a tus necesidades emocionales, 
            como la alegría, ansiedad,furia y tristeza.
         </p>
-      
+
+        <form class="formulario-emocional">
+          <h2 class="titulo-formulario">Formulario Emocional</h2>
+          <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <div class="form-group">
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="2" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label for="opciones">Selecciona una opción:</label>
+            <select id="opciones" name="opciones" required>
+              <option value="">-- Selecciona --</option>
+              <option value="opcion1">Opción 1</option>
+              <option value="opcion2">Opción 2</option>
+              <option value="opcion3">Opción 3</option>
+              <option value="opcion4">Opción 4</option>
+              <option value="opcion5">Opción 5</option>
+              <option value="opcion6">Opción 6</option>
+              <option value="opcion7">Opción 7</option>
+              <option value="opcion8">Opción 8</option>
+              <option value="opcion9">Opción 9</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="archivo">Sube un archivo:</label>
+            <input type="file" id="archivo" name="archivo">
+          </div>
+          <div class="btn-group">
+            <input type="submit" value="Enviar" class="btn btn-enviar">
+            <input type="reset" value="Limpiar" class="btn btn-limpiar">
+          </div>
+        </form>
+  
+        <code>
+        &lt;form class="formulario-emocional"&gt;
+          &lt;h2 class="titulo-formulario"&gt;Formulario Emocional&lt;/h2&gt;
+        
+          &lt;div class="form-group"&gt;
+            &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+            &lt;input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required&gt;
+          &lt;/div&gt;
+        
+          &lt;div class="form-group"&gt;
+            &lt;label for="email"&gt;Correo electrónico:&lt;/label&gt;
+            &lt;input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required&gt;
+          &lt;/div&gt;
+        
+          &lt;div class="form-group"&gt;
+            &lt;label for="password"&gt;Contraseña:&lt;/label&gt;
+            &lt;input type="password" id="password" name="password" required&gt;
+          &lt;/div&gt;
+        
+          &lt;div class="form-group"&gt;
+            &lt;label for="mensaje"&gt;Mensaje:&lt;/label&gt;
+            &lt;textarea id="mensaje" name="mensaje" rows="2" placeholder="Escribe tu mensaje aquí..." required&gt;&lt;/textarea&gt;
+          &lt;/div&gt;
+        
+          &lt;div class="form-group"&gt;
+            &lt;label for="opciones"&gt;Selecciona una opción:&lt;/label&gt;
+            &lt;select id="opciones" name="opciones" required&gt;
+              &lt;option value=""&gt;-- Selecciona --&lt;/option&gt;
+              &lt;option value="opcion1"&gt;Opción 1&lt;/option&gt;
+              &lt;option value="opcion2"&gt;Opción 2&lt;/option&gt;
+              &lt;option value="opcion3"&gt;Opción 3&lt;/option&gt;
+              &lt;option value="opcion4"&gt;Opción 4&lt;/option&gt;
+              &lt;option value="opcion5"&gt;Opción 5&lt;/option&gt;
+              &lt;option value="opcion6"&gt;Opción 6&lt;/option&gt;
+              &lt;option value="opcion7"&gt;Opción 7&lt;/option&gt;
+              &lt;option value="opcion8"&gt;Opción 8&lt;/option&gt;
+              &lt;option value="opcion9"&gt;Opción 9&lt;/option&gt;
+            &lt;/select&gt;
+          &lt;/div&gt;
+        
+          &lt;div class="form-group"&gt;
+            &lt;label for="archivo"&gt;Sube un archivo:&lt;/label&gt;
+            &lt;input type="file" id="archivo" name="archivo"&gt;
+          &lt;/div&gt;
+        
+          &lt;div class="btn-group"&gt;
+            &lt;input type="submit" value="Enviar" class="btn btn-enviar"&gt;
+            &lt;input type="reset" value="Limpiar" class="btn btn-limpiar"&gt;
+          &lt;/div&gt;
+        &lt;/form&gt;
+        </code></pre>
 
       <form action="" class="formulario-design">
         <h1 class="text-alegria font-alegria text-xl">Formulario de Registro</h1>
@@ -99,187 +193,112 @@
       &lt;/form&gt;
       </code></pre>
 
-
-      <form class="formulario-emocional">
-        <h2 class="titulo-formulario">Formulario Emocional</h2>
-        <div class="form-group">
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
-        </div>
-        <div class="form-group">
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
-        </div>
-        <div class="form-group">
-          <label for="password">Contraseña:</label>
-          <input type="password" id="password" name="password" required>
-        </div>
-        <div class="form-group">
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" rows="2" placeholder="Escribe tu mensaje aquí..." required></textarea>
-        </div>
-        <div class="form-group">
-          <label for="opciones">Selecciona una opción:</label>
-          <select id="opciones" name="opciones" required>
-            <option value="">-- Selecciona --</option>
-            <option value="opcion1">Opción 1</option>
-            <option value="opcion2">Opción 2</option>
-            <option value="opcion3">Opción 3</option>
-            <option value="opcion4">Opción 4</option>
-            <option value="opcion5">Opción 5</option>
-            <option value="opcion6">Opción 6</option>
-            <option value="opcion7">Opción 7</option>
-            <option value="opcion8">Opción 8</option>
-            <option value="opcion9">Opción 9</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="archivo">Sube un archivo:</label>
-          <input type="file" id="archivo" name="archivo">
-        </div>
-        <div class="btn-group">
-          <input type="submit" value="Enviar" class="btn btn-enviar">
-          <input type="reset" value="Limpiar" class="btn btn-limpiar">
-        </div>
-      </form>
-
-      <pre><code>
-      &lt;form class="formulario-emocional"&gt;
-        &lt;h2 class="titulo-formulario"&gt;Formulario Emocional&lt;/h2&gt;
-      
-        &lt;div class="form-group"&gt;
-          &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
-          &lt;input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required&gt;
-        &lt;/div&gt;
-      
-        &lt;div class="form-group"&gt;
-          &lt;label for="email"&gt;Correo electrónico:&lt;/label&gt;
-          &lt;input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required&gt;
-        &lt;/div&gt;
-      
-        &lt;div class="form-group"&gt;
-          &lt;label for="password"&gt;Contraseña:&lt;/label&gt;
-          &lt;input type="password" id="password" name="password" required&gt;
-        &lt;/div&gt;
-      
-        &lt;div class="form-group"&gt;
-          &lt;label for="mensaje"&gt;Mensaje:&lt;/label&gt;
-          &lt;textarea id="mensaje" name="mensaje" rows="2" placeholder="Escribe tu mensaje aquí..." required&gt;&lt;/textarea&gt;
-        &lt;/div&gt;
-      
-        &lt;div class="form-group"&gt;
-          &lt;label for="opciones"&gt;Selecciona una opción:&lt;/label&gt;
-          &lt;select id="opciones" name="opciones" required&gt;
-            &lt;option value=""&gt;-- Selecciona --&lt;/option&gt;
-            &lt;option value="opcion1"&gt;Opción 1&lt;/option&gt;
-            &lt;option value="opcion2"&gt;Opción 2&lt;/option&gt;
-            &lt;option value="opcion3"&gt;Opción 3&lt;/option&gt;
-            &lt;option value="opcion4"&gt;Opción 4&lt;/option&gt;
-            &lt;option value="opcion5"&gt;Opción 5&lt;/option&gt;
-            &lt;option value="opcion6"&gt;Opción 6&lt;/option&gt;
-            &lt;option value="opcion7"&gt;Opción 7&lt;/option&gt;
-            &lt;option value="opcion8"&gt;Opción 8&lt;/option&gt;
-            &lt;option value="opcion9"&gt;Opción 9&lt;/option&gt;
-          &lt;/select&gt;
-        &lt;/div&gt;
-      
-        &lt;div class="form-group"&gt;
-          &lt;label for="archivo"&gt;Sube un archivo:&lt;/label&gt;
-          &lt;input type="file" id="archivo" name="archivo"&gt;
-        &lt;/div&gt;
-      
-        &lt;div class="btn-group"&gt;
-          &lt;input type="submit" value="Enviar" class="btn btn-enviar"&gt;
-          &lt;input type="reset" value="Limpiar" class="btn btn-limpiar"&gt;
-        &lt;/div&gt;
-      &lt;/form&gt;
-      </code></pre>
-      <section class="">
-        <h2 class="text-alegria font-alegria text-xl">Elementos Individuales del Formulario</h2>
-      
-        <div class="form-group">
-          <label for="nombre" class="text-alegria">Nombre</label>
-          <input type="text" id="nombre" class="input-alegria" placeholder="Ingresa tu nombre">
+      <section>
+        <h2 class="text-alegria font-alegria text-xxl grupo-info">Elementos Individuales del Formulario</h2>
+        <div class="formulario-emocional">
+          <div class="form-group">
+            <label for="nombre" class="text-alegria">Nombre</label>
+            <input type="text" id="nombre" class="input-alegria" placeholder="Ingresa tu nombre">
+          </div>
         </div>
         
         <!-- input-email.html -->
-        <div class="form-group">
-          <label for="email" class="text-ansiedad">Correo electrónico</label>
-          <input type="email" id="email" class="input-ansiedad" placeholder="correo@ejemplo.com">
+        <div class="formulario-emocional">
+          <div class="form-group">
+            <label for="email" class="text-ansiedad">Correo electrónico</label>
+            <input type="email" id="email" class="input-ansiedad" placeholder="correo@ejemplo.com">
+          </div>
         </div>
         
         <!-- input-password.html -->
-        <div class="form-group">
-          <label for="password" class="text-temor">Contraseña</label>
-          <input type="password" id="password" class="input-temor" placeholder="Ingresa tu contraseña">
-        </div>
-        
+         <div class="formulario-emocional">
+          <div class="form-group">
+            <label for="password" class="text-temor">Contraseña</label>
+            <input type="password" id="password" class="input-temor" placeholder="Ingresa tu contraseña">
+          </div>
+         </div>
+
         <!-- textarea.html -->
-        <div class="form-group">
-          <label for="comentario" class="text-tristeza">Comentario</label>
-          <textarea id="comentario" class="textarea-tristeza" placeholder="Escribe un comentario..."></textarea>
-        </div>
+         <div class="formulario-emocional">
+          <div class="form-group">
+            <label for="comentario" class="text-tristeza">Comentario</label>
+            <textarea id="comentario" class="textarea-tristeza" placeholder="Escribe un comentario..."></textarea>
+          </div>
+         </div>
         
         <!-- select.html -->
-        <div class="form-group">
-          <label for="opcion" class="text-desagrado">Selecciona una opción</label>
-          <select id="opcion" class="select-desagrado">
-            <option value="1">Opción 1</option>
-            <option value="2">Opción 2</option>
-          </select>
-        </div>
+         <div class="formulario-emocional">
+          <div class="form-group">
+            <label for="opcion" class="text-desagrado">Selecciona una opción</label>
+            <select id="opcion" class="select-desagrado">
+              <option value="1">Opción 1</option>
+              <option value="2">Opción 2</option>
+            </select>
+          </div>
+         </div>
         
         <!-- radio.html -->
-        <fieldset class="form-group">
-          <legend class="text-envidia">Género</legend>
-          <label><input type="radio" name="genero" value="masculino" class="radio-envidia"> Masculino</label>
-          <label><input type="radio" name="genero" value="femenino" class="radio-envidia"> Femenino</label>
-        </fieldset>
+        <div class="formulario-emocional">
+          <fieldset class="form-group">
+            <legend class="text-envidia">Género</legend>
+            <label><input type="radio" name="genero" value="masculino" class="radio-envidia"> Masculino</label>
+            <label><input type="radio" name="genero" value="femenino" class="radio-envidia"> Femenino</label>
+          </fieldset>
+        </div>
         
         <!-- checkbox.html -->
-        <div class="form-group">
-          <label class="checkbox-furia">
-            <input type="checkbox" name="terminos"> Acepto los términos
-          </label>
-        </div>
+         <div class="formulario-emocional">
+          <div class="form-group">
+            <label class="checkbox-furia">
+              <input type="checkbox" name="terminos"> Acepto los términos
+            </label>
+          </div>
+         </div>
         
         <!-- switch.html -->
-        <div class="form-group">
-          <label class="switch-verguenza">
-            <input type="checkbox">
-            <span class="slider"></span>
-            Activar notificaciones
-          </label>
+        <div  class="formulario-emocional">
+          <div class="form-group">
+            <label class="switch-verguenza">
+              <input type="checkbox">
+              <span class="slider"></span>
+              Activar notificaciones
+            </label>
+          </div>
         </div>
-        
+
         <!-- range.html -->
-        <div class="form-group">
-          <label for="rango" class="text-aburrimiento">Nivel de satisfacción</label>
-          <input type="range" id="rango" class="range-aburrimiento" min="0" max="10">
+        <div class="formulario-emocional">
+          <div class="form-group">
+            <label for="rango" class="text-aburrimiento">Nivel de satisfacción</label>
+            <input type="range" id="rango" class="range-aburrimiento" min="0" max="10">
+          </div>
         </div>
         
         <!-- input-number.html -->
-        <div class="form-group">
-          <label for="edad" class="text-ansiedad">Edad</label>
-          <input type="number" id="edad" class="input-ansiedad" min="1" max="99">
+        <div  class="formulario-emocional">
+          <div class="form-group">
+            <label for="edad" class="text-ansiedad">Edad</label>
+            <input type="number" id="edad" class="input-ansiedad" min="1" max="99">
+          </div>
         </div>
         
         <!-- input-date.html -->
-        <div class="form-group">
-          <label for="fecha" class="text-alegria">Fecha de nacimiento</label>
-          <input type="date" id="fecha" class="input-alegria">
+        <div  class="formulario-emocional">
+          <div class="form-group">
+            <label for="fecha" class="text-alegria">Fecha de nacimiento</label>
+            <input type="date" id="fecha" class="input-alegria">
+          </div>
         </div>
         
         <!-- submit.html -->
-        <div class="form-group">
-          <button type="submit" class="btn-furia">Enviar</button>
+        <div class="formulario-emocional">
+          <div class="form-group">
+          <button type="submit" class="btn">Enviar</button>
+          </div>
         </div>
-        
       </section>
       </div>
-      
-
-      </div>
+    </div>
   </div>
   <footer class="row">
     <div class="footer-content">
