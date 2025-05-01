@@ -1,20 +1,5 @@
 @use 'variables' as *;
 
-.container-sb {
-  width: 200px;
-  padding: 1rem; 
-  margin: 20px auto;
-  border-radius: 1rem;
-  border: 2px solid $furia-oscuro;
-  text-align: center;
-  transition: transform 0.3s ease;
-  background-color: $furia-suave;
-}
-
-.container-sb:hover {
-  transform: translateY(-5px);
-}
-
 // Mixin para generar 9 tipos de sombra por emocion
 @mixin sombras-por-emocion($nombre, $color) {
   .shadow-#{$nombre}         { box-shadow: 0 4px 8px rgba($color, 0.3); }   

@@ -264,8 +264,8 @@
 }
 
 .box {
-  width: 800px;
-  height: 50px;
+  width: 90%;
+  max-width: 800px;
   margin: 1rem auto;
   display: flex;
   justify-content: center;
@@ -1121,14 +1121,6 @@
 
 .border-rounded {
   border-radius: 0.5rem;
-}
-
-.container-utils {
-  width: 300px;
-  font-weight: bold;
-  text-align: center;
-  margin: auto;
-  margin-bottom: 1rem;
 }
 
 .alert-advertencia {
@@ -2742,6 +2734,51 @@
   font-family: "Bebas Neue", sans-serif;
 }
 
+.container-bg {
+  width: 25%;
+  height: 200px;
+  padding: 30px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  white-space: normal;
+}
+
+.container-utils {
+  width: 300px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.container-sb {
+  width: 200px;
+  padding: 1rem;
+  margin: 20px auto;
+  border-radius: 1rem;
+  border: 2px solid #150f0f;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-color: white;
+}
+
+.container-sb:hover {
+  transform: translateY(-5px);
+}
+
+.tarjetas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
 .formulario-emocional {
   max-width: 600px;
   width: 100%;
@@ -2830,83 +2867,116 @@
   gap: 1.5rem;
   text-align: center;
 }
-.formulario-design .input-field {
-  width: 50%;
+.formulario-design .input-alegria {
+  background-color: #6587c1;
+  color: #f89b29;
   padding: 0.5rem;
-  margin: 0.5rem 0;
-  border-radius: 4px;
-  border: 1px solid #ccc;
-  background-color: white;
+  border-radius: 25px;
   font-size: 1rem;
-  color: #150f0f;
+  border: 1px solid #f89b29;
 }
-.formulario-design .input-field:focus {
-  border-color: #f89b29;
-  outline: none;
-  box-shadow: 0 0 5px #f89b29;
+.formulario-design .input-alegria:focus {
+  outline: 2px solid #f89b29;
 }
-.formulario-design label {
-  font-size: 0.875rem;
-  margin-bottom: 0.25rem;
-  display: block;
+.formulario-design .input-ansiedad {
+  background-color: #fba320;
+  color: #b11009;
+  padding: 0.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: 1px solid #b11009;
 }
-.formulario-design .btn-m {
-  padding: 0.5rem 1rem;
-  font-size: 0.875rem;
-  color: white;
-  background-color: #f89b29;
-  border: none;
-  border-radius: 4px;
+.formulario-design .input-ansiedad:focus {
+  outline: 2px solid #b11009;
+}
+.formulario-design .input-temor {
+  background-color: #a71f67;
+  color: #7b65a6;
+  padding: 0.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: 1px solid #7b65a6;
+}
+.formulario-design .input-temor:focus {
+  outline: 2px solid #7b65a6;
+}
+.formulario-design .textarea-tristeza {
+  background-color: #89ABC3;
+  color: #213054;
+  padding: 0.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: 1px solid #213054;
+  resize: vertical;
+}
+.formulario-design .textarea-tristeza:focus {
+  outline: 2px solid #213054;
+}
+.formulario-design .select-desagrado {
+  background-color: #78AB65;
+  color: #58B2B3;
+  padding: 0.5rem;
+  border-radius: 25px;
+  font-size: 1rem;
+  border: 1px solid #994398;
+}
+.formulario-design .select-desagrado:focus {
+  outline: 2px solid #20441F;
+}
+.formulario-design .radio-envidia {
+  accent-color: #850e8b;
+  margin-right: 0.25rem;
+}
+.formulario-design .checkbox-furia input[type=checkbox] {
+  accent-color: #b11009;
+  margin-right: 0.25rem;
+}
+.formulario-design .switch-verguenza {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+.formulario-design .switch-verguenza input[type=checkbox] {
+  display: none;
+}
+.formulario-design .switch-verguenza .slider {
+  width: 40px;
+  height: 20px;
+  background-color: #9C254E;
+  border-radius: 20px;
+  position: relative;
   cursor: pointer;
-  transition: background-color 0.3s;
 }
-.formulario-design .btn-m:hover {
-  background-color: #e68208;
+.formulario-design .switch-verguenza .slider::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  background-color: #9C254E;
+  border-radius: 50%;
+  top: 1px;
+  left: 1px;
+  transition: transform 0.3s ease;
 }
-.formulario-design .btn-m:active {
-  transform: scale(0.98);
+.formulario-design .switch-verguenza input:checked + .slider::before {
+  transform: translateX(20px);
 }
-
-.input-field {
-  padding: 0.5rem 1rem;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
+.formulario-design .range-aburrimiento {
   width: 100%;
-  box-sizing: border-box;
-  margin-bottom: 1rem;
+  accent-color: #818AA2;
 }
-
-.checkbox,
-.radio {
-  margin-right: 0.5rem;
-  accent-color: #2a9d8f;
-}
-
-.checkbox-label,
-.radio-label {
-  font-size: 1rem;
-  display: block;
-  margin-bottom: 0.5rem;
-}
-
-.btn {
-  padding: 0.6rem 1.2rem;
+.formulario-design .btn-furia {
+  background-color: #b11009;
+  color: white;
+  padding: 0.5rem 1rem;
   border: none;
-  border-radius: 4px;
-  font-weight: bold;
+  border-radius: 25px;
   cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
-
-.btn-enviar {
-  background-color: #2a9d8f;
-  color: white;
-}
-
-.btn-limpiar {
-  background-color: #e76f51;
-  color: white;
-  margin-left: 1rem;
+.formulario-design .btn-furia:hover {
+  background-color: #800c07;
 }
 
 body {
@@ -5389,21 +5459,6 @@ body {
   }
 }
 
-.container-sb {
-  width: 200px;
-  padding: 1rem;
-  margin: 20px auto;
-  border-radius: 1rem;
-  border: 2px solid #150f0f;
-  text-align: center;
-  transition: transform 0.3s ease;
-  background-color: white;
-}
-
-.container-sb:hover {
-  transform: translateY(-5px);
-}
-
 .shadow-furia {
   box-shadow: 0 4px 8px rgba(177, 16, 9, 0.3);
 }
@@ -5727,17 +5782,6 @@ body {
 
 .shadow-aburrimiento-glow {
   box-shadow: 0 0 15px 6px rgba(129, 129, 198, 0.8);
-}
-
-.container-bg {
-  width: 25%;
-  height: 200px;
-  padding: 30px;
-  margin: 10px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .bg-furia, .move-furia {
@@ -6139,14 +6183,6 @@ footer .footer-content .copyright p {
 }
 .contenedor-hover:hover .tooltip {
   display: block;
-}
-
-.tarjetas-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3rem;
-  padding: 2rem;
 }
 
 .tarjeta, .tarjeta-desagrado, .tarjeta-verguenza {

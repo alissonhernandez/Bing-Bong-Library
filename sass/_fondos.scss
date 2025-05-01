@@ -7,17 +7,6 @@
   .text-#{$name} { color: $color; }
 }
 
-.container-bg {
-  width: 25%;  
-  height: 200px;
-  padding: 30px;
-  margin: 10px auto; 
-  display: flex;
-  justify-content: center; 
-  align-items: center;  
-  text-align: center;
-}
-
   // Aplicar mixin a cada emocion
 @include emotion-colors(furia, $furia-fuego);
 @include emotion-colors(furia-humo, $furia-humo);
@@ -29,4 +18,3 @@
 @include emotion-colors(verguenza, $verguenza-recuerdo);
 @include emotion-colors(tristeza, $tristeza-brillante);
 @include emotion-colors(aburrimiento, $aburrimiento-suspiro);
-  
