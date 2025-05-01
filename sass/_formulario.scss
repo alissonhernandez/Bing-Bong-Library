@@ -10,10 +10,11 @@
 .formulario-emocional {
   max-width: 600px;
   width: 100%;
-  margin: 2rem auto;
-  padding: 2rem;
-  background-color: $furia-fuego;
-  border-radius: 1rem;
+  margin: $spacing-lg auto;
+  padding: $spacing-lg;
+  background: linear-gradient(to bottom, $furia-oscuro 0%, $furia-fuego 100%);
+
+  border-radius: $spacing-md;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
@@ -30,11 +31,12 @@
   .form-group {
     display: flex;
     flex-direction: column;
-
+   
     label {
       color: $furia-suave;
       font-weight: bold;
-      margin-bottom: 0.5rem;
+      margin-bottom: $spacing-sm;
+      $font-furia: 'Bebas Neue', sans-serif;
     }
 
     input,
@@ -57,7 +59,7 @@
       resize: vertical;
     }
   }
-
+ 
   .btn-group {
     display: flex;
     justify-content: space-between;
@@ -73,14 +75,19 @@
       cursor: pointer;
       color: white;
     }
-
+    &:hover {
+      background-color: lighten($furia-oscuro, 10%);
+      color: $furia-fuego;
+    }
+    
     .btn-enviar {
-      background-color: $furia-suave;
+      background-color: $furia-oscuro;
+      color: $furia-suave;
     }
 
     .btn-limpiar {
-      background-color: $furia-suave;
-      color: $furia-oscuro;
+      background-color: $furia-oscuro;
+      color: $furia-suave;
     }
   }
 }
