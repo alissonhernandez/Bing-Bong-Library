@@ -9,68 +9,90 @@
 </head>
 
 <body>
-    <object type="image/svg+xml" data="iconos/icons.svg" style="display: none;"></object>
-    <nav class="navbar_bingbong_img">
+    <object type="image/svg+xml" data="../iconos/icons.svg" style="display: none;"></object>
+    <nav class="navbar_bingbong_img row">
         <div class="logo">
             <img src="../img/BBLibrary.png" alt="logo">
         </div>
         <input type="checkbox" id="toggler">
         <label for="toggler">
             <svg class="icon">
-                <use xlink:href="iconos/icons.svg#menu"></use>
+                <use xlink:href="../iconos/icons.svg#menu"></use>
             </svg>
         </label>
         <div class="nav_items">
             <a href="../index.html" class="nav_link">Inicio</a>
-            <a href="./enlaces/badges.html" class="nav_link col">Documentación</a>
+            <a href="../enlaces/documentacion.html" class="nav_link col">Documentación</a>
             <a href="https://github.com/alissonhernandez/Bing-Bong-Library" class="nav_link col">Github</a>
         </div>
     </nav>
-    <div class="container-principal-sc col-xxl-7">
-        <div class="grupo-info">
-            <h1 class="font-Furia text-alegria-electrisante">BADGES</h1>
+  
+    <div class="row">
+      <div class="navbar_furia_text col-2">
+        <ul class="nav_items">
+            <h2 class="navbar__brand">Componentes </h2>
+            <li><a class="nav-link" href="../enlaces/alertas.html">Alertas</a></li>
+            <li><a class="nav-link" href="../enlaces/navegacion.html">Barra de navegación</a></li>
+            <li><a class="nav-link" href="../enlaces/badges.html">Badges</a></li>
+            <li><a class="nav-link" href="../enlaces/botones.html">Botones</a></li>
+            <li><a class="nav-link" href="../enlaces/containers.html">Containers</a></li>
+            <li><a class="nav-link" href="../enlaces/formulario.html">Formularios</a></li>
+            <li><a class="nav-link" href="../enlaces/tarjetas.html">Tarjetas</a></li>
+            <h2 class="navbar__brand">Clases utilitarias</h2>
+            <li><a class="nav-link" href="../enlaces/fondos.html">Colores de fondo</a></li>
+            <li><a class="nav-link" href="../enlaces/margenes.html">Margenes, padding y bordes</a></li>
+            <li><a class="nav-link" href="../enlaces/mover.html">Mover elementos</a></li>
+            <li><a class="nav-link" href="../enlaces/ocultar.html">Ocultar elementos</a></li>
+            <li><a class="nav-link" href="../enlaces/sombras.html">Sombras</a></li>
+            <li><a class="nav-link" href="../enlaces/textos.html">Tipos de textos</a></li>
+            <li><a class="nav-link" href="../enlaces/redondear.html">Redondear elementos</a></li>
+          </ul>
         </div>
-        //Descripcion acerca del componente
-        <div class="col-xxl-7">
-            <p class="font-tristeza  text-furia-oscuro">
-                Nuestros badges combinan colores vivos, formas dinámicas y detalles brillantes. Cada badge representa
-                una emoción específica,
-                permitiendo destacar notificaciones,
-                estados o logros de manera divertida, expresiva y llena de personalidad."
-            </p>
-        </div>
-        <div class="container-xl-sc col-xxl-10">
-            <h2 class="font-desagrado text-envidia-marea">Badges de Aburrimiento</h2>
-            <p class="font-tristeza text-furia-oscuro"> Los badges de Aburrimiento,
-                son monotonos, son los básicos que se necesitan.
-            </p>
-            <div class="col-xxl-10">
-                <div class="badge-row">
-                    <div class="badge_aburrimiento a_alegria">Alegria</div>
-                    <div class="badge_aburrimiento a_tristeza">Tristeza</div>
-                    <div class="badge_aburrimiento a_furia">Furia</div>
-                    <div class="badge_aburrimiento a_temor">Temor</div>
-                    <div class="badge_aburrimiento a_desagrado">Desagrado</div>
-                    <div class="badge_aburrimiento a_ansiedad">Ansiedad</div>
-                    <div class="badge_aburrimiento a_verguenza">Verguenza</div>
-                    <div class="badge_aburrimiento a_envidia">Envidia</div>
-                    <div class="badge_aburrimiento a_aburrimiento">Aburrimiento</div>
+        <div class="col-9">
+          <div class="container-principal-sc">
+            <div class="container-principal-sc col-xxl-7">
+                <div class="grupo-info">
+                    <h1 class="font-Furia text-alegria-electrisante">BADGES</h1>
                 </div>
-                <br>
-                <code>
-                    &lt;div class="badge_aburrimiento a_alegria"&gt;Alegria&lt;/div&gt;
-                    &lt;div class="badge_aburrimiento a_tristeza"&gt;Tristeza&lt;/div&gt;
-                    &lt;div class="badge_aburrimiento a_furia"&gt;Furia&lt;/div&gt;
-                    &lt;div class="badge_aburrimiento a_temor"&gt;Temor&lt;/div&gt;
-                    &lt;div class="badge_aburrimiento a_desagrado"&gt;Desagrado&lt;/div&gt;
-                    &lt;div class="badge_aburrimiento a_ansiedad"&gt;Ansiedad&lt;/div&gt;
-                    &lt;div class="badge_aburrimiento a_verguenza"&gt;Verguenza&lt;/div&gt;
-                    &lt;div class="badge_aburrimiento a_envidia"&gt;Envidia&lt;/div&gt;
-                    &lt;div class="badge_aburrimiento a_aburrimiento"&gt;Aburrimiento&lt;/div&gt;
-                  </code>
-            </div>
-
-            <div class="container-xl-sc col-xxl-10">
+                
+                <div class="col-xxl-9">
+                    <p class="font-tristeza  text-furia-oscuro">
+                        Nuestros badges combinan colores vivos, formas dinámicas y detalles brillantes. Cada badge representa
+                        una emoción específica,
+                        permitiendo destacar notificaciones,
+                        estados o logros de manera divertida, expresiva y llena de personalidad."
+                    </p>
+                </div>
+                <h2 class="font-desagrado text-envidia-marea">Badges de Aburrimiento</h2>
+                <p class="font-tristeza text-furia-oscuro"> Los badges de Aburrimiento,
+                    son monotonos, son los básicos que se necesitan.
+                </p>
+                
+                <div class="col-xxl-10">
+                    <div class="badge-row">
+                        <div class="badge_aburrimiento a_alegria">Alegria</div>
+                        <div class="badge_aburrimiento a_tristeza">Tristeza</div>
+                        <div class="badge_aburrimiento a_furia">Furia</div>
+                        <div class="badge_aburrimiento a_temor">Temor</div>
+                        <div class="badge_aburrimiento a_desagrado">Desagrado</div>
+                        <div class="badge_aburrimiento a_ansiedad">Ansiedad</div>
+                        <div class="badge_aburrimiento a_verguenza">Verguenza</div>
+                        <div class="badge_aburrimiento a_envidia">Envidia</div>
+                        <div class="badge_aburrimiento a_aburrimiento">Aburrimiento</div>
+                    </div>
+                    <br>
+                    <code>
+                        &lt;div class="badge_aburrimiento a_alegria"&gt;Alegria&lt;/div&gt;
+                        &lt;div class="badge_aburrimiento a_tristeza"&gt;Tristeza&lt;/div&gt;
+                        &lt;div class="badge_aburrimiento a_furia"&gt;Furia&lt;/div&gt;
+                        &lt;div class="badge_aburrimiento a_temor"&gt;Temor&lt;/div&gt;
+                        &lt;div class="badge_aburrimiento a_desagrado"&gt;Desagrado&lt;/div&gt;
+                        &lt;div class="badge_aburrimiento a_ansiedad"&gt;Ansiedad&lt;/div&gt;
+                        &lt;div class="badge_aburrimiento a_verguenza"&gt;Verguenza&lt;/div&gt;
+                        &lt;div class="badge_aburrimiento a_envidia"&gt;Envidia&lt;/div&gt;
+                        &lt;div class="badge_aburrimiento a_aburrimiento"&gt;Aburrimiento&lt;/div&gt;
+                    </code>
+                </div>
                 <h2 class="font-desagrado text-envidia-marea">Badges de Envidia</h2>
                 <p class="font-tristeza text-furia-oscuro"> Los badges de envidia, lucen una peculiar estrella en el
                     centro como los bellos
@@ -97,89 +119,80 @@
                         &lt;div class="badge_envidia e_verguenza"&gt;Verguenza&lt;/div&gt;
                         &lt;div class="badge_envidia e_envidia"&gt;Envidia&lt;/div&gt;
                         &lt;div class="badge_envidia e_aburrimiento"&gt;Aburrimiento&lt;/div&gt;
-                      </code>
+                    </code>
                 </div>
-
-                <div class="container-xl-sc col-xxl-10">
-                    <h2 class="font-desagrado text-envidia-marea">Badges de Furia</h2>
-                    <p class="font-tristeza text-furia-oscuro"> Los badges de furia tienen un efecto de un boom,
-                        como de un golpe de rabia.
+                <h2 class="font-desagrado text-envidia-marea">Badges de Furia</h2>
+                <p class="font-tristeza text-furia-oscuro"> Los badges de furia tienen un efecto de un boom,
+                    como de un golpe de rabia.
+                </p>
+                <div class="col-xxl-10">
+                    <div class="badge-row">
+                        <div class="badge_furia f_alegria">Alegria</div>
+                        <div class="badge_furia f_tristeza">Tristeza</div>
+                        <div class="badge_furia f_furia">Furia</div>
+                        <div class="badge_furia f_temor">Temor</div>
+                        <div class="badge_furia f_desagrado">Desagrado</div>
+                        <div class="badge_furia f_ansiedad">Ansiedad</div>
+                        <div class="badge_furia f_verguenza">Verguenza</div>
+                        <div class="badge_furia f_envidia">Envidia</div>
+                        <div class="badge_furia f_aburrimiento">Aburrimiento</div>
+                    </div>
+                    <br>
+                    <code>
+                        &lt;div class="badge_furia f_alegria"&gt;Alegria&lt;/div&gt;
+                        &lt;div class="badge_furia f_tristeza"&gt;Tristeza&lt;/div&gt;
+                        &lt;div class="badge_furia f_furia"&gt;Furia&lt;/div&gt;
+                        &lt;div class="badge_furia f_temor"&gt;Temor&lt;/div&gt;
+                        &lt;div class="badge_furia f_desagrado"&gt;Desagrado&lt;/div&gt;
+                        &lt;div class="badge_furia f_ansiedad"&gt;Ansiedad&lt;/div&gt;
+                        &lt;div class="badge_furia f_verguenza"&gt;Verguenza&lt;/div&gt;
+                        &lt;div class="badge_furia f_envidia"&gt;Envidia&lt;/div&gt;
+                        &lt;div class="badge_furia f_aburrimiento"&gt;Aburrimiento&lt;/div&gt;
+                    </code>
+                </div>
+                
+                <h2 class="font-desagrado text-envidia-marea">Badges de Desagrado</h2>
+                    <p class="font-tristeza text-furia-oscuro"> Los badges de desagrado tiene un efecto de luz muy
+                        bonito, con una mezcla de un conjunto de dos emociones.
                     </p>
+                    
                     <div class="col-xxl-10">
                         <div class="badge-row">
-                            <div class="badge_furia f_alegria">Alegria</div>
-                            <div class="badge_furia f_tristeza">Tristeza</div>
-                            <div class="badge_furia f_furia">Furia</div>
-                            <div class="badge_furia f_temor">Temor</div>
-                            <div class="badge_furia f_desagrado">Desagrado</div>
-                            <div class="badge_furia f_ansiedad">Ansiedad</div>
-                            <div class="badge_furia f_verguenza">Verguenza</div>
-                            <div class="badge_furia f_envidia">Envidia</div>
-                            <div class="badge_furia f_aburrimiento">Aburrimiento</div>
+                            <div class="badge_desagrado furia-envidia">Furia-Envidia</div>
+                            <div class="badge_desagrado verguenza-alegria ">Verguenza-Alegria</div>
+                            <div class="badge_desagrado aburrimiento-temor">Aburrimiento-Temor</div>
+                            <div class="badge_desagrado ansiedad-desagrado">Ansiedad-Desagrado</div>
+                            <div class="badge_desagrado tristeza-envidia">Trsiteza-Envidia</div>
+                            <div class="badge_desagrado furia-alegria">Furia-Alegria</div>
+                            <div class="badge_desagrado verguenza-desagrado">Verguenza-Desagrado</div>
+                            <div class="badge_desagrado ansiedad-temor">Ansiedad-Temor</div>
                         </div>
                         <br>
                         <code>
-                            &lt;div class="badge_furia f_alegria"&gt;Alegria&lt;/div&gt;
-                            &lt;div class="badge_furia f_tristeza"&gt;Tristeza&lt;/div&gt;
-                            &lt;div class="badge_furia f_furia"&gt;Furia&lt;/div&gt;
-                            &lt;div class="badge_furia f_temor"&gt;Temor&lt;/div&gt;
-                            &lt;div class="badge_furia f_desagrado"&gt;Desagrado&lt;/div&gt;
-                            &lt;div class="badge_furia f_ansiedad"&gt;Ansiedad&lt;/div&gt;
-                            &lt;div class="badge_furia f_verguenza"&gt;Verguenza&lt;/div&gt;
-                            &lt;div class="badge_furia f_envidia"&gt;Envidia&lt;/div&gt;
-                            &lt;div class="badge_furia f_aburrimiento"&gt;Aburrimiento&lt;/div&gt;
-                          </code>
+                            &lt;div class="badge_desagrado furia-envidia"&gt;Furia-Envidia&lt;/div&gt;
+                            &lt;div class="badge_desagrado verguenza-alegria"&gt;Verguenza-Alegria&lt;/div&gt;
+                            &lt;div class="badge_desagrado aburrimiento-temor"&gt;Aburrimiento-Temor&lt;/div&gt;
+                            &lt;div class="badge_desagrado ansiedad-desagrado"&gt;Ansiedad-Desagrado&lt;/div&gt;
+                            &lt;div class="badge_desagrado tristeza-envidia"&gt;Tristeza-Envidia&lt;/div&gt;
+                            &lt;div class="badge_desagrado furia-alegria"&gt;Furia-Alegria&lt;/div&gt;
+                            &lt;div class="badge_desagrado verguenza-desagrado"&gt;Verguenza-Desagrado&lt;/div&gt;
+                            &lt;div class="badge_desagrado ansiedad-temor"&gt;Ansiedad-Temor&lt;/div&gt;
+                        </code>
                     </div>
-
-                    <div class="container-xl-sc col-xxl-10">
-                        <h2 class="font-desagrado text-envidia-marea">Badges de Desagrado</h2>
-                        <p class="font-tristeza text-furia-oscuro"> Los badges de desagrado tiene un efecto de luz muy
-                            bonito,
-                            con una mezcla de un conjunto de dos emociones.
-                        </p>
-                        <div class="col-xxl-10">
-                            <div class="badge-row">
-                                <div class="badge_desagrado furia-envidia">Furia-Envidia</div>
-                                <div class="badge_desagrado verguenza-alegria ">Verguenza-Alegria</div>
-                                <div class="badge_desagrado aburrimiento-temor">Aburrimiento-Temor</div>
-                                <div class="badge_desagrado ansiedad-desagrado">Ansiedad-Desagrado</div>
-                                <div class="badge_desagrado tristeza-envidia">Trsiteza-Envidia</div>
-                                <div class="badge_desagrado furia-alegria">Furia-Alegria</div>
-                                <div class="badge_desagrado verguenza-desagrado">Verguenza-Desagrado</div>
-                                <div class="badge_desagrado ansiedad-temor">Ansiedad-Temor</div>
-                            </div>
-                            <br>
-            <code>
-                &lt;div class="badge_desagrado furia-envidia"&gt;Furia-Envidia&lt;/div&gt;
-                &lt;div class="badge_desagrado verguenza-alegria"&gt;Verguenza-Alegria&lt;/div&gt;
-                &lt;div class="badge_desagrado aburrimiento-temor"&gt;Aburrimiento-Temor&lt;/div&gt;
-                &lt;div class="badge_desagrado ansiedad-desagrado"&gt;Ansiedad-Desagrado&lt;/div&gt;
-                &lt;div class="badge_desagrado tristeza-envidia"&gt;Tristeza-Envidia&lt;/div&gt;
-                &lt;div class="badge_desagrado furia-alegria"&gt;Furia-Alegria&lt;/div&gt;
-                &lt;div class="badge_desagrado verguenza-desagrado"&gt;Verguenza-Desagrado&lt;/div&gt;
-                &lt;div class="badge_desagrado ansiedad-temor"&gt;Ansiedad-Temor&lt;/div&gt;
-            </code>
-                        </div>
-                        <div class="container-xl-sc col-xxl-10">
-                            <h2 class="font-desagrado text-envidia-marea">Tamaños para Badges.</h2>
-                            <p class="font-tristeza text-furia-oscuro"> Disponemos de dos diferentes tamaños
-                                para los badges.
-                                <br>
-                                XS = Pequeño y SM = Mediano
-                            </p>
-                            <div class="col-xxl-7">
-                                <div class="badge-row">
-                                    <div class="badge_envidia sm e_alegria">Alegria</div>
-                                    <div class="badge_envidia xs e_furia">Furia</div>
-                                </div>
-                                <br>
-                                <code>
-                                &lt;div class="badge_envidia sm e_alegria"&gt;Alegria&lt;/div&gt;
-                                &lt;div class="badge_envidia xs e_furia"&gt;Furia&lt;/div&gt;
-                            </code>
-                            </div>
-                        </div>
+                <h2 class="font-desagrado text-envidia-marea">Tamaños para Badges.</h2>
+                <p class="font-tristeza text-furia-oscuro"> Disponemos de dos diferentes tamaños para los badges.<br>
+                    XS = Pequeño y SM = Mediano
+                </p>
+                <div class="col-xxl-7">
+                    <div class="badge-row">
+                        <div class="badge_envidia sm e_alegria">Alegria</div>
+                        <div class="badge_envidia xs e_furia">Furia</div>
                     </div>
+                    <br>
+                    <code>
+                        &lt;div class="badge_envidia sm e_alegria"&gt;Alegria&lt;/div&gt;
+                        &lt;div class="badge_envidia xs e_furia"&gt;Furia&lt;/div&gt;
+                    </code>
                 </div>
             </div>
         </div>
