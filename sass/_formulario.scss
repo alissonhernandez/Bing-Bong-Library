@@ -91,3 +91,123 @@
     }
   }
 }
+
+formulario
+    .input-field {
+        width: 100%;
+        padding: $spacing-sm;
+        margin: $spacing-sm 0;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        background-color: white;
+        font-size: $font-size-base;
+        color: $furia-oscuro;
+
+        &:focus {
+            border-color: $alegria-vibrante;
+            outline: none;
+            box-shadow: 0 0 5px $alegria-vibrante;
+        }
+    }
+
+    // Estilo para los labels
+    label {
+        font-size: $font-size-sm;
+        margin-bottom: $spacing-xs;
+        display: block;
+    }
+
+    // Estilo para el botón
+    .btn-m {
+        padding: $spacing-sm $spacing-md;
+        font-size: $font-size-sm;
+        color: $furia-suave;
+        background-color: $alegria-vibrante;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &:hover {
+            background-color: darken($alegria-vibrante, 10%);
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+
+
+// Estilos para el título
+h1.text-alegria {
+    text-align: center;
+    font-size: $font-size-xxl;
+    color: $alegria-brillante;
+    margin-bottom: $spacing-lg;
+}
+
+
+
+.formulario {
+  background-color: $alegria-tranquilidad;
+  padding: $spacing-lg;
+  border-radius: map-get($radius, md);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  max-height: 500px;
+  margin: 0 auto;
+  font-family: $font-alegria;
+
+  // Espaciado entre los elementos del formulario
+  .input-field {
+      width: 100%;
+      padding: $spacing-sm;
+      margin: $spacing-sm 0;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      background-color: white;
+      font-size: $font-size-base;
+      color: $furia-oscuro;
+
+      &:focus {
+          border-color: $alegria-vibrante;
+          outline: none;
+          box-shadow: 0 0 5px $alegria-vibrante;
+      }
+  }
+
+  // Estilo para los labels
+  label {
+      font-size: $font-size-sm;
+      margin-bottom: $spacing-xs;
+      display: block;
+  }
+
+  // Estilo para el botón
+  .btn-m {
+      padding: $spacing-sm $spacing-md;
+      font-size: $font-size-sm;
+      color: $furia-suave;
+      background-color: $alegria-vibrante;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+
+      &:hover {
+          background-color: darken($alegria-vibrante, 10%);
+      }
+
+      &:active {
+          transform: scale(0.98);
+      }
+  }
+}
+
+// Estilos para el título
+h1.text-alegria {
+  text-align: center;
+  font-size: $font-size-xxl;
+  color: $alegria-brillante;
+  margin-bottom: $spacing-lg;
+}
