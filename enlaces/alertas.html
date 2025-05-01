@@ -1,15 +1,14 @@
-<!DOCTYPE html>
+                           <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario Emocional</title>
+  <title>Alertas | Bing Bong Library</title>
   <link rel="stylesheet" href="../css/style.css">
+  
 </head>
 <body>
   <object type="image/svg+xml" data="../iconos/icons.svg" style="display: none;"></object>
-
-  <!-- Barra de navegación -->
   <nav class="navbar_bingbong_img row">
     <div class="logo">
       <img src="../img/BBLibrary.png" alt="logo">
@@ -22,185 +21,53 @@
     </label>
     <div class="nav_items">
       <a href="../index.html" class="nav_link">Inicio</a>
-      <a href="/enlaces/badges.html" class="nav_link col">Documentación</a>
+      <a href="../enlaces/documentacion.html" class="nav_link col">Documentación</a>
       <a href="https://github.com/alissonhernandez/Bing-Bong-Library" class="nav_link col">Github</a>
     </div>
   </nav>
 
   <div class="row">
-    <!-- Sidebar -->
     <div class="navbar_furia_text col-2">
       <ul class="nav_items">
         <h2 class="navbar__brand">Componentes</h2>
-        <li><a class="nav-link" href="#">Alertas</a></li>
-        <li><a class="nav-link" href="#">Barra de Navegación</a></li>
-        <li><a class="nav-link" href="#">Badges</a></li>
-        <li><a class="nav-link" href="#">Botones</a></li>
-        <li><a class="nav-link" href="#">Containers</a></li>
-        <li><a class="nav-link" href="#">Formularios</a></li>
-        <li><a class="nav-link" href="#">Tarjetas</a></li>
+        <li><a class="nav-link" href="../enlaces/alertas.html">Alertas</a></li>
+        <li><a class="nav-link" href="../enlaces/navegacion.html">Barra de Navegación</a></li>
+        <li><a class="nav-link" href="../enlaces/badges.html">Badges</a></li>
+        <li><a class="nav-link" href="../enlaces/botones.html">Botones</a></li>
+        <li><a class="nav-link" href="../enlaces/containers.html">Containers</a></li>
+        <li><a class="nav-link" href="../enlaces/formulario.html">Formularios</a></li>
+        <li><a class="nav-link" href="../enlaces/tarjetas.html">Tarjetas</a></li>
         <h2 class="navbar__brand">Clases utilitarias</h2>
-        <li><a class="nav-link" href="#">Colores de fondo</a></li>
-        <li><a class="nav-link" href="#">Margenes, padding y bordes</a></li>
-        <li><a class="nav-link" href="#">Mover elementos</a></li>
-        <li><a class="nav-link" href="#">Ocultar elementos</a></li>
-        <li><a class="nav-link" href="#">Containers</a></li>
-        <li><a class="nav-link" href="#">Sombras</a></li>
-        <li><a class="nav-link" href="#">Tipos de Textos</a></li>
+        <li><a class="nav-link" href="../enlaces/fondos.html">Colores de fondo</a></li>
+        <li><a class="nav-link" href="../enlaces/margenes.html">Márgenes, padding y bordes</a></li>
+        <li><a class="nav-link" href="../enlaces/mover.html">Mover elementos</a></li>
+        <li><a class="nav-link" href="../enlaces/ocultar.html">Ocultar elementos</a></li>
+        <li><a class="nav-link" href="../enlaces/sombras.html">Sombras</a></li>
+        <li><a class="nav-link" href="../enlaces/textos.html">Tipos de Textos</a></li>
       </ul>
     </div>
-    <div class="container-principal-sc col-xxl-7">
+    <div class="col-9">
       <div class="container-principal-sc">
-      <h1 class="text-alegria font-alegria text-xl mb-md">Formulario de Registro</h1>
-  
-      <form class="formulario">
-        
-  
-        <div class="form-group">
-          <label for="email" class="text-alegria">Correo Electrónico</label>
-          <input type="email" id="email" name="email" class="input-field" placeholder="Ingresa tu correo">
+        <div class="grupo-info">
+          <h1 class="font-verguenza text-verguenza-fantastica">Sistema de Alertas</h1>
         </div>
-  
-        <div class="form-group">
-          <label for="password" class="text-alegria">Contraseña</label>
-          <input type="password" id="password" name="password" class="input-field" placeholder="Ingresa tu contraseña">
+        <p class="font-alegria text-furia-oscuro text-xl">
+          Nuestro sistema de alertas proporciona mensajes visuales y contextuales que informan al usuario sobre eventos importantes dentro del sitio. Las alertas están clasificadas por tipo y color para facilitar su identificación y mejorar la experiencia del usuario. A continuación, se presentan ejemplos de cada tipo:
+        </p>
+
+        <div class="alert-container">
+          <div class="alert-exito"><strong>Éxito:</strong> Tu acción se completó correctamente.</div>
+          <div class="alert-peligro"><strong>Error:</strong> Ocurrió un problema al guardar.</div>
+          <div class="alert-info"><strong>Información:</strong> Este es un mensaje informativo general.</div>
+          <div class="alert-advertencia"><strong>Advertencia:</strong> Verifica los campos obligatorios antes de continuar.</div>
+          <div class="alert-importante-claro"><strong>Importante:</strong> Este es un mensaje con fondo claro y resaltado.</div>
+          <div class="alert-importante-oscuro"><strong>Importante:</strong> Este es un mensaje con fondo oscuro para mayor énfasis.</div>
+          <div class="alert-advertencia">
+            <strong>Enlace:</strong> Consulta nuestra <a href="#">política de privacidad</a> para más detalles.
+          </div>
         </div>
-  
-        <div class="form-group mt-md">
-          <button type="submit" class="ansiedad-I -m">Enviar</button>
-  
-        </div>
-      </form>
-    </div>
-
-    <!-- Contenido principal -->
-    <div class="container-principal-sc col-xxl-7">
-      <div class="container-principal-sc">
-        <form class="formulario-emocional">
-          <h2 class="titulo-formulario">Formulario Emocional</h2>
-
-          <div class="form-group">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
-          </div>
-
-          <div class="form-group">
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
-          </div>
-
-          <div class="form-group">
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
-          </div>
-
-          <div class="form-group">
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" rows="2" placeholder="Escribe tu mensaje aquí..." required></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="opciones">Selecciona una opción:</label>
-            <select id="opciones" name="opciones" required>
-              <option value="">-- Selecciona --</option>
-              <option value="opcion1">Opción 1</option>
-              <option value="opcion2">Opción 2</option>
-              <option value="opcion3">Opción 3</option>
-              <option value="opcion4">Opción 4</option>
-              <option value="opcion5">Opción 5</option>
-              <option value="opcion6">Opción 6</option>
-              <option value="opcion7">Opción 7</option>
-              <option value="opcion8">Opción 8</option>
-              <option value="opcion9">Opción 9</option>
-            </select>
-          </div>
-
-          <div class="form-group">
-            <label for="archivo">Sube un archivo:</label>
-            <input type="file" id="archivo" name="archivo">
-          </div>
-
-          <div class="btn-group">
-            <input type="submit" value="Enviar" class="btn btn-enviar">
-            <input type="reset" value="Limpiar" class="btn btn-limpiar">
-          </div>
-        </form>
-        <pre><code>
-          &lt;form class="formulario-emocional"&gt;
-            &lt;h2 class="titulo-formulario"&gt;Formulario Emocional&lt;/h2&gt;
-          
-            &lt;div class="form-group"&gt;
-              &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
-              &lt;input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required&gt;
-            &lt;/div&gt;
-          
-            &lt;div class="form-group"&gt;
-              &lt;label for="email"&gt;Correo electrónico:&lt;/label&gt;
-              &lt;input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required&gt;
-            &lt;/div&gt;
-          
-            &lt;div class="form-group"&gt;
-              &lt;label for="password"&gt;Contraseña:&lt;/label&gt;
-              &lt;input type="password" id="password" name="password" required&gt;
-            &lt;/div&gt;
-          
-            &lt;div class="form-group"&gt;
-              &lt;label for="mensaje"&gt;Mensaje:&lt;/label&gt;
-              &lt;textarea id="mensaje" name="mensaje" rows="2" placeholder="Escribe tu mensaje aquí..." required&gt;&lt;/textarea&gt;
-            &lt;/div&gt;
-          
-            &lt;div class="form-group"&gt;
-              &lt;label for="opciones"&gt;Selecciona una opción:&lt;/label&gt;
-              &lt;select id="opciones" name="opciones" required&gt;
-                &lt;option value=""&gt;-- Selecciona --&lt;/option&gt;
-                &lt;option value="opcion1"&gt;Opción 1&lt;/option&gt;
-                &lt;option value="opcion2"&gt;Opción 2&lt;/option&gt;
-                &lt;option value="opcion3"&gt;Opción 3&lt;/option&gt;
-                &lt;option value="opcion4"&gt;Opción 4&lt;/option&gt;
-                &lt;option value="opcion5"&gt;Opción 5&lt;/option&gt;
-                &lt;option value="opcion6"&gt;Opción 6&lt;/option&gt;
-                &lt;option value="opcion7"&gt;Opción 7&lt;/option&gt;
-                &lt;option value="opcion8"&gt;Opción 8&lt;/option&gt;
-                &lt;option value="opcion9"&gt;Opción 9&lt;/option&gt;
-              &lt;/select&gt;
-            &lt;/div&gt;
-          
-            &lt;div class="form-group"&gt;
-              &lt;label for="archivo"&gt;Sube un archivo:&lt;/label&gt;
-              &lt;input type="file" id="archivo" name="archivo"&gt;
-            &lt;/div&gt;
-          
-            &lt;div class="btn-group"&gt;
-              &lt;input type="submit" value="Enviar" class="btn btn-enviar"&gt;
-              &lt;input type="reset" value="Limpiar" class="btn btn-limpiar"&gt;
-            &lt;/div&gt;
-          &lt;/form&gt;
-                    </code></pre>
       </div>
     </div>
   </div>
-
-  <!-- Footer -->
-  <footer class="row">
-    <div class="footer-content">
-      <div class="footer-logo">
-        <img src="/img/BBLibrary.png" alt="Logo">
-      </div>
-      <div class="footer-links col">
-        <a href="index.html">Inicio</a>
-        <a href="/enlaces/badges.html">Documentación</a>
-        <a href="https://github.com/alissonhernandez/Bing-Bong-Library">Github</a>
-      </div>
-      <div class="footer-colaboradores col">
-        <a href="https://github.com/alissonhernandez">Alisson Hernandéz</a>
-        <a href="https://github.com/DianaEspinal">Diana Espinal</a>
-        <a href="https://github.com/isabeCastillo">Miriam Castillo</a>
-        <a href="https://github.com/Osiris30">Osiris Andrade</a>
-      </div>
-      <div class="copyright row">
-        <p>&copy; 2025 Bing Bong Library. Todos los derechos reservados.</p>
-      </div>
-    </div>
-  </footer>
 </body>
 </html>

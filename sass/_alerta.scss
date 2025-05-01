@@ -2,6 +2,7 @@
 @use 'redondear' as *;
 @use 'variables' as *;
 @use 'margenes' as *;
+@use 'breackpoints' as *;
 @mixin alerta($padding: $spacing-md, $bg-color, $text-color, $border-color, $font-family: $font-envidia, $link-color: $text-color) {
     padding: $padding;
     border-radius: map-get($map: $radius, $key: xl);
@@ -50,5 +51,28 @@
         &-claro{
             @include alerta($bg-color: $furia-suave, $text-color: darken($furia-suave, 15%), $border-color: $furia-suave);
         }
+    }
+}
+.alert-container {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  @media (min-width: 576px) {
+    .alert-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .alert-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 992px) {
+    .alert-container {
+      grid-template-columns: repeat(3, 1fr);
     }
 }
