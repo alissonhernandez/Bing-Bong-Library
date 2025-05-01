@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo Grid</title>
+  <link rel="stylesheet" href="/css/BBLibrary.css">
+  <style>
+    .demo-box {
+      background-color: #87cefa;
+      border: 1px solid #000;
+      text-align: center;
+      padding: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+    <object type="image/svg+xml" data="../iconos/icons.svg" style="display: none;"></object>
+
+  <nav class="navbar_bingbong_img row">
+    <div class="logo">
+      <img src="../img/BBLibrary.png" alt="logo">
+    </div>
+    <input type="checkbox" id="toggler">
+    <label for="toggler">
+      <svg class="icon">
+        <use xlink:href="../iconos/icons.svg#menu"></use>
+      </svg>
+    </label>
+    <div class="nav_items">
+      <a href="../index.html" class="nav_link">Inicio</a>
+      <a href="../enlaces/documentacion.html" class="nav_link col">Documentación</a>
+      <a href="https://github.com/alissonhernandez/Bing-Bong-Library" class="nav_link col">Github</a>
+    </div>
+  </nav>
+  <div class="row">
+    <div class="navbar_furia_text col-2">
+      <input type="checkbox" id="toggler-vertical">
+      <label for="toggler-vertical">
+        <svg class="icon">
+          <use xlink:href="../iconos/icons.svg#menu_flecha"></use>
+        </svg>
+      </label>
+      <ul class="nav_items">
+        <h2 class="navbar__brand">Componentes</h2>
+        <li><a class="nav-link" href="../enlaces/alertas.html">Alertas</a></li>
+        <li><a class="nav-link" href="../enlaces/navegacion.html">Barra de navegación</a></li>
+        <li><a class="nav-link" href="../enlaces/badges.html">Badges</a></li>
+        <li><a class="nav-link" href="../enlaces/botones.html">Botones</a></li>
+        <li><a class="nav-link" href="../enlaces/containers.html">Containers</a></li>
+        <li><a class="nav-link" href="../enlaces/formulario.html">Formularios</a></li>
+        <li><a class="nav-link" href="../enlaces/tarjetas.html">Tarjetas</a></li>
+        <h2 class="navbar__brand">Clases utilitarias</h2>
+        <li><a class="nav-link" href="../enlaces/fondos.html">Colores de fondo</a></li>
+        <li><a class="nav-link" href="../enlaces/margenes.html">Márgenes, padding y bordes</a></li>
+        <li><a class="nav-link" href="../enlaces/mover.html">Mover elementos</a></li>
+        <li><a class="nav-link" href="../enlaces/ocultar.html">Ocultar elementos</a></li>
+        <li><a class="nav-link" href="../enlaces/sombras.html">Sombras</a></li>
+        <li><a class="nav-link" href="../enlaces/textos.html">Tipos de textos</a></li>
+        <li><a class="nav-link" href="../enlaces/redondear.html">Redondear elementos</a></li>
+      </ul>
+    </div>
+
+    <div class="container col-9">
+        <h1>Sistema de Grid de Bing Bong Library</h1>
+        <p>
+        Este sistema de grid está basado en 12 columnas, es flexible y responsivo.  
+        Puedes combinar columnas que sumen hasta 12 en una fila.  
+        A continuación, se muestran ejemplos básicos con comentarios.
+        </p><br>
+        <h2>3 columnas de 4 (col-4)</h2>
+        <div class="row">
+          <div class="col-4"><div class="demo-box">Col 4</div></div>
+          <div class="col-4"><div class="demo-box">Col 4</div></div>
+          <div class="col-4"><div class="demo-box">Col 4</div></div>
+        </div><br>
+      
+        <h2>2 columnas de 6 (col-6)</h2>
+        <div class="row">
+          <div class="col-6"><div class="demo-box">Col 6</div></div>
+          <div class="col-6"><div class="demo-box">Col 6</div></div>
+        </div><br>
+      
+        <h2>1 columna de 3 y 1 de 9 (col-3 + col-9)</h2>
+        <div class="row">
+          <div class="col-3"><div class="demo-box">Col 3</div></div>
+          <div class="col-9"><div class="demo-box">Col 9</div></div>
+        </div><br>
+        
+        <h2>1 sola columna (col-12)</h2>
+    <div class="row">
+      <div class="col-12"><div class="demo-box">Col 12</div></div>
+    </div>
+
+    <p>
+      Recuerda que la clase <code>.row</code> agrupa las columnas,  
+      y las clases <code>.col-X</code> definen cuántas columnas ocupa cada una.  
+      Asegúrate de que el total por fila no exceda 12.
+    </p>
+      </div>
+    </div>
+</div>
+
+  <footer class="row">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="../img/BBLibrary.png" alt="Logo">
+      </div>
+      <div class="footer-links col">
+        <a href="../index.html">Inicio</a>
+        <a href="../enlaces/documentacion.html">Documentación</a>
+        <a href="https://github.com/alissonhernandez/Bing-Bong-Library">Github</a>
+      </div>
+      <div class="footer-colaboradores col">
+        <a href="https://github.com/alissonhernandez">Alisson Hernández</a>
+        <a href="https://github.com/DianaEspinal">Diana Espinal</a>
+        <a href="https://github.com/isabeCastillo">Miriam Castillo</a>
+        <a href="https://github.com/Osiris30">Osiris Andrade</a>
+      </div>
+      <div class="copyright row">
+        <p>&copy; 2025 Bing Bong Library. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
