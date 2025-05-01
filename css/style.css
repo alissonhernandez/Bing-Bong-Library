@@ -4799,17 +4799,10 @@ body {
   transform: scale(1.05);
 }
 
-body {
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
-
 .container-sb {
   width: 200px;
   padding: 1rem;
+  margin: 20px auto;
   border-radius: 1rem;
   border: 2px solid #150f0f;
   text-align: center;
