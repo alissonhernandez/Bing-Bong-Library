@@ -9,6 +9,7 @@
 - [Proyecto](#sobre-nuestro-proyecto)
 - [Bing Bong Library](#bing-bong-library)
 - [¿Qué necesitas?](#qué-necesitas)
+- [¿Cómo usarla con CDN?](#cómo-usarla-con-cdn)
 - [Realizado con](#realizados-con)
 - [Versión](#version)
 - [Autores](#autores)
@@ -41,6 +42,13 @@ _Tener instalado en tu maquina los siguientes componentes:_
 - Un editor de texto.
 - Node.js para compilar codigo en SASS.
 - Instalación previa de SASS.
+```
+## ¿CÓMO USARLA CON CDN?
+
+Puedes incluir Bing Bong Library fácilmente en tu proyecto HTML sin necesidad de descargar archivos. Solo copia este enlace en tu `<head>`:
+
+```html
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/alissonhernandez/Bing-Bong-Library@main/css/BBLibrary.css">
 ```
 
 ## REALIZADOS CON:
