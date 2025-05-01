@@ -120,6 +120,23 @@
         display: flex;
         gap: $items-gap;
     }
+    @media screen and (max-width: 760px) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        row-gap: 1rem;
+        padding: 1rem;
+    
+        .nav_marca {
+          justify-self: start;
+        }
+    
+        .nav_items {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+        }
+    }
 }
 
 //usando el formato general y dando diseño al texto

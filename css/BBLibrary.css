@@ -4348,6 +4348,23 @@ body {
   display: flex;
   gap: 2.5rem;
 }
+@media screen and (max-width: 760px) {
+  .navbar_furia_nametext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+  .navbar_furia_nametext .nav_marca {
+    justify-self: start;
+  }
+  .navbar_furia_nametext .nav_items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
 
 .navbar_envidia_nametext {
   display: flex;
@@ -4377,6 +4394,23 @@ body {
   color: #850e8b;
   display: flex;
   gap: 2.5rem;
+}
+@media screen and (max-width: 760px) {
+  .navbar_envidia_nametext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+  .navbar_envidia_nametext .nav_marca {
+    justify-self: start;
+  }
+  .navbar_envidia_nametext .nav_items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
 
 .navbar_ansiedad_nametext {
@@ -4408,6 +4442,23 @@ body {
   display: flex;
   gap: 2.5rem;
 }
+@media screen and (max-width: 760px) {
+  .navbar_ansiedad_nametext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+  .navbar_ansiedad_nametext .nav_marca {
+    justify-self: start;
+  }
+  .navbar_ansiedad_nametext .nav_items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
 
 .navbar_alegria_nametext {
   display: flex;
@@ -4437,6 +4488,23 @@ body {
   color: #e1ec56;
   display: flex;
   gap: 2.5rem;
+}
+@media screen and (max-width: 760px) {
+  .navbar_alegria_nametext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+  .navbar_alegria_nametext .nav_marca {
+    justify-self: start;
+  }
+  .navbar_alegria_nametext .nav_items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
 
 .navbar_temor_nametext {
@@ -4468,6 +4536,23 @@ body {
   display: flex;
   gap: 2.5rem;
 }
+@media screen and (max-width: 760px) {
+  .navbar_temor_nametext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+  .navbar_temor_nametext .nav_marca {
+    justify-self: start;
+  }
+  .navbar_temor_nametext .nav_items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
 
 .navbar_desagrado_nametext {
   display: flex;
@@ -4497,6 +4582,23 @@ body {
   color: #20441F;
   display: flex;
   gap: 2.5rem;
+}
+@media screen and (max-width: 760px) {
+  .navbar_desagrado_nametext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+  .navbar_desagrado_nametext .nav_marca {
+    justify-self: start;
+  }
+  .navbar_desagrado_nametext .nav_items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
 
 .navbar_verguenza_nametext {
@@ -4528,6 +4630,23 @@ body {
   display: flex;
   gap: 2.5rem;
 }
+@media screen and (max-width: 760px) {
+  .navbar_verguenza_nametext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+  .navbar_verguenza_nametext .nav_marca {
+    justify-self: start;
+  }
+  .navbar_verguenza_nametext .nav_items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
 
 .navbar_tristeza_nametext {
   display: flex;
@@ -4558,6 +4677,23 @@ body {
   display: flex;
   gap: 2.5rem;
 }
+@media screen and (max-width: 760px) {
+  .navbar_tristeza_nametext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+  .navbar_tristeza_nametext .nav_marca {
+    justify-self: start;
+  }
+  .navbar_tristeza_nametext .nav_items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
 
 .navbar_aburrimiento_nametext {
   display: flex;
@@ -4587,6 +4723,23 @@ body {
   color: #0F1156;
   display: flex;
   gap: 2.5rem;
+}
+@media screen and (max-width: 760px) {
+  .navbar_aburrimiento_nametext {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    row-gap: 1rem;
+    padding: 1rem;
+  }
+  .navbar_aburrimiento_nametext .nav_marca {
+    justify-self: start;
+  }
+  .navbar_aburrimiento_nametext .nav_items {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
 }
 
 .navbar_furia_text {
