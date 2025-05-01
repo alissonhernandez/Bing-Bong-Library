@@ -1,0 +1,16 @@
+.img-emocion {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    display: block;
+    margin: 2rem auto; 
+  
+    // Responsive
+    @media (min-width: 768px) {
+      max-width: 300px;
+    }
+  
+    @media (min-width: 1024px) {
+      max-width: 350px;
+    }
+  }

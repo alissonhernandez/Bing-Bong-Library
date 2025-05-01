@@ -5442,4 +5442,22 @@ footer .footer-content .copyright p {
   }
 }
 
+.img-emocion {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 2rem auto;
+}
+@media (min-width: 768px) {
+  .img-emocion {
+    max-width: 300px;
+  }
+}
+@media (min-width: 1024px) {
+  .img-emocion {
+    max-width: 350px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
