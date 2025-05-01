@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../img/BBLibrary.png">
+</head>
+<body>
+    <object type="image/svg+xml" data="../iconos/icons.svg" style="display: none;"></object>
+    <nav class="navbar_bingbong_img row">
+        <div class="logo">
+            <img src="../img/BBLibrary.png" alt="logo">
+        </div>
+        <input type="checkbox" id="toggler">
+        <label for="toggler">
+            <svg class="icon">
+                <use xlink:href="../iconos/icons.svg#menu"></use>
+            </svg>
+        </label>
+        <div class="nav_items">
+            <a href="../index.html" class="nav_link">Inicio</a>
+            <a href="../enlaces/documentacion.html" class="nav_link col">Documentación</a>
+            <a href="https://github.com/alissonhernandez/Bing-Bong-Library" class="nav_link col">Github</a>
+        </div>
+    </nav>
+    <div class="row">
+      <div class="navbar_furia_text col-2">
+        <input type="checkbox" id="toggler-vertical">
+          <label for="toggler-vertical">
+            <svg class="icon">
+              <use xlink:href="../iconos/icons.svg#menu_flecha"></use>
+            </svg>
+          </label>
+        <ul class="nav_items">
+          <h2 class="navbar__brand">Componentes </h2>
+          <li><a class="nav-link" href="../enlaces/alertas.html">Alertas</a></li>
+          <li><a class="nav-link" href="../enlaces/navegacion.html">Barra de navegación</a></li>
+          <li><a class="nav-link" href="../enlaces/badges.html">Badges</a></li>
+          <li><a class="nav-link" href="../enlaces/botones.html">Botones</a></li>
+          <li><a class="nav-link" href="../enlaces/containers.html">Containers</a></li>
+          <li><a class="nav-link" href="../enlaces/formulario.html">Formularios</a></li>
+          <li><a class="nav-link" href="../enlaces/tarjetas.html">Tarjetas</a></li>
+          <h2 class="navbar__brand">Clases utilitarias</h2>
+          <li><a class="nav-link" href="../enlaces/fondos.html">Colores de fondo</a></li>
+          <li><a class="nav-link" href="../enlaces/margenes.html">Margenes, padding y bordes</a></li>
+          <li><a class="nav-link" href="../enlaces/mover.html">Mover elementos</a></li>
+          <li><a class="nav-link" href="../enlaces/ocultar.html">Ocultar elementos</a></li>
+          <li><a class="nav-link" href="../enlaces/sombras.html">Sombras</a></li>
+          <li><a class="nav-link" href="../enlaces/textos.html">Tipos de textos</a></li>
+          <li><a class="nav-link" href="../enlaces/redondear.html">Redondear elementos</a></li>
+        </ul>
+      </div>
+        <div class="col-9">
+          <div class="container-principal-sc">
+            <div class="grupo-info">
+                <h1 class="font-verguenza text-verguenza-fantastica">TARJETAS EMOCIONALES</h1>
+              </div>
+              <p class="font-desagrado text-furia-oscuro">
+                Descubrí el diseño único de cada emoción en estas tarjetas interactivas. 
+                Colores, formas y animaciones se combinan para mostrar cómo se siente cada una. ¡Explorá y sentí cada emoción a tu ritmo!
+              </p>
+              
+            <div class="tarjetas-container">
+                <div class="tarjeta-verguenza">
+                    <h3>Vergüenza</h3>
+                    <p>Prefiere quedarse en casa... le da mucha pena salir. <br>🥺<br>👉🏼👈🏼</p>
+                </div>
+
+                <code>
+                    &lt;div class="tarjetas-container"&gt;
+                      &lt;div class="tarjeta-verguenza"&gt;
+                        &lt;h3&gt;Vergüenza&lt;/h3&gt;
+                        &lt;p&gt;Prefiere quedarse en casa... le da mucha pena salir. &lt;br&gt;🥺&lt;br&gt;👉🏼👈🏼&lt;/p&gt;
+                      &lt;/div&gt;
+                    &lt;/div&gt;
+                </code>                  
+                <div class="tarjeta-tristeza">
+                    <div class="flip-inner">
+                        <div class="flip-front">
+                            <img src="../img/tristeza.jpg" alt="Tristeza" />
+                        </div>
+                    <div class="flip-back">
+                        <h3>Tristeza</h3>
+                        <p>Sin tristeza, la alegría no se siente igual.</p>
+                    </div>
+                </div>   
+            </div>
+            <code>
+                &lt;div class="tarjeta-tristeza"&gt;
+                  &lt;div class="flip-inner"&gt;
+                    &lt;div class="flip-front"&gt;
+                      &lt;img src="../img/tristeza.jpg" alt="Tristeza" /&gt;
+                    &lt;/div&gt;
+                    &lt;div class="flip-back"&gt;
+                      &lt;h3&gt;Tristeza&lt;/h3&gt;
+                      &lt;p&gt;Sin tristeza, la alegría no se siente igual.&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              </code>
+              
+            <div class="tarjeta-desagrado">
+                <h3 class="text-xl">Desagrado</h3>
+                <p class="text-xxl font-desagrado text-desagrado-autoridad">¡NO TOQUES ESE BOTÓN!</p>
+                <a class="btn-m temor-D" href="brocoli.html"><p class="centrado-arriba text-xl">Vamos</p></a>
+            </div>
+            <code>
+                &lt;div class="tarjeta-desagrado"&gt;
+                  &lt;h3 class="text-xl"&gt;Desagrado&lt;/h3&gt;
+                  &lt;p class="text-xxl font-desagrado text-desagrado-autoridad"&gt;¡NO TOQUES ESE BOTÓN!&lt;/p&gt;
+                  &lt;a class="btn-m temor-D" href="brocoli.html"&gt;
+                    &lt;p class="centrado-arriba text-xl"&gt;Vamos&lt;/p&gt;
+                  &lt;/a&gt;
+                &lt;/div&gt;
+              </code>
+              
+        </div>
+    </div>
+</div>
+</div>
+<footer class="row">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="../img/BBLibrary.png" alt="Logo">
+      </div>
+      <div class="footer-links col">
+        <a href="index.html">Inicio</a>
+        <a href="../enlaces/documentacion.html">Documentación</a>
+        <a href="https://github.com/alissonhernandez/Bing-Bong-Library">Github</a>
+      </div>
+      <div class="footer-colaboradores col">
+        <a href="https://github.com/alissonhernandez">Alisson Hernandéz</a>
+        <a href="https://github.com/DianaEspinal">Diana Espinal</a>
+        <a href="https://github.com/isabeCastillo">Miriam Castillo</a>
+        <a href="https://github.com/Osiris30">Osiris Andrade</a>
+      </div>
+      <div class="copyright row">
+        <p>&copy; 2025 Bing Bong Library. Todos los derechos reservados.</p>
+      </div>
+   </div>
+</footer>
+      
+</body>
+</html>

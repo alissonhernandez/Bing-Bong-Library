@@ -273,7 +273,7 @@
   font-weight: bold;
 }
 
-.rounded-full {
+.rounded-full, .tarjeta-verguenza {
   width: 100px;
   height: 100px;
   border-radius: 9999px;
@@ -527,7 +527,8 @@
   text-align: center;
 }
 
-.rounded-emotion-tristeza-md {
+.rounded-emotion-tristeza-md, .tarjeta-tristeza .flip-front,
+.tarjeta-tristeza .flip-back {
   border-radius: 25px;
   background-color: #40B2E3;
   padding: 0.5rem;
@@ -600,7 +601,7 @@
   text-align: center;
 }
 
-.rounded-emotion-desagrado-lg {
+.rounded-emotion-desagrado-lg, .tarjeta-desagrado {
   border-radius: 35px;
   background-color: #78AB65;
   padding: 0.5rem;
@@ -715,7 +716,7 @@
   text-align: center;
 }
 
-.rounded-full {
+.rounded-full, .tarjeta-verguenza {
   border-radius: 9999px;
 }
 
@@ -5591,7 +5592,7 @@ body {
   box-shadow: 0 5px 10px rgba(120, 171, 101, 0.4);
 }
 
-.shadow-desagrado-md {
+.shadow-desagrado-md, .tarjeta-desagrado {
   box-shadow: 0 8px 16px rgba(120, 171, 101, 0.5);
 }
 
@@ -5643,7 +5644,7 @@ body {
   box-shadow: 0 20px 40px rgba(216, 98, 137, 0.8);
 }
 
-.shadow-verguenza-3xl {
+.shadow-verguenza-3xl, .tarjeta-verguenza {
   box-shadow: 0 24px 48px rgba(216, 98, 137, 0.9);
 }
 
@@ -5663,7 +5664,8 @@ body {
   box-shadow: 0 5px 10px rgba(64, 178, 227, 0.4);
 }
 
-.shadow-tristeza-md {
+.shadow-tristeza-md, .tarjeta-tristeza .flip-front,
+.tarjeta-tristeza .flip-back {
   box-shadow: 0 8px 16px rgba(64, 178, 227, 0.5);
 }
 
@@ -5816,7 +5818,7 @@ body {
   color: #7b65a6;
 }
 
-.bg-desagrado, .move-desagrado {
+.bg-desagrado, .move-desagrado, .tarjeta-desagrado {
   background-color: #78AB65;
   color: white;
 }
@@ -5829,7 +5831,7 @@ body {
   color: #78AB65;
 }
 
-.bg-verguenza {
+.bg-verguenza, .tarjeta-verguenza {
   background-color: #D86289;
   color: white;
 }
@@ -5842,7 +5844,7 @@ body {
   color: #D86289;
 }
 
-.bg-tristeza, .move-tristeza {
+.bg-tristeza, .move-tristeza, .tarjeta-tristeza .flip-front {
   background-color: #40B2E3;
   color: white;
 }
@@ -6137,6 +6139,94 @@ footer .footer-content .copyright p {
 }
 .contenedor-hover:hover .tooltip {
   display: block;
+}
+
+.tarjetas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.tarjeta, .tarjeta-desagrado, .tarjeta-verguenza {
+  width: 280px;
+  margin: 1rem;
+  font-family: "Creepster", cursive;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.tarjeta-verguenza {
+  padding: 1rem;
+  border: 3px dashed #834186;
+  width: 280px;
+  height: 200px;
+}
+.tarjeta-verguenza h3 {
+  color: #834186;
+  font-family: "Gloria Hallelujah", cursive;
+  margin-bottom: 0.5rem;
+}
+.tarjeta-verguenza p {
+  font-size: 1rem;
+  color: #834186;
+  font-family: "Gloria Hallelujah", cursive;
+}
+
+.tarjeta-tristeza {
+  perspective: 1000px;
+  width: 280px;
+  height: 300px;
+}
+.tarjeta-tristeza .flip-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.tarjeta-tristeza:hover .flip-inner {
+  transform: rotateY(180deg);
+}
+.tarjeta-tristeza .flip-front,
+.tarjeta-tristeza .flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.tarjeta-tristeza .flip-front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tarjeta-tristeza .flip-front img {
+  width: 100%;
+  border-radius: 25px;
+}
+.tarjeta-tristeza .flip-back {
+  background-color: #89ABC3;
+  color: #213054;
+  transform: rotateY(180deg);
+  padding: 1rem;
+}
+.tarjeta-tristeza .flip-back h3 {
+  font-family: "Comfortaa", sans-serif;
+}
+.tarjeta-tristeza .flip-back p {
+  font-size: 1rem;
+}
+
+.tarjeta-desagrado {
+  border: 2px solid #994398;
+  padding: 1rem;
+}
+.tarjeta-desagrado h3 {
+  color: #994398;
+  font-family: "Lilita One", cursive;
 }
 
 .img-emocion {
