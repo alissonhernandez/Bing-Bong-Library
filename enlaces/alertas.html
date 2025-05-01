@@ -9,6 +9,7 @@
 </head>
 <body>
   <object type="image/svg+xml" data="../iconos/icons.svg" style="display: none;"></object>
+
   <nav class="navbar_bingbong_img row">
     <div class="logo">
       <img src="../img/BBLibrary.png" alt="logo">
@@ -25,16 +26,17 @@
       <a href="https://github.com/alissonhernandez/Bing-Bong-Library" class="nav_link col">Github</a>
     </div>
   </nav>
+
   <div class="row">
     <div class="navbar_furia_text col-2">
       <input type="checkbox" id="toggler-vertical">
-        <label for="toggler-vertical">
-          <svg class="icon">
-            <use xlink:href="../iconos/icons.svg#menu_flecha"></use>
-          </svg>
-        </label>
+      <label for="toggler-vertical">
+        <svg class="icon">
+          <use xlink:href="../iconos/icons.svg#menu_flecha"></use>
+        </svg>
+      </label>
       <ul class="nav_items">
-        <h2 class="navbar__brand">Componentes </h2>
+        <h2 class="navbar__brand">Componentes</h2>
         <li><a class="nav-link" href="../enlaces/alertas.html">Alertas</a></li>
         <li><a class="nav-link" href="../enlaces/navegacion.html">Barra de navegación</a></li>
         <li><a class="nav-link" href="../enlaces/badges.html">Badges</a></li>
@@ -44,7 +46,7 @@
         <li><a class="nav-link" href="../enlaces/tarjetas.html">Tarjetas</a></li>
         <h2 class="navbar__brand">Clases utilitarias</h2>
         <li><a class="nav-link" href="../enlaces/fondos.html">Colores de fondo</a></li>
-        <li><a class="nav-link" href="../enlaces/margenes.html">Margenes, padding y bordes</a></li>
+        <li><a class="nav-link" href="../enlaces/margenes.html">Márgenes, padding y bordes</a></li>
         <li><a class="nav-link" href="../enlaces/mover.html">Mover elementos</a></li>
         <li><a class="nav-link" href="../enlaces/ocultar.html">Ocultar elementos</a></li>
         <li><a class="nav-link" href="../enlaces/sombras.html">Sombras</a></li>
@@ -52,26 +54,152 @@
         <li><a class="nav-link" href="../enlaces/redondear.html">Redondear elementos</a></li>
       </ul>
     </div>
-    <div class="col-9">
-      <div class="container-principal-sc">
-        <div class="grupo-info">
-          <h1 class="font-verguenza text-verguenza-fantastica">Sistema de Alertas</h1>
-        </div>
-        <p class="font-alegria text-furia-oscuro text-xl">
-          Nuestro sistema de alertas proporciona mensajes visuales y contextuales que informan al usuario sobre eventos importantes dentro del sitio. Las alertas están clasificadas por tipo y color para facilitar su identificación y mejorar la experiencia del usuario. A continuación, se presentan ejemplos de cada tipo:
-        </p>
 
-        <div class="alert-container">
-          <div class="alert-exito"><strong>Éxito:</strong> Tu acción se completó correctamente.</div>
-          <div class="alert-peligro"><strong>Error:</strong> Ocurrió un problema al guardar.</div>
-          <div class="alert-info"><strong>Información:</strong> Este es un mensaje informativo general.</div>
-          <div class="alert-advertencia"><strong>Advertencia:</strong> Verifica los campos obligatorios antes de continuar.</div>
-          <div class="alert-importante-claro"><strong>Importante:</strong> Este es un mensaje con fondo claro y resaltado.</div>
-          <div class="alert-importante-oscuro"><strong>Importante:</strong> Este es un mensaje con fondo oscuro para mayor énfasis.</div>
-          <div class="alert-advertencia">
-            <strong>Enlace:</strong> Consulta nuestra <a href="#">política de privacidad</a> para más detalles.
-          </div>
+
+    <div class="container-principal-sc col-9">
+      <div class="grupo-info">
+        <h1 class="font-tristeza text-envidia-alarmante text-m">Sistema de Alertas</h1>
+      </div>
+      <p class="font-alegria text-furia-oscuro text-xl">
+        Nuestro sistema de alertas proporciona mensajes visuales y contextuales que informan al usuario sobre eventos importantes dentro del sitio. Las alertas están clasificadas por tipo y color para facilitar su identificación y mejorar la experiencia del usuario. A continuación, se presentan ejemplos de cada tipo:
+      </p>
+
+      <div>
+        <div class="alerta-info">Alerta de información</div>
+        <div class="alerta-peligro">Alerta de peligro</div>
+        <div class="alerta-advertencia">Alerta de advertencia</div>
+        <div class="alerta-exito">Alerta de completado</div>
+        <div class="alerta-importante-claro">Alerta importante clara</div>
+        <div class="alerta-importante-oscuro">Alerta importante oscuro</div>
+        
+        <pre><code>&lt;div class="alerta alerta-informacion"&gt;
+          Esta es una alerta de información.
+        &lt;/div&gt;
+        
+        &lt;div class="alerta alerta-peligro"&gt;
+          Esta es una alerta de peligro.
+        &lt;/div&gt;
+        
+        &lt;div class="alerta alerta-advertencia"&gt;
+          Esta es una alerta de advertencia.
+        &lt;/div&gt;
+        
+        &lt;div class="alerta alerta-completado"&gt;
+          Esta es una alerta de completado.
+        &lt;/div&gt;
+        </code></pre>
+
+        <div class="alerta-info">Alerta de información para más <a href="#" class="alerta-link">información visite aquí</a></div>
+        <div class="alerta-peligro">Alerta de peligro precaución <a href="#" class="alerta-link">sigue estos pasos</a></div>
+        <div class="alerta-advertencia">Alerta de advertencia ¿estas seguro? <a href="#" class="alerta-link">informate si tienes dudas</a></div>
+        <div class="alerta alerta-exito">Alerta de completado para más <a href="#" class="alerta-link">información visite aquí</a></div>
+        <div class="alerta-importante-claro">Alerta importante mas <a href="#" class="alerta-link">información visite aquí</a></div>
+        <div class="alerta-importante-oscuro">Alerta importante mas más <a href="#" class="alerta-link">información visite aquí</a></div>
+        <pre><code>&lt;div class="alerta alerta-informacion"&gt;
+          Alerta de información para más &lt;a href="#" class="alerta-link"&gt;información visite aquí&lt;/a&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="alerta alerta-peligro"&gt;
+          Alerta de peligro para más &lt;a href="#" class="alerta-link"&gt;información visite aquí&lt;/a&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="alerta alerta-advertencia"&gt;
+          Alerta de advertencia para más &lt;a href="#" class="alerta-link"&gt;información visite aquí&lt;/a&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="alerta alerta-completado"&gt;
+          Alerta de completado para más &lt;a href="#" class="alerta-link"&gt;información visite aquí&lt;/a&gt;
+        &lt;/div&gt;
+        </code></pre>
+
+        <div class="alerta alerta-informacion">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+          </svg>
+          Esta es una alerta de información
         </div>
+
+        <div class="alerta alerta-peligro">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+          Esta es una alerta de peligro
+        </div>
+
+        <div class="alerta alerta-advertencia">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+          </svg>
+          ¡Es una advertencia!
+        </div>
+
+        <div class="alerta alerta-completado">
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+          </svg>
+          Se ha completado satisfactoriamente
+        </div>
+        <pre><code>&lt;div class=&quot;alerta alerta-peligro&quot;&gt;
+          &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+            &lt;path d=&quot;M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z&quot;/&gt;
+          &lt;/svg&gt;
+          Esta es una alerta de peligro
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;alerta alerta-advertencia&quot;&gt;
+          &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+            &lt;path d=&quot;M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z&quot;/&gt;
+          &lt;/svg&gt;
+          ¡Es una advertencia!
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;alerta alerta-completado&quot;&gt;
+          &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;24&quot; height=&quot;24&quot; fill=&quot;currentColor&quot; viewBox=&quot;0 0 16 16&quot;&gt;
+            &lt;path d=&quot;M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z&quot;/&gt;
+          &lt;/svg&gt;
+          Se ha completado satisfactoriamente
+        &lt;/div&gt;
+        </code>
+
+        <div class="alerta-info">
+          <h1>¡Alerta Información!</h1>
+          <p class="ttxt-Arial">Tenemos información sobre tus datos guardados.</p>
+        </div>
+
+        <div class="alerta-peligro">
+          <h1>¡Error!</h1>
+          <p class="ttxt-Arial">Ha sucedido un error al guardar tus datos.</p>
+        </div>
+
+        <div class="alerta-advertencia">
+          <h1>¡Advertencia!</h1>
+          <p class="ttxt-Arial">Puede que algo haya salido mal anteriormente.</p>
+        </div>
+
+        <div class="alerta-exito">
+          <h1>¡Bien hecho!</h1>
+          <p class="ttxt-Arial">Datos guardados correctamente.</p>
+        </div>
+        <code>&lt;div class=&quot;alerta alerta-informacion&quot;&gt;
+          &lt;h1&gt;¡Alerta Información!&lt;/h1&gt;
+          &lt;p class=&quot;ttxt-Arial&quot;&gt;Tenemos información sobre tus datos guardados.&lt;/p&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;alerta alerta-peligro&quot;&gt;
+          &lt;h1&gt;¡Error!&lt;/h1&gt;
+          &lt;p class=&quot;ttxt-Arial&quot;&gt;Ha sucedido un error al guardar tus datos.&lt;/p&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;alerta alerta-advertencia&quot;&gt;
+          &lt;h1&gt;¡Advertencia!&lt;/h1&gt;
+          &lt;p class=&quot;ttxt-Arial&quot;&gt;Puede que algo haya salido mal anteriormente.&lt;/p&gt;
+        &lt;/div&gt;
+        
+        &lt;div class=&quot;alerta alerta-completado&quot;&gt;
+          &lt;h1&gt;¡Bien hecho!&lt;/h1&gt;
+          &lt;p class=&quot;ttxt-Arial&quot;&gt;Datos guardados correctamente.&lt;/p&gt;
+        &lt;/div&gt;
+        </code>
       </div>
     </div>
   </div>
@@ -81,12 +209,12 @@
         <img src="../img/BBLibrary.png" alt="Logo">
       </div>
       <div class="footer-links col">
-        <a href="index.html">Inicio</a>
+        <a href="../index.html">Inicio</a>
         <a href="../enlaces/documentacion.html">Documentación</a>
         <a href="https://github.com/alissonhernandez/Bing-Bong-Library">Github</a>
       </div>
       <div class="footer-colaboradores col">
-        <a href="https://github.com/alissonhernandez">Alisson Hernandéz</a>
+        <a href="https://github.com/alissonhernandez">Alisson Hernández</a>
         <a href="https://github.com/DianaEspinal">Diana Espinal</a>
         <a href="https://github.com/isabeCastillo">Miriam Castillo</a>
         <a href="https://github.com/Osiris30">Osiris Andrade</a>
@@ -94,7 +222,7 @@
       <div class="copyright row">
         <p>&copy; 2025 Bing Bong Library. Todos los derechos reservados.</p>
       </div>
-   </div>
+    </div>
   </footer>
 </body>
 </html>
