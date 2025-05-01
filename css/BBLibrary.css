@@ -3499,9 +3499,6 @@ body {
   transform: scale(1.3);
 }
 .navbar_furia_img #toggler,
-.navbar_furia_img #toggler-furia,
-.navbar_furia_img #toggler-envidia,
-.navbar_furia_img #toggler-ansiedad,
 .navbar_furia_img label {
   display: none;
   color: white;
@@ -3549,13 +3546,10 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_furia_img #toggler, .navbar_furia_img #toggler-furia, .navbar_furia_img #toggler-envidia, .navbar_furia_img #toggler-ansiedad {
+  .navbar_furia_img #toggler {
     display: none;
   }
-  .navbar_furia_img #toggler,
-  .navbar_furia_img #toggler-furia,
-  .navbar_furia_img #toggler-envidia,
-  .navbar_furia_img #toggler-ansiedad:checked ~ .nav_items {
+  .navbar_furia_img #toggler:checked ~ .nav_items {
     max-height: 500px;
   }
 }
@@ -3597,9 +3591,6 @@ body {
   transform: scale(1.3);
 }
 .navbar_envidia_img #toggler,
-.navbar_envidia_img #toggler-furia,
-.navbar_envidia_img #toggler-envidia,
-.navbar_envidia_img #toggler-ansiedad,
 .navbar_envidia_img label {
   display: none;
   color: white;
@@ -3647,13 +3638,10 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_envidia_img #toggler, .navbar_envidia_img #toggler-furia, .navbar_envidia_img #toggler-envidia, .navbar_envidia_img #toggler-ansiedad {
+  .navbar_envidia_img #toggler {
     display: none;
   }
-  .navbar_envidia_img #toggler,
-  .navbar_envidia_img #toggler-furia,
-  .navbar_envidia_img #toggler-envidia,
-  .navbar_envidia_img #toggler-ansiedad:checked ~ .nav_items {
+  .navbar_envidia_img #toggler:checked ~ .nav_items {
     max-height: 500px;
   }
 }
@@ -3695,9 +3683,6 @@ body {
   transform: scale(1.3);
 }
 .navbar_ansiedad_img #toggler,
-.navbar_ansiedad_img #toggler-furia,
-.navbar_ansiedad_img #toggler-envidia,
-.navbar_ansiedad_img #toggler-ansiedad,
 .navbar_ansiedad_img label {
   display: none;
   color: white;
@@ -3745,13 +3730,10 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_ansiedad_img #toggler, .navbar_ansiedad_img #toggler-furia, .navbar_ansiedad_img #toggler-envidia, .navbar_ansiedad_img #toggler-ansiedad {
+  .navbar_ansiedad_img #toggler {
     display: none;
   }
-  .navbar_ansiedad_img #toggler,
-  .navbar_ansiedad_img #toggler-furia,
-  .navbar_ansiedad_img #toggler-envidia,
-  .navbar_ansiedad_img #toggler-ansiedad:checked ~ .nav_items {
+  .navbar_ansiedad_img #toggler:checked ~ .nav_items {
     max-height: 500px;
   }
 }
@@ -3793,9 +3775,6 @@ body {
   transform: scale(1.3);
 }
 .navbar_alegria_img #toggler,
-.navbar_alegria_img #toggler-furia,
-.navbar_alegria_img #toggler-envidia,
-.navbar_alegria_img #toggler-ansiedad,
 .navbar_alegria_img label {
   display: none;
   color: white;
@@ -3843,13 +3822,10 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_alegria_img #toggler, .navbar_alegria_img #toggler-furia, .navbar_alegria_img #toggler-envidia, .navbar_alegria_img #toggler-ansiedad {
+  .navbar_alegria_img #toggler {
     display: none;
   }
-  .navbar_alegria_img #toggler,
-  .navbar_alegria_img #toggler-furia,
-  .navbar_alegria_img #toggler-envidia,
-  .navbar_alegria_img #toggler-ansiedad:checked ~ .nav_items {
+  .navbar_alegria_img #toggler:checked ~ .nav_items {
     max-height: 500px;
   }
 }
@@ -3891,9 +3867,6 @@ body {
   transform: scale(1.3);
 }
 .navbar_temor_img #toggler,
-.navbar_temor_img #toggler-furia,
-.navbar_temor_img #toggler-envidia,
-.navbar_temor_img #toggler-ansiedad,
 .navbar_temor_img label {
   display: none;
   color: white;
@@ -3941,13 +3914,10 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_temor_img #toggler, .navbar_temor_img #toggler-furia, .navbar_temor_img #toggler-envidia, .navbar_temor_img #toggler-ansiedad {
+  .navbar_temor_img #toggler {
     display: none;
   }
-  .navbar_temor_img #toggler,
-  .navbar_temor_img #toggler-furia,
-  .navbar_temor_img #toggler-envidia,
-  .navbar_temor_img #toggler-ansiedad:checked ~ .nav_items {
+  .navbar_temor_img #toggler:checked ~ .nav_items {
     max-height: 500px;
   }
 }
@@ -3989,9 +3959,6 @@ body {
   transform: scale(1.3);
 }
 .navbar_desagrado_img #toggler,
-.navbar_desagrado_img #toggler-furia,
-.navbar_desagrado_img #toggler-envidia,
-.navbar_desagrado_img #toggler-ansiedad,
 .navbar_desagrado_img label {
   display: none;
   color: white;
@@ -4039,13 +4006,10 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_desagrado_img #toggler, .navbar_desagrado_img #toggler-furia, .navbar_desagrado_img #toggler-envidia, .navbar_desagrado_img #toggler-ansiedad {
+  .navbar_desagrado_img #toggler {
     display: none;
   }
-  .navbar_desagrado_img #toggler,
-  .navbar_desagrado_img #toggler-furia,
-  .navbar_desagrado_img #toggler-envidia,
-  .navbar_desagrado_img #toggler-ansiedad:checked ~ .nav_items {
+  .navbar_desagrado_img #toggler:checked ~ .nav_items {
     max-height: 500px;
   }
 }
@@ -4087,9 +4051,6 @@ body {
   transform: scale(1.3);
 }
 .navbar_verguenza_img #toggler,
-.navbar_verguenza_img #toggler-furia,
-.navbar_verguenza_img #toggler-envidia,
-.navbar_verguenza_img #toggler-ansiedad,
 .navbar_verguenza_img label {
   display: none;
   color: white;
@@ -4137,13 +4098,10 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_verguenza_img #toggler, .navbar_verguenza_img #toggler-furia, .navbar_verguenza_img #toggler-envidia, .navbar_verguenza_img #toggler-ansiedad {
+  .navbar_verguenza_img #toggler {
     display: none;
   }
-  .navbar_verguenza_img #toggler,
-  .navbar_verguenza_img #toggler-furia,
-  .navbar_verguenza_img #toggler-envidia,
-  .navbar_verguenza_img #toggler-ansiedad:checked ~ .nav_items {
+  .navbar_verguenza_img #toggler:checked ~ .nav_items {
     max-height: 500px;
   }
 }
@@ -4185,9 +4143,6 @@ body {
   transform: scale(1.3);
 }
 .navbar_tristeza_img #toggler,
-.navbar_tristeza_img #toggler-furia,
-.navbar_tristeza_img #toggler-envidia,
-.navbar_tristeza_img #toggler-ansiedad,
 .navbar_tristeza_img label {
   display: none;
   color: white;
@@ -4235,13 +4190,10 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_tristeza_img #toggler, .navbar_tristeza_img #toggler-furia, .navbar_tristeza_img #toggler-envidia, .navbar_tristeza_img #toggler-ansiedad {
+  .navbar_tristeza_img #toggler {
     display: none;
   }
-  .navbar_tristeza_img #toggler,
-  .navbar_tristeza_img #toggler-furia,
-  .navbar_tristeza_img #toggler-envidia,
-  .navbar_tristeza_img #toggler-ansiedad:checked ~ .nav_items {
+  .navbar_tristeza_img #toggler:checked ~ .nav_items {
     max-height: 500px;
   }
 }
@@ -4283,9 +4235,6 @@ body {
   transform: scale(1.3);
 }
 .navbar_aburrimiento_img #toggler,
-.navbar_aburrimiento_img #toggler-furia,
-.navbar_aburrimiento_img #toggler-envidia,
-.navbar_aburrimiento_img #toggler-ansiedad,
 .navbar_aburrimiento_img label {
   display: none;
   color: white;
@@ -4333,13 +4282,10 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_aburrimiento_img #toggler, .navbar_aburrimiento_img #toggler-furia, .navbar_aburrimiento_img #toggler-envidia, .navbar_aburrimiento_img #toggler-ansiedad {
+  .navbar_aburrimiento_img #toggler {
     display: none;
   }
-  .navbar_aburrimiento_img #toggler,
-  .navbar_aburrimiento_img #toggler-furia,
-  .navbar_aburrimiento_img #toggler-envidia,
-  .navbar_aburrimiento_img #toggler-ansiedad:checked ~ .nav_items {
+  .navbar_aburrimiento_img #toggler:checked ~ .nav_items {
     max-height: 500px;
   }
 }
@@ -4381,9 +4327,6 @@ body {
   transform: scale(1.3);
 }
 .navbar_bingbong_img #toggler,
-.navbar_bingbong_img #toggler-furia,
-.navbar_bingbong_img #toggler-envidia,
-.navbar_bingbong_img #toggler-ansiedad,
 .navbar_bingbong_img label {
   display: none;
   color: white;
@@ -4431,13 +4374,10 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_bingbong_img #toggler, .navbar_bingbong_img #toggler-furia, .navbar_bingbong_img #toggler-envidia, .navbar_bingbong_img #toggler-ansiedad {
+  .navbar_bingbong_img #toggler {
     display: none;
   }
-  .navbar_bingbong_img #toggler,
-  .navbar_bingbong_img #toggler-furia,
-  .navbar_bingbong_img #toggler-envidia,
-  .navbar_bingbong_img #toggler-ansiedad:checked ~ .nav_items {
+  .navbar_bingbong_img #toggler:checked ~ .nav_items {
     max-height: 500px;
   }
 }
@@ -4755,7 +4695,7 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
-.navbar_furia_text #toggler-vertical, .navbar_furia_text label {
+.navbar_furia_text input[type=checkbox], .navbar_furia_text label {
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -4782,6 +4722,7 @@ body {
   .navbar_furia_text .nav_items {
     width: 0;
     max-height: 0;
+    font-size: 0.75rem;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
   }
@@ -4789,7 +4730,7 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_furia_text #toggler-vertical:checked ~ .nav_items {
+  .navbar_furia_text input[type=checkbox]:checked ~ .nav_items {
     max-height: 1000px;
     width: 100%;
   }
@@ -4838,7 +4779,7 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
-.navbar_envidia_text #toggler-vertical, .navbar_envidia_text label {
+.navbar_envidia_text input[type=checkbox], .navbar_envidia_text label {
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -4865,6 +4806,7 @@ body {
   .navbar_envidia_text .nav_items {
     width: 0;
     max-height: 0;
+    font-size: 0.75rem;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
   }
@@ -4872,7 +4814,7 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_envidia_text #toggler-vertical:checked ~ .nav_items {
+  .navbar_envidia_text input[type=checkbox]:checked ~ .nav_items {
     max-height: 1000px;
     width: 100%;
   }
@@ -4921,7 +4863,7 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
-.navbar_ansiedad_text #toggler-vertical, .navbar_ansiedad_text label {
+.navbar_ansiedad_text input[type=checkbox], .navbar_ansiedad_text label {
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -4948,6 +4890,7 @@ body {
   .navbar_ansiedad_text .nav_items {
     width: 0;
     max-height: 0;
+    font-size: 0.75rem;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
   }
@@ -4955,7 +4898,7 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_ansiedad_text #toggler-vertical:checked ~ .nav_items {
+  .navbar_ansiedad_text input[type=checkbox]:checked ~ .nav_items {
     max-height: 1000px;
     width: 100%;
   }
@@ -5004,7 +4947,7 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
-.navbar_alegria_text #toggler-vertical, .navbar_alegria_text label {
+.navbar_alegria_text input[type=checkbox], .navbar_alegria_text label {
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -5031,6 +4974,7 @@ body {
   .navbar_alegria_text .nav_items {
     width: 0;
     max-height: 0;
+    font-size: 0.75rem;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
   }
@@ -5038,7 +4982,7 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_alegria_text #toggler-vertical:checked ~ .nav_items {
+  .navbar_alegria_text input[type=checkbox]:checked ~ .nav_items {
     max-height: 1000px;
     width: 100%;
   }
@@ -5087,7 +5031,7 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
-.navbar_temor_text #toggler-vertical, .navbar_temor_text label {
+.navbar_temor_text input[type=checkbox], .navbar_temor_text label {
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -5114,6 +5058,7 @@ body {
   .navbar_temor_text .nav_items {
     width: 0;
     max-height: 0;
+    font-size: 0.75rem;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
   }
@@ -5121,7 +5066,7 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_temor_text #toggler-vertical:checked ~ .nav_items {
+  .navbar_temor_text input[type=checkbox]:checked ~ .nav_items {
     max-height: 1000px;
     width: 100%;
   }
@@ -5170,7 +5115,7 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
-.navbar_desagrado_text #toggler-vertical, .navbar_desagrado_text label {
+.navbar_desagrado_text input[type=checkbox], .navbar_desagrado_text label {
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -5197,6 +5142,7 @@ body {
   .navbar_desagrado_text .nav_items {
     width: 0;
     max-height: 0;
+    font-size: 0.75rem;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
   }
@@ -5204,7 +5150,7 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_desagrado_text #toggler-vertical:checked ~ .nav_items {
+  .navbar_desagrado_text input[type=checkbox]:checked ~ .nav_items {
     max-height: 1000px;
     width: 100%;
   }
@@ -5253,7 +5199,7 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
-.navbar_verguenza_text #toggler-vertical, .navbar_verguenza_text label {
+.navbar_verguenza_text input[type=checkbox], .navbar_verguenza_text label {
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -5280,6 +5226,7 @@ body {
   .navbar_verguenza_text .nav_items {
     width: 0;
     max-height: 0;
+    font-size: 0.75rem;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
   }
@@ -5287,7 +5234,7 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_verguenza_text #toggler-vertical:checked ~ .nav_items {
+  .navbar_verguenza_text input[type=checkbox]:checked ~ .nav_items {
     max-height: 1000px;
     width: 100%;
   }
@@ -5336,7 +5283,7 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
-.navbar_tristeza_text #toggler-vertical, .navbar_tristeza_text label {
+.navbar_tristeza_text input[type=checkbox], .navbar_tristeza_text label {
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -5363,6 +5310,7 @@ body {
   .navbar_tristeza_text .nav_items {
     width: 0;
     max-height: 0;
+    font-size: 0.75rem;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
   }
@@ -5370,7 +5318,7 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_tristeza_text #toggler-vertical:checked ~ .nav_items {
+  .navbar_tristeza_text input[type=checkbox]:checked ~ .nav_items {
     max-height: 1000px;
     width: 100%;
   }
@@ -5419,7 +5367,7 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
-.navbar_aburrimiento_text #toggler-vertical, .navbar_aburrimiento_text label {
+.navbar_aburrimiento_text input[type=checkbox], .navbar_aburrimiento_text label {
   display: none;
 }
 @media screen and (max-width: 768px) {
@@ -5446,6 +5394,7 @@ body {
   .navbar_aburrimiento_text .nav_items {
     width: 0;
     max-height: 0;
+    font-size: 0.75rem;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out;
   }
@@ -5453,7 +5402,7 @@ body {
     padding: 1rem;
     width: 100%;
   }
-  .navbar_aburrimiento_text #toggler-vertical:checked ~ .nav_items {
+  .navbar_aburrimiento_text input[type=checkbox]:checked ~ .nav_items {
     max-height: 1000px;
     width: 100%;
   }
