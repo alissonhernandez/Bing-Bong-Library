@@ -181,7 +181,7 @@
 .navbar_tristeza_img{
     @include navbar__img($tristeza-profunda, $tristeza-apagada, $font-tristeza, $font-size-xl);
 }
-.navbar_tristeza_img{
+.navbar_aburrimiento_img{
     @include navbar__img($aburrimiento-silencioso, $aburrimiento-suave, $font-aburrimiento, $font-size-xl);
 }
 .navbar_bingbong_img {
