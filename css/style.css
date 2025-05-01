@@ -2149,6 +2149,8 @@
 
 .container-principal {
   width: 100%;
+  height: 100vh;
+  overflow: auto;
   padding-right: 3rem;
   padding-left: 3rem;
   margin-right: auto;
@@ -2187,6 +2189,8 @@
 
 .container-fluid {
   width: 100%;
+  height: 100vh;
+  overflow: auto;
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: auto;
@@ -2225,6 +2229,8 @@
 
 .container-sm {
   width: 100%;
+  height: 100vh;
+  overflow: auto;
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: auto;
@@ -2263,6 +2269,8 @@
 
 .container-md {
   width: 100%;
+  height: 100vh;
+  overflow: auto;
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: auto;
@@ -2301,6 +2309,8 @@
 
 .container-lg {
   width: 100%;
+  height: 100vh;
+  overflow: auto;
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: auto;
@@ -2339,6 +2349,8 @@
 
 .container-xl {
   width: 100%;
+  height: 100vh;
+  overflow: auto;
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: auto;
@@ -2377,6 +2389,8 @@
 
 .container-xxl {
   width: 100%;
+  height: 100vh;
+  overflow: auto;
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: auto;
@@ -2415,6 +2429,8 @@
 
 .container-principal-sc {
   width: 100%;
+  height: 100vh;
+  overflow: auto;
   padding-right: 3rem;
   padding-left: 3rem;
   margin-right: auto;
@@ -2452,6 +2468,8 @@
 
 .container-fluid-sc {
   width: 100%;
+  height: 100vh;
+  overflow: auto;
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: auto;
@@ -2489,6 +2507,8 @@
 
 .container-sm-sc {
   width: 100%;
+  height: 100vh;
+  overflow: auto;
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: auto;
@@ -2526,6 +2546,8 @@
 
 .container-md-sc {
   width: 100%;
+  height: 100vh;
+  overflow: auto;
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: auto;
@@ -2563,6 +2585,8 @@
 
 .container-lg-sc {
   width: 100%;
+  height: 100vh;
+  overflow: auto;
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: auto;
@@ -2600,6 +2624,8 @@
 
 .container-xl-sc {
   width: 100%;
+  height: 100vh;
+  overflow: auto;
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: auto;
@@ -2637,6 +2663,8 @@
 
 .container-xxl-sc {
   width: 100%;
+  height: 100vh;
+  overflow: auto;
   padding-right: 1rem;
   padding-left: 1rem;
   margin-right: auto;
@@ -2692,61 +2720,74 @@
   font-family: "Bebas Neue", sans-serif;
 }
 
-input[type=text],
-input[type=email],
-input[type=password],
-textarea,
-select {
+.formulario-emocional {
+  max-width: 600px;
   width: 100%;
-  box-sizing: border-box;
-  font-family: "Kanit", sans-serif;
-  border-radius: 25px;
-  border: 1px solid #f89b29;
-  padding: 0.5rem;
-  font-size: 1rem;
-  transition: 0.3s ease;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #b11009;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
-
-input[type=text] {
-  background-color: #5b392e;
+.formulario-emocional .titulo-formulario {
   color: white;
-}
-
-input[type=email] {
-  background-color: #6f75a4;
-  color: #1c246f;
-}
-
-input[type=submit],
-input[type=reset] {
-  cursor: pointer;
-  font-weight: 700;
-  border: none;
-}
-
-input[type=submit] {
-  background-color: #543227;
-  color: white;
-  gap: 15rem;
-}
-
-input[type=reset] {
-  background-color: #fba320;
-  color: white;
-}
-
-label,
-p {
-  font-size: 1.25rem;
   font-family: "Bebas Neue", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.formulario-emocional .form-group {
+  display: flex;
+  flex-direction: column;
+}
+.formulario-emocional .form-group label {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.formulario-emocional .form-group input,
+.formulario-emocional .form-group textarea,
+.formulario-emocional .form-group select {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.8rem;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: white;
+  color: #b11009;
+}
+.formulario-emocional .form-group input:focus,
+.formulario-emocional .form-group textarea:focus,
+.formulario-emocional .form-group select:focus {
+  outline: 2px solid #eedbd3;
+}
+.formulario-emocional .form-group textarea {
+  resize: vertical;
+}
+.formulario-emocional .btn-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+.formulario-emocional .btn-group .btn {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
   color: white;
 }
-
-form {
-  background-color: #e04f06;
-  padding: 0.25rem;
-  border-radius: 35px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+.formulario-emocional .btn-group .btn-enviar {
+  background-color: white;
+}
+.formulario-emocional .btn-group .btn-limpiar {
+  background-color: white;
+  color: #150f0f;
 }
 
 body {
