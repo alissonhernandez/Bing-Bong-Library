@@ -1,78 +1,55 @@
-@use 'textos' as *;
-@use 'redondear' as *;
 @use 'variables' as *;
 @use 'margenes' as *;
+@use 'textos' as *;
+@use 'redondear' as *;
 @use 'breackpoints' as *;
-@mixin alerta($padding: $spacing-md, $bg-color, $text-color, $border-color, $font-family: $font-envidia, $link-color: $text-color) {
-    padding: $padding;
-    border-radius: map-get($map: $radius, $key: xl);
-    background-color: rgba($bg-color, 0.15);
-    color: $text-color;
-    border: 1px solid $border-color;
-    font-family: $font-family;
-    margin-bottom: 1rem;
-
-    a {
-      color: $link-color;
-      font-weight: bold;
-      text-decoration: underline;
-  
-      &:hover {
-        text-decoration: none;
-      }
-    }
-
-    i {
-      margin-right: 0.5rem;
-      font-style: normal;
-    }
+.alerta {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 1.5rem; 
 }
-.alert {
-    &-advertencia{
-        @include alerta($bg-color: $ansiedad-relajada, $text-color: darken($ansiedad-relajada, 15%), $border-color: $ansiedad-relajada);
-    }
 
-    &-peligro{
-        @include alerta($bg-color: $furia-fuego, $text-color: darken($furia-fuego, 15%), $border-color: $furia-fuego);
-    }
+@mixin alerta-estilo($bg, $color, $borde) {
+  background-color: rgba($bg, 0.1);
+  border: 1px solid $borde;
+  color: $color;
+  font-family: $font-desagrado;
+  gap: 1rem;
 
-    &-exito{
-        @include alerta($bg-color: $desagrado-sarcastico, $text-color: darken($desagrado-sarcastico, 15%), $border-color: $desagrado-sarcastico);
-    }
+  h2 {
+    font-family: $font-verguenza;
+    color: $color;
+  }
 
-    &-info{
-        @include alerta($bg-color: $tristeza-suspiro, $text-color: darken($tristeza-suspiro, 15%), $border-color: $tristeza-suspiro);
-    }
+  p {
+    font-family: $font-envidia;
+    color: $color;
+  }
 
-    &-importante{
-        &-oscuro{
-            @include alerta($bg-color: $furia-oscuro, $text-color: darken($furia-oscuro, 15%), $border-color: $furia-oscuro);
-        }
-        &-claro{
-            @include alerta($bg-color: $furia-suave, $text-color: darken($furia-suave, 15%), $border-color: $furia-suave);
-        }
-    }
+  .icon {
+    fill: $color;
+  }
 }
-.alert-container {
-    display: grid;
-    gap: 1rem;
-    padding: 1rem;
+
+.alerta {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  &-informacion {
+    @include alerta-estilo($tristeza-suspiro, darken($tristeza-suspiro, 2%), $tristeza-suspiro);
   }
 
-  @media (min-width: 576px) {
-    .alert-container {
-      grid-template-columns: repeat(1, 1fr);
-    }
+  &-peligro {
+    @include alerta-estilo($furia-fuego, darken($furia-fuego, 5%), $furia-fuego);
   }
 
-  @media (min-width: 768px) {
-    .alert-container {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  &-advertencia {
+    @include alerta-estilo($ansiedad-relajada, darken($ansiedad-relajada, 8%), $ansiedad-relajada);
   }
 
-  @media (min-width: 992px) {
-    .alert-container {
-      grid-template-columns: repeat(3, 1fr);
-    }
+  &-completado {
+    @include alerta-estilo($desagrado-sarcastico, darken($desagrado-sarcastico, 10%), $desagrado-sarcastico);
+  }
 }
