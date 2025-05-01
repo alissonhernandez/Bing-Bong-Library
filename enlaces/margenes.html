@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Ejemplos de Utilidades SCSS</title>
+  <title>Margenes, Paddings y Bordes</title>
   <link rel="stylesheet" href="../css/style.css">
   <link rel="icon" href="../img/BBLibrary.png">
 </head>
@@ -27,8 +27,7 @@
     </nav>
   
     <div class="row">
-      <div class="navbar_furia_text col-2">
-          
+      <div class="navbar_furia_text col-2"> 
           <ul class="nav_items">
               <h2 class="navbar__brand">Componentes </h2>
               <li><a class="nav-link" href="../enlaces/alertas.html">Alertas</a></li>
@@ -48,18 +47,43 @@
               <li><a class="nav-link" href="../enlaces/textos.html">Tipos de Textos</a></li>
           </ul>
         </div>
-        <div class="col-7">
+        <div class="col-9">
           <div class="container-principal-sc">
+
+            <div class="grupo-info">
+              <h1 class="font-verguenza text-verguenza-fantastica">Margenes, Paddings y Bordes</h1>
+            </div>
+            <p class="font-envidia text-furia-oscuro text-xl">
+              Descubrí cómo las emociones dan forma al espacio.  
+              Los márgenes marcan distancia, los paddings abrazan el contenido,  
+              y los bordes definen la actitud de cada bloque.  
+              Combiná estas utilidades para diseñar con intención, estilo y mucha personalidad.  
+              ¡Dejá que tus emociones guíen cada separación!
+            </p>
+            
             <h1 class="font-alegria text-alegria-electrisante">Márgenes de Alegria</h1>
-            <div class="ccontainer-utils border m-xs bg-alegria">
-              <p class="text-alegria-electrisante">.m-xs (4px)</p>
+            <div class="container-utils border m-xs bg-alegria">
+              <p class="text-alegria-electrisante m-xs">.m-xs (4px)</p>
             </div>
             <div class="container-utils border m-md bg-alegria">
-              <p class="text-alegria-electrisante">.m-md (16px)</p>
+              <p class="text-alegria-electrisante m-md">.m-md (16px)</p>
             </div>
             <div class="container-utils border m-xl bg-alegria">
-              <p class="text-alegria-electrisante">.m-xl (48px)</p>
+              <p class="text-alegria-electrisante m-xl">.m-xl (48px)</p>
             </div>
+
+            <code>
+              &lt;h1 class="font-alegria text-alegria-electrisante"&gt;Márgenes de Alegria&lt;/h1&gt;<br>
+              &lt;div class="container-utils border m-xs bg-alegria"&gt;<br>
+              &nbsp;&nbsp;&lt;p class="text-alegria-electrisante m-xs"&gt;.m-xs (4px)&lt;/p&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="container-utils border m-md bg-alegria"&gt;<br>
+              &nbsp;&nbsp;&lt;p class="text-alegria-electrisante m-md"&gt;.m-md (16px)&lt;/p&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="container-utils border m-xl bg-alegria"&gt;<br>
+              &nbsp;&nbsp;&lt;p class="text-alegria-electrisante m-xl"&gt;.m-xl (48px)&lt;/p&gt;<br>
+              &lt;/div&gt;
+            </code>            
             
             <h1 class="font-tristeza text-tristeza-suspiro">Paddings de Tristeza</h1>
             <div class="container-utils border p-xs bg-tristeza">
@@ -71,6 +95,19 @@
             <div class="container-utils border p-xl bg-tristeza">
               <p class="text-tristeza-suspiro">.p-xl (48px)</p>
             </div>
+
+            <code>
+              &lt;h1 class="font-tristeza text-tristeza-suspiro"&gt;Paddings de Tristeza&lt;/h1&gt;<br>
+              &lt;div class="container-utils border p-xs bg-tristeza"&gt;<br>
+              &nbsp;&nbsp;&lt;p class="text-tristeza-suspiro"&gt;.p-xs (4px)&lt;/p&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="container-utils border p-md bg-tristeza"&gt;<br>
+              &nbsp;&nbsp;&lt;p class="text-tristeza-suspiro"&gt;.p-md (16px)&lt;/p&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="container-utils border p-xl bg-tristeza"&gt;<br>
+              &nbsp;&nbsp;&lt;p class="text-tristeza-suspiro"&gt;.p-xl (48px)&lt;/p&gt;<br>
+              &lt;/div&gt;
+            </code>            
             
             <h1 class="font-desagrado text-desagrado-dramatico">Bordes de Envidia</h1>
             <div class="container-utils bg-desagrado">
@@ -88,11 +125,30 @@
             <div class="container-utils border border-rounded bg-desagrado">
               <p class="text-desagrado-dramatico">.border-rounded</p>
             </div>
-          </div>
+            <code>
+              &lt;h1 class="font-desagrado text-desagrado-dramatico"&gt;Bordes de Envidia&lt;/h1&gt;<br>
+              &lt;div class="container-utils bg-desagrado"&gt;<br>
+              &nbsp;&nbsp;&lt;p class="text-desagrado-dramatico"&gt;.border-none&lt;/p&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="container-utils border bg-desagrado"&gt;<br>
+              &nbsp;&nbsp;&lt;p class="text-desagrado-dramatico"&gt;.border&lt;/p&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="container-utils border-thick bg-desagrado"&gt;<br>
+              &nbsp;&nbsp;&lt;p class="text-desagrado-dramatico"&gt;.border-thick&lt;/p&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="container-utils border-dashed bg-desagrado"&gt;<br>
+              &nbsp;&nbsp;&lt;p class="text-desagrado-dramatico"&gt;.border-dashed&lt;/p&gt;<br>
+              &lt;/div&gt;<br>
+              &lt;div class="container-utils border border-rounded bg-desagrado"&gt;<br>
+              &nbsp;&nbsp;&lt;p class="text-desagrado-dramatico"&gt;.border-rounded&lt;/p&gt;<br>
+              &lt;/div&gt;
+            </code>
+            
         </div>
       </div>
     </div>
   </div>
+</div>
   <footer class="row">
     <div class="footer-content">
         <div class="footer-logo">

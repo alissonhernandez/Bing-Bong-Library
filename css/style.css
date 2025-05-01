@@ -2725,7 +2725,7 @@
   width: 100%;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #b11009;
+  background: linear-gradient(to bottom, #150f0f 0%, #b11009 100%);
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   display: flex;
@@ -2782,12 +2782,17 @@
   cursor: pointer;
   color: white;
 }
+.formulario-emocional .btn-group:hover {
+  background-color: #332424;
+  color: #b11009;
+}
 .formulario-emocional .btn-group .btn-enviar {
-  background-color: white;
+  background-color: #150f0f;
+  color: white;
 }
 .formulario-emocional .btn-group .btn-limpiar {
-  background-color: white;
-  color: #150f0f;
+  background-color: #150f0f;
+  color: white;
 }
 
 body {
