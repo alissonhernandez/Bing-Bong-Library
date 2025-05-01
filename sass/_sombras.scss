@@ -1,21 +1,49 @@
 @use 'variables' as *;
 
-
-// Mixin para generar 4 tipos de sombra por emocion
-@mixin sombras-por-emocion($nombre, $color) {
-  .shadow-#{$nombre}         { box-shadow: 0 4px 6px rgba($color, 0.3); }
-  .shadow-#{$nombre}-md      { box-shadow: 0 6px 12px rgba($color, 0.35); }
-  .shadow-#{$nombre}-lg      { box-shadow: 0 8px 16px rgba($color, 0.38); }
-  .shadow-#{$nombre}-xl      { box-shadow: 0 12px 24px rgba($color, 0.4); }
+body {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 2rem;
 }
+
+
+.container-sb {
+  width: 200px;
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 2px solid $furia-oscuro;
+  text-align: center;
+  transition: transform 0.3s ease;
+  background-color: $furia-suave;
+}
+
+.container-sb:hover {
+  transform: translateY(-5px);
+}
+
+// Mixin para generar 9 tipos de sombra por emocion
+@mixin sombras-por-emocion($nombre, $color) {
+  .shadow-#{$nombre}         { box-shadow: 0 4px 8px rgba($color, 0.3); }   
+  .shadow-#{$nombre}-sm      { box-shadow: 0 5px 10px rgba($color, 0.4); }  
+  .shadow-#{$nombre}-md      { box-shadow: 0 8px 16px rgba($color, 0.5); }   
+  .shadow-#{$nombre}-lg      { box-shadow: 0 12px 24px rgba($color, 0.6); } 
+  .shadow-#{$nombre}-xl      { box-shadow: 0 16px 32px rgba($color, 0.7); } 
+  .shadow-#{$nombre}-2xl     { box-shadow: 0 20px 40px rgba($color, 0.8); }  
+  .shadow-#{$nombre}-3xl     { box-shadow: 0 24px 48px rgba($color, 0.9); } 
+  .shadow-#{$nombre}-inner   { box-shadow: inset 0 5px 10px rgba($color, 0.4); }  
+  .shadow-#{$nombre}-glow    { box-shadow: 0 0 15px 6px rgba($color, 0.8); }  
+}
+
 
 // Aplicar mixin a cada emocion
 @include sombras-por-emocion(furia, $furia-fuego);
-@include sombras-por-emocion(envidia, $envidia-alarmante);
+@include sombras-por-emocion(envidia, $envidia-marea);
 @include sombras-por-emocion(ansiedad, $ansiedad-espontanea);
-@include sombras-por-emocion(alegria, $alegria-vibrante);
-@include sombras-por-emocion(temor, $temor-adrenalina);
-@include sombras-por-emocion(desagrado, $desagrado-dramatico);
-@include sombras-por-emocion(verguenza, $verguenza-fantastica);
+@include sombras-por-emocion(alegria, $alegria-brillante);
+@include sombras-por-emocion(temor, $temor-suave);
+@include sombras-por-emocion(desagrado, $desagrado-sarcastico);
+@include sombras-por-emocion(verguenza, $verguenza-recuerdo);
 @include sombras-por-emocion(tristeza, $tristeza-brillante);
-@include sombras-por-emocion(aburrimiento, $aburrimiento-suspiro);
+@include sombras-por-emocion(aburrimiento, $aburrimiento-suave);
