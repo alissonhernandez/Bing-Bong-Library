@@ -4542,6 +4542,7 @@ body {
   font-family: "Bebas Neue", sans-serif;
   align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
 }
 .navbar_furia_text li {
   list-style: none;
@@ -4571,6 +4572,54 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
+.navbar_furia_text #toggler-vertical, .navbar_furia_text label {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar_furia_text {
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    display: grid;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+  }
+  .navbar_furia_text label {
+    margin: 10px;
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+  }
+  .navbar_furia_text .nav_items {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    flex-direction: column;
+    background-color: #eedbd3;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 9;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .navbar_furia_text .nav-link {
+    padding: 1rem;
+    width: 100%;
+  }
+  #toggler-vertical:checked ~ .navbar_furia_text .nav_items {
+    width: 250px;
+  }
+}
 
 .navbar_envidia_text {
   display: flex;
@@ -4585,6 +4634,7 @@ body {
   font-family: "Kanit", sans-serif;
   align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
 }
 .navbar_envidia_text li {
   list-style: none;
@@ -4614,6 +4664,54 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
+.navbar_envidia_text #toggler-vertical, .navbar_envidia_text label {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar_envidia_text {
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    display: grid;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+  }
+  .navbar_envidia_text label {
+    margin: 10px;
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+  }
+  .navbar_envidia_text .nav_items {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    flex-direction: column;
+    background-color: #6f75a4;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 9;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .navbar_envidia_text .nav-link {
+    padding: 1rem;
+    width: 100%;
+  }
+  #toggler-vertical:checked ~ .navbar_envidia_text .nav_items {
+    width: 250px;
+  }
+}
 
 .navbar_ansiedad_text {
   display: flex;
@@ -4628,6 +4726,7 @@ body {
   font-family: "Rubik Mono One", sans-serif;
   align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
 }
 .navbar_ansiedad_text li {
   list-style: none;
@@ -4657,6 +4756,54 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
+.navbar_ansiedad_text #toggler-vertical, .navbar_ansiedad_text label {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar_ansiedad_text {
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    display: grid;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+  }
+  .navbar_ansiedad_text label {
+    margin: 10px;
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+  }
+  .navbar_ansiedad_text .nav_items {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    flex-direction: column;
+    background-color: #fba320;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 9;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .navbar_ansiedad_text .nav-link {
+    padding: 1rem;
+    width: 100%;
+  }
+  #toggler-vertical:checked ~ .navbar_ansiedad_text .nav_items {
+    width: 250px;
+  }
+}
 
 .navbar_alegria_text {
   display: flex;
@@ -4671,6 +4818,7 @@ body {
   font-family: "Baloo 2", cursive;
   align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
 }
 .navbar_alegria_text li {
   list-style: none;
@@ -4700,6 +4848,54 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
+.navbar_alegria_text #toggler-vertical, .navbar_alegria_text label {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar_alegria_text {
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    display: grid;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+  }
+  .navbar_alegria_text label {
+    margin: 10px;
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+  }
+  .navbar_alegria_text .nav_items {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    flex-direction: column;
+    background-color: #6587c1;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 9;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .navbar_alegria_text .nav-link {
+    padding: 1rem;
+    width: 100%;
+  }
+  #toggler-vertical:checked ~ .navbar_alegria_text .nav_items {
+    width: 250px;
+  }
+}
 
 .navbar_temor_text {
   display: flex;
@@ -4714,6 +4910,7 @@ body {
   font-family: "Creepster", cursive;
   align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
 }
 .navbar_temor_text li {
   list-style: none;
@@ -4743,6 +4940,54 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
+.navbar_temor_text #toggler-vertical, .navbar_temor_text label {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar_temor_text {
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    display: grid;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+  }
+  .navbar_temor_text label {
+    margin: 10px;
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+  }
+  .navbar_temor_text .nav_items {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    flex-direction: column;
+    background-color: #7b65a6;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 9;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .navbar_temor_text .nav-link {
+    padding: 1rem;
+    width: 100%;
+  }
+  #toggler-vertical:checked ~ .navbar_temor_text .nav_items {
+    width: 250px;
+  }
+}
 
 .navbar_desagrado_text {
   display: flex;
@@ -4757,6 +5002,7 @@ body {
   font-family: "Lilita One", cursive;
   align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
 }
 .navbar_desagrado_text li {
   list-style: none;
@@ -4786,6 +5032,54 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
+.navbar_desagrado_text #toggler-vertical, .navbar_desagrado_text label {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar_desagrado_text {
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    display: grid;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+  }
+  .navbar_desagrado_text label {
+    margin: 10px;
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+  }
+  .navbar_desagrado_text .nav_items {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    flex-direction: column;
+    background-color: #78AB65;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 9;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .navbar_desagrado_text .nav-link {
+    padding: 1rem;
+    width: 100%;
+  }
+  #toggler-vertical:checked ~ .navbar_desagrado_text .nav_items {
+    width: 250px;
+  }
+}
 
 .navbar_verguenza_text {
   display: flex;
@@ -4800,6 +5094,7 @@ body {
   font-family: "Gloria Hallelujah", cursive;
   align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
 }
 .navbar_verguenza_text li {
   list-style: none;
@@ -4829,6 +5124,54 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
+.navbar_verguenza_text #toggler-vertical, .navbar_verguenza_text label {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar_verguenza_text {
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    display: grid;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+  }
+  .navbar_verguenza_text label {
+    margin: 10px;
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+  }
+  .navbar_verguenza_text .nav_items {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    flex-direction: column;
+    background-color: #816F96;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 9;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .navbar_verguenza_text .nav-link {
+    padding: 1rem;
+    width: 100%;
+  }
+  #toggler-vertical:checked ~ .navbar_verguenza_text .nav_items {
+    width: 250px;
+  }
+}
 
 .navbar_tristeza_text {
   display: flex;
@@ -4843,6 +5186,7 @@ body {
   font-family: "Comfortaa", sans-serif;
   align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
 }
 .navbar_tristeza_text li {
   list-style: none;
@@ -4872,6 +5216,54 @@ body {
   border-radius: 50px;
   transform: scale(1.05);
 }
+.navbar_tristeza_text #toggler-vertical, .navbar_tristeza_text label {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar_tristeza_text {
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    display: grid;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+  }
+  .navbar_tristeza_text label {
+    margin: 10px;
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+  }
+  .navbar_tristeza_text .nav_items {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    flex-direction: column;
+    background-color: #89ABC3;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 9;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .navbar_tristeza_text .nav-link {
+    padding: 1rem;
+    width: 100%;
+  }
+  #toggler-vertical:checked ~ .navbar_tristeza_text .nav_items {
+    width: 250px;
+  }
+}
 
 .navbar_aburrimiento_text {
   display: flex;
@@ -4886,6 +5278,7 @@ body {
   font-family: "M PLUS Rounded 1c", sans-serif;
   align-items: flex-start;
   justify-content: flex-start;
+  position: relative;
 }
 .navbar_aburrimiento_text li {
   list-style: none;
@@ -4914,6 +5307,54 @@ body {
   background-color: #0F1156;
   border-radius: 50px;
   transform: scale(1.05);
+}
+.navbar_aburrimiento_text #toggler-vertical, .navbar_aburrimiento_text label {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .navbar_aburrimiento_text {
+    width: 0;
+    overflow: hidden;
+    padding: 0;
+    display: grid;
+    flex-direction: column;
+    align-items: stretch;
+    position: relative;
+  }
+  .navbar_aburrimiento_text label {
+    margin: 10px;
+    display: inline-flex;
+    align-self: flex-start;
+    padding: 1rem;
+    cursor: pointer;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+    z-index: 10;
+  }
+  .navbar_aburrimiento_text .nav_items {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    flex-direction: column;
+    background-color: #484BA9;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+    z-index: 9;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .navbar_aburrimiento_text .nav-link {
+    padding: 1rem;
+    width: 100%;
+  }
+  #toggler-vertical:checked ~ .navbar_aburrimiento_text .nav_items {
+    width: 250px;
+  }
 }
 
 .container-sb {

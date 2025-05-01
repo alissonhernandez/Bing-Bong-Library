@@ -132,6 +132,7 @@
     font-family: $font-family-nav;
     align-items: flex-start;
     justify-content: flex-start;
+    position: relative;
     .nav_items{
         display: flex;
         flex-direction: column;
@@ -151,6 +152,52 @@
             background-color: $hover-bg-color;
             border-radius: map-get($map: $radius, $key: xl);
             transform: scale(1.05);
+        }
+    }
+    #toggler-vertical, label{
+        display: none;
+    }
+    @media screen and (max-width: 768px) {
+        width: 0;
+        overflow: hidden;
+        padding: 0;
+        display: grid;
+        flex-direction: column;
+        align-items: stretch;
+        position: relative;
+        label{
+            margin: 10px;
+            display: inline-flex;
+            align-self: flex-start;
+            padding: 1rem;
+            cursor: pointer;
+            position: absolute;
+            right: 1rem;
+            top: 1rem;
+            z-index: 10;
+        }
+        .nav_items{
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            flex-direction: column;
+            background-color: $bg-color;
+            padding: 0;
+            overflow: hidden;
+            max-height: 0;
+            transition: max-height 0.3s ease-in-out;
+            z-index: 9;
+            align-items: center;
+            overflow-x: hidden;
+        }
+        .nav-link{
+            padding: 1rem;
+            width: 100%;
+        }
+        #toggler-vertical:checked ~ & .nav_items {
+            width: 250px;
         }
     }
 }
